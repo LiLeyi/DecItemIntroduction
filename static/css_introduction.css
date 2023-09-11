@@ -13,7 +13,7 @@ body {
     background: no-repeat url(background.png) center center;
     background-size: cover;
     margin: 0;
-    padding: 3%;
+    padding: 5vh;
     position: relative;
     background-attachment: fixed;
 }
@@ -97,6 +97,6 @@ a:active {
     height: 20vh;
     image-rendering: pixelated;
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 10px;
+    padding: 5vh;
     border-radius: 10px;
 }
