@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     color: rgba(0, 0, 0, 0.7);
-    font-size: 120%;
+    font-size: 3vh;
     font-family: unset;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 }
@@ -13,7 +13,7 @@ body {
     background: no-repeat url(background.png) center center;
     background-size: cover;
     margin: 0;
-    padding: 3%;
+    padding: 5%;
     position: relative;
     background-attachment: fixed;
 }
@@ -38,7 +38,7 @@ body {
 
 #search_div {
     width: 100%;
-    height: 20px;
+    height: 7vh;
     padding-bottom: 40px;
 }
 
@@ -48,8 +48,9 @@ body {
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.8);
     padding-left: 10px;
-    width: 30%;
-    height: 40px;
+    width: 30vh;
+    height: 7vh;
+    font-size: 2vh;
 }
 
 #search_button {
@@ -58,8 +59,9 @@ body {
     border: rgba(0, 0, 0, 0);
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.8);
-    width: 5%;
-    height: 40px;
+    width: 7vh;
+    height: 7vh;
+    font-size: 2vh;
 }
 
 #lang_select {
@@ -68,8 +70,9 @@ body {
     border: none;
     border-radius: 10px;
     color: rgba(255, 255, 255, 0.8);
-    width: 5%;
-    height: 40px;
+    width: 7vh;
+    height: 7vh;
+    font-size: 2vh;
     appearance: none;
 }
 
@@ -105,8 +108,8 @@ a:active {
 }
 
 .item_icon {
-    width: 3%;
-    height: 3%;
+    width: 5vh;
+    height: 5vh;
     image-rendering: pixelated;
 }
 
