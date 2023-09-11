@@ -4,7 +4,7 @@ html,
 body {
     height: 100%;
     color: rgba(255, 255, 255, 0.6);
-    font-size: 120%;
+    font-size: 3vh;
     font-family: unset;
     text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.15);
 }
@@ -43,8 +43,6 @@ body {
     background-color: rgba(255, 255, 255, 0.2);
     border: rgba(0, 0, 0, 0);
     border-radius: 10px;
-    width: 5%;
-    height: 40px;
     margin-top: 10px;
     -webkit-transition: color .5s;
     transition: color .5s;
@@ -52,6 +50,9 @@ body {
     transition-duration: 0.5s;
     transition-delay: 0s;
     transition-property: all;
+    width: 7vh;
+    height: 7vh;
+    font-size: 2vh;
 }
 
 a {
@@ -92,8 +93,8 @@ a:active {
 }
 
 .item_icon {
-    width: 10%;
-    height: 10%;
+    width: 20vh;
+    height: 20vh;
     image-rendering: pixelated;
     background-color: rgba(255, 255, 255, 0.2);
     padding: 10px;
