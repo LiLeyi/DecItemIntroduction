@@ -1462,6 +1462,15 @@
 		},
 		"red_spider_lily": {
 			"textures": "textures/items/red_spider_lily"
+		},
+		"cob": {
+			"textures": "textures/items/cob"
+		},
+		"corn": {
+			"textures": "textures/items/corn"
+		},
+		"corn_seeds": {
+			"textures": "textures/items/corn_seeds"
 		}
   }
 }

@@ -195,7 +195,8 @@ window.AddData = {
             "\u51bb \u624b \u51bb \u811a",
             "\u5251\u5203\u5192\u7740\u4ee4\u4eba\u6bdb\u9aa8\u609a\u7136\u7684\u5bd2\u6c14",
             "\u88ab\u5b83\u780d\u4e2d\u7684\u611f\u89c9\u523a\u75db\u5fc3\u810f",
-            "\u96ea\u539f\u6b66\u5668\u9876\u5c42\u623f \u8fd8\u60f3\u5347\u7ea7\uff1f"
+            "\u96ea\u539f\u6b66\u5668\u9876\u5c42\u623f \u8fd8\u60f3\u5347\u7ea7\uff1f",
+            "lly\u559c\u6b22\u7684"
         ]
     },
     "dec:alchemic_stone": {
@@ -225,25 +226,25 @@ window.AddData = {
         "texture": "textures/items/alchemic_stone",
         "rec": [],
         "loot": [
-            "loot_tables/entities/king_of_pillager.json",
             "loot_tables/blocks/cave_crate.json",
+            "loot_tables/entities/goblin_wizard.json",
             "loot_tables/entities/ruined_muddy_brushable_block.json",
-            "loot_tables/blocks/frozen_crate.json",
             "loot_tables/blocks/crate.json",
-            "loot_tables/entities/goblin_wizard.json"
+            "loot_tables/entities/king_of_pillager.json",
+            "loot_tables/blocks/frozen_crate.json"
         ],
         "loot_by_entity": [
-            "dec:king_of_pillager",
-            "dec:goblin_wizard"
+            "dec:goblin_wizard",
+            "dec:king_of_pillager"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "King Of Pillager",
-                "Goblin Wizard"
+                "Goblin Wizard",
+                "King Of Pillager"
             ],
             "zh_CN": [
-                "\u63a0\u593a\u8005\u4e4b\u738b",
-                "\u54e5\u5e03\u6797\u6cd5\u5e08"
+                "\u54e5\u5e03\u6797\u6cd5\u5e08",
+                "\u63a0\u593a\u8005\u4e4b\u738b"
             ]
         },
         "loot_by_block": [],
@@ -1749,8 +1750,8 @@ window.AddData = {
             "recipes/amethyst_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -4088,8 +4089,8 @@ window.AddData = {
             "recipes/amethyst_ray_staff.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/template/weapon/magic_weapon/staff.json"
+            "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -4203,8 +4204,8 @@ window.AddData = {
             "recipes/amethyst_sword.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -4427,12 +4428,11 @@ window.AddData = {
         "texture": "textures/items/apple_juice",
         "rec": [],
         "loot": [
+            "loot_tables/entities/zombie.json",
             "loot_tables/entities/blood_zombie.json",
-            "loot_tables/entities/lurk_zombie.json",
-            "loot_tables/entities/zombie.json"
+            "loot_tables/entities/lurk_zombie.json"
         ],
         "loot_by_entity": [
-            "dec:lurk_zombie",
             "dec:mushroom_zombie",
             "dec:watcher",
             "minecraft:zombie",
@@ -4440,22 +4440,23 @@ window.AddData = {
             "dec:zombie_warrior",
             "minecraft:husk",
             "minecraft:zombie_villager",
-            "minecraft:zombie_villager_v2"
+            "minecraft:zombie_villager_v2",
+            "dec:lurk_zombie"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Lurk Zombie",
                 "Mushroom Zombie",
                 "Watcher",
                 "Zombie Summoner",
-                "Zombie Warrior"
+                "Zombie Warrior",
+                "Lurk Zombie"
             ],
             "zh_CN": [
-                "\u6f5c\u58f0\u50f5\u5c38",
                 "\u771f\u83cc\u50f5\u5c38",
                 "\u770b\u5b88\u8005",
                 "\u50f5\u5c38\u53ec\u5524\u5e08",
-                "\u50f5\u5c38\u6218\u58eb"
+                "\u50f5\u5c38\u6218\u58eb",
+                "\u6f5c\u58f0\u50f5\u5c38"
             ]
         },
         "loot_by_block": [],
@@ -4651,8 +4652,8 @@ window.AddData = {
         },
         "texture": "textures/items/artificial_meat",
         "rec": [
-            "recipes/artificial_meat2.json",
-            "recipes/artificial_meat1.json"
+            "recipes/artificial_meat1.json",
+            "recipes/artificial_meat2.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -4693,10 +4694,10 @@ window.AddData = {
         },
         "texture": "textures/items/artificial_meat_creator_off",
         "rec": [
-            "recipes/artificial_meat_creator_on.json",
-            "recipes/artificial_meat2.json",
+            "recipes/artificial_meat_creator_off.json",
             "recipes/artificial_meat1.json",
-            "recipes/artificial_meat_creator_off.json"
+            "recipes/artificial_meat_creator_on.json",
+            "recipes/artificial_meat2.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -4733,9 +4734,9 @@ window.AddData = {
         },
         "texture": "textures/items/artificial_meat_creator_on",
         "rec": [
+            "recipes/artificial_meat1.json",
             "recipes/artificial_meat_creator_on.json",
-            "recipes/artificial_meat2.json",
-            "recipes/artificial_meat1.json"
+            "recipes/artificial_meat2.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -4773,8 +4774,8 @@ window.AddData = {
         },
         "texture": "textures/items/artificial_meat_creator_power",
         "rec": [
-            "recipes/artificial_meat_creator_on.json",
-            "recipes/artificial_meat_creator_power.json"
+            "recipes/artificial_meat_creator_power.json",
+            "recipes/artificial_meat_creator_on.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -4918,8 +4919,8 @@ window.AddData = {
         },
         "texture": "textures/items/a_bowl_of_rice",
         "rec": [
-            "recipes/potato_rice.json",
-            "recipes/a_bowl_of_rice.json"
+            "recipes/a_bowl_of_rice.json",
+            "recipes/potato_rice.json"
         ],
         "loot": [
             "loot_tables/chests/warehouse_of_watcher.json"
@@ -5099,8 +5100,8 @@ window.AddData = {
             "recipes/bamboo_yataghan.json"
         ],
         "loot": [
-            "loot_tables/chests/jungle_temple.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/chests/jungle_temple.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -5250,8 +5251,8 @@ window.AddData = {
             "recipes/night_sword.json"
         ],
         "loot": [
-            "loot_tables/template/weapon/summon_weapon/summon_weapon.json",
-            "loot_tables/entities/predators.json"
+            "loot_tables/entities/predators.json",
+            "loot_tables/template/weapon/summon_weapon/summon_weapon.json"
         ],
         "loot_by_entity": [
             "dec:predators"
@@ -5296,10 +5297,10 @@ window.AddData = {
             "recipes/complete_bat_wing.json"
         ],
         "loot": [
-            "loot_tables/entities/vampire_bat.json",
             "loot_tables/chests/village/village_butcher.json",
+            "loot_tables/entities/bat.json",
             "loot_tables/blocks/crate.json",
-            "loot_tables/entities/bat.json"
+            "loot_tables/entities/vampire_bat.json"
         ],
         "loot_by_entity": [
             "dec:vampire_bat"
@@ -5507,11 +5508,11 @@ window.AddData = {
         "texture": "textures/items/bizarre_chilli_seeds",
         "rec": [],
         "loot": [
-            "loot_tables/blocks/bizarre_chilli_crop.json",
             "loot_tables/entities/lurk_zombie.json",
+            "loot_tables/blocks/bizarre_chilli_crop.json",
+            "loot_tables/chests/soul_room_nor.json",
             "loot_tables/chests/soul_room_har.json",
-            "loot_tables/chests/soul_room_boss.json",
-            "loot_tables/chests/soul_room_nor.json"
+            "loot_tables/chests/soul_room_boss.json"
         ],
         "loot_by_entity": [
             "dec:lurk_zombie"
@@ -5536,15 +5537,6 @@ window.AddData = {
             ]
         },
         "loot_by_structure": {
-            "soul_room_har_1": [
-                "Chest"
-            ],
-            "soul_room_har_2": [
-                "Chest"
-            ],
-            "soul_room_boss": [
-                "Chest"
-            ],
             "soul_room_nor_4": [
                 "Chest"
             ],
@@ -5558,6 +5550,15 @@ window.AddData = {
                 "Chest"
             ],
             "soul_room_stair_5": [
+                "Chest"
+            ],
+            "soul_room_har_1": [
+                "Chest"
+            ],
+            "soul_room_har_2": [
+                "Chest"
+            ],
+            "soul_room_boss": [
                 "Chest"
             ]
         },
@@ -6110,8 +6111,8 @@ window.AddData = {
         },
         "texture": "textures/items/blizzard_sword",
         "rec": [
-            "recipes/absolute_zero.json",
-            "recipes/blizzard_sword.json"
+            "recipes/blizzard_sword.json",
+            "recipes/absolute_zero.json"
         ],
         "loot": [
             "loot_tables/template/weapon/melee_weapon/sword.json"
@@ -6400,8 +6401,8 @@ window.AddData = {
             "recipes/blood_meat.json"
         ],
         "loot": [
-            "loot_tables/tasks/008.json",
-            "loot_tables/tasks/041.json"
+            "loot_tables/tasks/041.json",
+            "loot_tables/tasks/008.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -6897,82 +6898,82 @@ window.AddData = {
         },
         "texture": "textures/items/blue_gem_debris",
         "rec": [
-            "recipes/dark_pearl.json",
+            "recipes/magic_powder_by_blue_gem_debris.json",
             "recipes/blue_gem.json",
-            "recipes/magic_powder_by_blue_gem_debris.json"
+            "recipes/dark_pearl.json"
         ],
         "loot": [
-            "loot_tables/chests/jungle_temple.json",
-            "loot_tables/chests/village/village_cartographer.json",
-            "loot_tables/chests/village/village_mason.json",
-            "loot_tables/chests/village/village_snowy_house.json",
-            "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/chests/igloo_chest.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/chests/stronghold_corridor.json",
-            "loot_tables/chests/village/village_desert_house.json",
-            "loot_tables/chests/village/village_plains_house.json",
-            "loot_tables/chests/buriedtreasure.json",
-            "loot_tables/chests/snow_altar.json",
-            "loot_tables/chests/village/village_tannery.json",
-            "loot_tables/chests/village/village_armorer.json",
-            "loot_tables/chests/guard_tower.json",
-            "loot_tables/chests/bastion_hoglin_stable.json",
-            "loot_tables/chests/bastion_other.json",
-            "loot_tables/chests/ruined_portal.json",
-            "loot_tables/chests/village/village_shepherd.json",
-            "loot_tables/chests/goblin_house_1.json",
-            "loot_tables/chests/bastion_bridge.json",
-            "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/chests/effigy_2.json",
-            "loot_tables/chests/enchanted_house.json",
-            "loot_tables/chests/grave.json",
-            "loot_tables/chests/stronghold_crossing.json",
-            "loot_tables/chests/shipwrecktreasure.json",
-            "loot_tables/chests/soul_room_har.json",
-            "loot_tables/blocks/blue_gem_ore.json",
-            "loot_tables/chests/illusioner_house.json",
-            "loot_tables/chests/monster_room.json",
-            "loot_tables/chests/pirate_ship_small.json",
-            "loot_tables/chests/simple_dungeon.json",
-            "loot_tables/chests/village/village_taiga_house.json",
-            "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/chests/desert_pyramid.json",
-            "loot_tables/chests/village_blacksmith.json",
-            "loot_tables/chests/nether_bridge.json",
-            "loot_tables/chests/village/village_savanna_house.json",
-            "loot_tables/chests/bastion_treasure.json",
-            "loot_tables/chests/ruined_house.json",
-            "loot_tables/chests/giant_tree_barrel.json",
-            "loot_tables/chests/village_two_room_house.json",
-            "loot_tables/chests/underwater_ruin_small.json",
             "loot_tables/chests/village/village_toolsmith.json",
-            "loot_tables/chests/ash_castle_treasure.json",
-            "loot_tables/chests/snowflake_tower.json",
-            "loot_tables/chests/village/village_temple.json",
-            "loot_tables/chests/village/village_weaponsmith.json",
-            "loot_tables/chests/ruined_muddy_4.json",
-            "loot_tables/chests/haunted_house.json",
-            "loot_tables/chests/tower_of_watcher/ore.json",
-            "loot_tables/chests/hunter_house.json",
-            "loot_tables/chests/snowflake_kiosk.json",
-            "loot_tables/chests/challenger_tower.json",
-            "loot_tables/chests/ash_castle.json",
-            "loot_tables/chests/underwater_ruin_big.json",
-            "loot_tables/chests/spawn_bonus_chest.json",
-            "loot_tables/chests/plain_tower.json",
-            "loot_tables/chests/stronghold_library.json",
             "loot_tables/chests/shipwreck.json",
-            "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/pillager_outpost.json",
-            "loot_tables/chests/end_vestiges.json",
+            "loot_tables/chests/ruined_portal.json",
+            "loot_tables/chests/enchanted_house.json",
+            "loot_tables/chests/haunted_house.json",
+            "loot_tables/chests/snow_altar.json",
+            "loot_tables/chests/village/village_armorer.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/chests/village/village_temple.json",
+            "loot_tables/chests/effigy_2.json",
             "loot_tables/chests/village/village_butcher.json",
+            "loot_tables/chests/giant_tree_barrel.json",
             "loot_tables/chests/shipwrecksupply.json",
-            "loot_tables/chests/village/village_fletcher.json",
-            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/chests/illusioner_house.json",
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/chests/grave.json",
+            "loot_tables/chests/monster_room.json",
+            "loot_tables/chests/bastion_hoglin_stable.json",
+            "loot_tables/chests/simple_dungeon.json",
+            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/chests/goblin_house_1.json",
+            "loot_tables/chests/underwater_ruin_big.json",
+            "loot_tables/chests/ruined_muddy_4.json",
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/hunter_house.json",
+            "loot_tables/chests/village/village_shepherd.json",
+            "loot_tables/chests/village/village_plains_house.json",
+            "loot_tables/blocks/blue_gem_ore.json",
+            "loot_tables/chests/bastion_other.json",
+            "loot_tables/chests/plain_tower.json",
+            "loot_tables/chests/abandoned_mineshaft.json",
+            "loot_tables/chests/everlasting_winter_tower.json",
+            "loot_tables/chests/guard_tower.json",
             "loot_tables/chests/soul_room_nor.json",
-            "loot_tables/chests/abandoned_mineshaft.json"
+            "loot_tables/chests/challenger_tower.json",
+            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/chests/ash_castle.json",
+            "loot_tables/chests/stronghold_library.json",
+            "loot_tables/chests/end_vestiges.json",
+            "loot_tables/chests/nether_bridge.json",
+            "loot_tables/chests/village/village_taiga_house.json",
+            "loot_tables/chests/village/village_snowy_house.json",
+            "loot_tables/chests/bastion_bridge.json",
+            "loot_tables/chests/shipwrecktreasure.json",
+            "loot_tables/chests/bastion_treasure.json",
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/chests/village/village_fletcher.json",
+            "loot_tables/chests/pillager_outpost.json",
+            "loot_tables/chests/stronghold_crossing.json",
+            "loot_tables/chests/stronghold_corridor.json",
+            "loot_tables/chests/jungle_temple.json",
+            "loot_tables/chests/buriedtreasure.json",
+            "loot_tables/chests/village/village_desert_house.json",
+            "loot_tables/chests/village/village_tannery.json",
+            "loot_tables/chests/underwater_ruin_small.json",
+            "loot_tables/chests/village/village_cartographer.json",
+            "loot_tables/chests/ruined_house.json",
+            "loot_tables/chests/village/village_savanna_house.json",
+            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/snowflake_kiosk.json",
+            "loot_tables/chests/village_two_room_house.json",
+            "loot_tables/chests/snowflake_tower.json",
+            "loot_tables/chests/igloo_chest.json",
+            "loot_tables/chests/village_blacksmith.json",
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/chests/tower_of_watcher/ore.json",
+            "loot_tables/chests/spawn_bonus_chest.json",
+            "loot_tables/chests/village/village_mason.json",
+            "loot_tables/chests/village/village_weaponsmith.json",
+            "loot_tables/chests/desert_pyramid.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -6988,37 +6989,41 @@ window.AddData = {
             ]
         },
         "loot_by_structure": {
-            "deep_garden": [
-                "Chest"
-            ],
             "muddy_altar": [
                 "Barrel"
+            ],
+            "enchanted_house": [
+                "Barrel"
+            ],
+            "haunted_house_1": [
+                "Chest",
+                "Barrel"
+            ],
+            "haunted_house_2": [
+                "Chest"
             ],
             "snow_altar": [
                 "Barrel",
                 "Chest"
             ],
-            "guard_tower_1": [
-                "Chest"
-            ],
-            "guard_tower_2": [
-                "Chest"
-            ],
-            "guard_tower_3": [
-                "Chest",
-                "Barrel"
-            ],
-            "goblin_house_1": [
-                "Chest"
-            ],
-            "everlasting_winter_tower": [
+            "warehouse_of_watcher": [
+                "Barrel",
                 "Chest"
             ],
             "effigy_2": [
                 "Chest"
             ],
-            "enchanted_house": [
+            "giant_tree": [
                 "Barrel"
+            ],
+            "giant_tree_with_ticking": [
+                "Barrel"
+            ],
+            "illusioner_house_1": [
+                "Chest"
+            ],
+            "deep_garden": [
+                "Chest"
             ],
             "cemetery_1": [
                 "Chest"
@@ -7035,63 +7040,31 @@ window.AddData = {
             "soul_room_har_2": [
                 "Chest"
             ],
-            "illusioner_house_1": [
+            "goblin_house_1": [
                 "Chest"
-            ],
-            "pirate_ship_small_1": [
-                "Chest"
-            ],
-            "warehouse_of_watcher": [
-                "Barrel",
-                "Chest"
-            ],
-            "ruined_house_1": [
-                "Barrel"
-            ],
-            "ruined_house_2": [
-                "Barrel"
-            ],
-            "giant_tree": [
-                "Barrel"
-            ],
-            "giant_tree_with_ticking": [
-                "Barrel"
-            ],
-            "ash_castle": [
-                "Chest",
-                "Barrel"
-            ],
-            "snowflake_tower_3": [
-                "Barrel"
             ],
             "ruined_muddy_4": [
                 "Chest",
                 "Barrel"
             ],
-            "haunted_house_1": [
-                "Chest",
-                "Barrel"
-            ],
-            "haunted_house_2": [
-                "Chest"
-            ],
             "hunter_house_1": [
                 "Barrel"
-            ],
-            "snowflake_kiosk_2": [
-                "Barrel"
-            ],
-            "challenger_tower": [
-                "Chest"
             ],
             "plain_tower": [
                 "Chest"
             ],
-            "end_vestiges": [
-                "ShulkerBox"
-            ],
-            "soul_room_boss": [
+            "everlasting_winter_tower": [
                 "Chest"
+            ],
+            "guard_tower_1": [
+                "Chest"
+            ],
+            "guard_tower_2": [
+                "Chest"
+            ],
+            "guard_tower_3": [
+                "Chest",
+                "Barrel"
             ],
             "soul_room_nor_4": [
                 "Chest"
@@ -7107,6 +7080,34 @@ window.AddData = {
             ],
             "soul_room_stair_5": [
                 "Chest"
+            ],
+            "challenger_tower": [
+                "Chest"
+            ],
+            "soul_room_boss": [
+                "Chest"
+            ],
+            "ash_castle": [
+                "Barrel",
+                "Chest"
+            ],
+            "end_vestiges": [
+                "ShulkerBox"
+            ],
+            "pirate_ship_small_1": [
+                "Chest"
+            ],
+            "ruined_house_1": [
+                "Barrel"
+            ],
+            "ruined_house_2": [
+                "Barrel"
+            ],
+            "snowflake_kiosk_2": [
+                "Barrel"
+            ],
+            "snowflake_tower_3": [
+                "Barrel"
             ]
         },
         "annotation": [
@@ -7338,8 +7339,8 @@ window.AddData = {
         "rec": [],
         "loot": [
             "loot_tables/gameplay/fishing/ocean_treasure.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/items/hunter_book.json"
+            "loot_tables/items/hunter_book.json",
+            "loot_tables/template/weapon/melee_weapon/sword.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -7616,8 +7617,8 @@ window.AddData = {
         "rec": [],
         "loot": [
             "loot_tables/entities/skeleton_warrior_gear.json",
-            "loot_tables/tasks/008.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/tasks/008.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -7743,8 +7744,8 @@ window.AddData = {
         },
         "texture": "textures/items/bullet_bag",
         "rec": [
-            "recipes/bullet_bag.json",
-            "recipes/blood_bullet_bag.json"
+            "recipes/blood_bullet_bag.json",
+            "recipes/bullet_bag.json"
         ],
         "loot": [
             "loot_tables/chests/hunter_house.json"
@@ -7974,8 +7975,8 @@ window.AddData = {
         },
         "texture": "textures/items/candy",
         "rec": [
-            "recipes/candy_by_block.json",
             "recipes/candy_block.json",
+            "recipes/candy_by_block.json",
             "recipes/candy.json"
         ],
         "loot": [
@@ -8085,10 +8086,10 @@ window.AddData = {
         "texture": "textures/items/candy_cane",
         "rec": [],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json",
             "loot_tables/blocks/christmas_gift_block.json",
-            "loot_tables/items/christmas_sock.json"
+            "loot_tables/items/christmas_sock.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/template/weapon/melee_weapon/sword.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -8391,9 +8392,9 @@ window.AddData = {
         "texture": "textures/items/chaos_staff",
         "rec": [],
         "loot": [
-            "loot_tables/template/weapon/summon_weapon/summon_weapon.json",
+            "loot_tables/entities/ash_knight.json",
             "loot_tables/entities/ash_knight_head.json",
-            "loot_tables/entities/ash_knight.json"
+            "loot_tables/template/weapon/summon_weapon/summon_weapon.json"
         ],
         "loot_by_entity": [
             "dec:ash_knight_head"
@@ -8677,9 +8678,9 @@ window.AddData = {
         "texture": "textures/items/christmas_cap",
         "rec": [],
         "loot": [
+            "loot_tables/blocks/christmas_gift_block.json",
             "loot_tables/items/christmas_sock.json",
-            "loot_tables/entities/armor_christmas.json",
-            "loot_tables/blocks/christmas_gift_block.json"
+            "loot_tables/entities/armor_christmas.json"
         ],
         "loot_by_entity": [
             "dec:gingerbread_man_by_totem"
@@ -8735,8 +8736,8 @@ window.AddData = {
         "texture": "textures/items/christmas_gift",
         "rec": [],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/entities/chest_monster.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/entities/chest_monster_trade.json"
         ],
         "loot_by_entity": [
@@ -8807,8 +8808,8 @@ window.AddData = {
         "texture": "textures/items/christmas_sock",
         "rec": [],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/blocks/christmas_gift_block.json"
+            "loot_tables/blocks/christmas_gift_block.json",
+            "loot_tables/chests/warehouse_of_watcher.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -8868,8 +8869,8 @@ window.AddData = {
             "recipes/furnace_coal_fish.json"
         ],
         "loot": [
-            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/ice_fish.json",
+            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/fish.json",
             "loot_tables/gameplay/fishing/ocean_fish.json",
             "loot_tables/gameplay/fishing/desert_fish.json"
@@ -8914,50 +8915,50 @@ window.AddData = {
             "recipes/coal_nugget_by_ingot.json"
         ],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/chests/haunted_house.json",
-            "loot_tables/chests/tower_of_watcher/ore.json",
-            "loot_tables/chests/hunter_house.json",
-            "loot_tables/entities/stone_golem.json",
-            "loot_tables/entities/goblin.json",
-            "loot_tables/chests/goblin_house_1.json",
             "loot_tables/blocks/cave_crate.json",
-            "loot_tables/entities/end_stone_golem.json",
-            "loot_tables/entities/goblin_sniper.json",
             "loot_tables/blocks/end_coal_ore.json",
+            "loot_tables/chests/hunter_house.json",
+            "loot_tables/chests/haunted_house.json",
+            "loot_tables/entities/end_stone_golem.json",
+            "loot_tables/entities/goblin_wizard.json",
+            "loot_tables/entities/goblin.json",
+            "loot_tables/entities/goblin_sniper.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/chests/tower_of_watcher/ore.json",
             "loot_tables/blocks/nether_coal_ore.json",
-            "loot_tables/chests/illusioner_house.json",
             "loot_tables/entities/gargoyle.json",
+            "loot_tables/chests/illusioner_house.json",
             "loot_tables/entities/obsidian_golem.json",
-            "loot_tables/entities/goblin_wizard.json"
+            "loot_tables/chests/goblin_house_1.json",
+            "loot_tables/entities/stone_golem.json"
         ],
         "loot_by_entity": [
-            "dec:stone_golem",
-            "dec:goblin",
             "dec:end_stone_golem",
+            "dec:goblin_wizard",
+            "dec:goblin",
             "dec:goblin_sniper",
             "dec:gargoyle",
             "dec:obsidian_golem",
-            "dec:goblin_wizard"
+            "dec:stone_golem"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Stone Golem",
-                "Goblin",
                 "Endstone Golem",
+                "Goblin Wizard",
+                "Goblin",
                 "Goblin Sniper",
                 "Gargoyle",
                 "Obsidian Golem",
-                "Goblin Wizard"
+                "Stone Golem"
             ],
             "zh_CN": [
-                "\u77f3\u5934\u5080\u5121",
-                "\u54e5\u5e03\u6797",
                 "\u672b\u5730\u77f3\u5080\u5121",
+                "\u54e5\u5e03\u6797\u6cd5\u5e08",
+                "\u54e5\u5e03\u6797",
                 "\u54e5\u5e03\u6797\u72d9\u51fb\u624b",
                 "\u77f3\u50cf\u9b3c",
                 "\u9ed1\u66dc\u77f3\u5080\u5121",
-                "\u54e5\u5e03\u6797\u6cd5\u5e08"
+                "\u77f3\u5934\u5080\u5121"
             ]
         },
         "loot_by_block": [
@@ -8975,9 +8976,8 @@ window.AddData = {
             ]
         },
         "loot_by_structure": {
-            "warehouse_of_watcher": [
-                "Barrel",
-                "Chest"
+            "hunter_house_1": [
+                "Barrel"
             ],
             "haunted_house_1": [
                 "Chest",
@@ -8986,19 +8986,52 @@ window.AddData = {
             "haunted_house_2": [
                 "Chest"
             ],
-            "hunter_house_1": [
-                "Barrel"
-            ],
-            "goblin_house_1": [
+            "warehouse_of_watcher": [
+                "Barrel",
                 "Chest"
             ],
             "illusioner_house_1": [
+                "Chest"
+            ],
+            "goblin_house_1": [
                 "Chest"
             ]
         },
         "annotation": [
             "\u6700\u597d\u7528\u7684\u5206\u89e3,\u4e0d\u50cf\u67d0\u4e2a\u9752\u91d1\u77f3\uff08\uff09"
         ]
+    },
+    "dec:cob": {
+        "lang": {
+            "en_US": "Cob",
+            "zh_CN": "\u7389\u7c73\u68d2"
+        },
+        "beh": {
+            "description": {
+                "category": "items",
+                "identifier": "dec:cob"
+            },
+            "components": {
+                "minecraft:creative_category": {
+                    "parent": "itemGroup.name.decorations"
+                },
+                "minecraft:display_name": {
+                    "value": "item.dec:cob.name"
+                },
+                "minecraft:icon": {
+                    "texture": "cob"
+                }
+            }
+        },
+        "texture": "textures/items/cob",
+        "rec": [],
+        "loot": [],
+        "loot_by_entity": [],
+        "loot_by_entity_lang": {},
+        "loot_by_block": [],
+        "loot_by_block_lang": {},
+        "loot_by_structure": {},
+        "annotation": []
     },
     "dec:coffee_of_lileyi": {
         "lang": {
@@ -9155,9 +9188,9 @@ window.AddData = {
         "texture": "textures/items/complete_bat_wing",
         "rec": [
             "recipes/nightmare.json",
-            "recipes/night_sword.json",
             "recipes/elytra.json",
             "recipes/complete_bat_wing.json",
+            "recipes/night_sword.json",
             "recipes/bat_bait.json"
         ],
         "loot": [
@@ -10426,8 +10459,8 @@ window.AddData = {
         },
         "texture": "textures/items/copper_battleaxe",
         "rec": [
-            "recipes/copper_battleaxe.json",
-            "recipes/furnace_copper_battleaxe.json"
+            "recipes/furnace_copper_battleaxe.json",
+            "recipes/copper_battleaxe.json"
         ],
         "loot": [
             "loot_tables/template/weapon/melee_weapon/axe.json"
@@ -10504,8 +10537,8 @@ window.AddData = {
             "recipes/copper_boots.json"
         ],
         "loot": [
-            "loot_tables/template/armor/copper.json",
-            "loot_tables/chests/muddy_altar.json"
+            "loot_tables/chests/muddy_altar.json",
+            "loot_tables/template/armor/copper.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -10583,8 +10616,8 @@ window.AddData = {
             "recipes/copper_chestplate.json"
         ],
         "loot": [
-            "loot_tables/template/armor/copper.json",
-            "loot_tables/chests/muddy_altar.json"
+            "loot_tables/chests/muddy_altar.json",
+            "loot_tables/template/armor/copper.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -10724,9 +10757,9 @@ window.AddData = {
             "recipes/copper_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -10868,8 +10901,8 @@ window.AddData = {
             "recipes/copper_helmet.json"
         ],
         "loot": [
-            "loot_tables/template/armor/copper.json",
-            "loot_tables/chests/muddy_altar.json"
+            "loot_tables/chests/muddy_altar.json",
+            "loot_tables/template/armor/copper.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -10947,8 +10980,8 @@ window.AddData = {
             "recipes/copper_leggings.json"
         ],
         "loot": [
-            "loot_tables/template/armor/copper.json",
-            "loot_tables/chests/muddy_altar.json"
+            "loot_tables/chests/muddy_altar.json",
+            "loot_tables/template/armor/copper.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -10985,11 +11018,11 @@ window.AddData = {
         },
         "texture": "textures/items/copper_nugget",
         "rec": [
-            "recipes/copper_dart.json",
             "recipes/copper_nugget_by_ingot.json",
-            "recipes/furnace_copper_sword.json",
+            "recipes/copper_ingot_by_nugget.json",
             "recipes/furnace_copper_dagger.json",
-            "recipes/copper_ingot_by_nugget.json"
+            "recipes/copper_dart.json",
+            "recipes/furnace_copper_sword.json"
         ],
         "loot": [
             "loot_tables/entities/skeleton_wizard.json"
@@ -11174,8 +11207,8 @@ window.AddData = {
         },
         "texture": "textures/items/copper_sickle",
         "rec": [
-            "recipes/copper_sickle.json",
-            "recipes/furnace_copper_sickle.json"
+            "recipes/furnace_copper_sickle.json",
+            "recipes/copper_sickle.json"
         ],
         "loot": [
             "loot_tables/entities/goblin_gear.json",
@@ -11282,13 +11315,13 @@ window.AddData = {
         },
         "texture": "textures/items/copper_sword",
         "rec": [
-            "recipes/copper_sword.json",
-            "recipes/furnace_copper_sword.json"
+            "recipes/furnace_copper_sword.json",
+            "recipes/copper_sword.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -12524,19 +12557,19 @@ window.AddData = {
         },
         "texture": "textures/items/coral_ingot",
         "rec": [
-            "recipes/coral_axe.json",
             "recipes/coral_dart.json",
             "recipes/sharp_coral.json",
-            "recipes/coral_pickaxe.json"
+            "recipes/coral_pickaxe.json",
+            "recipes/coral_axe.json"
         ],
         "loot": [
-            "loot_tables/chests/underwater_ruin_big.json",
             "loot_tables/chests/shipwreck.json",
             "loot_tables/chests/underwater_ruin_small.json",
+            "loot_tables/chests/buriedtreasure.json",
             "loot_tables/chests/shipwrecktreasure.json",
-            "loot_tables/chests/shipwrecksupply.json",
             "loot_tables/chests/pirate_ship_small.json",
-            "loot_tables/chests/buriedtreasure.json"
+            "loot_tables/chests/shipwrecksupply.json",
+            "loot_tables/chests/underwater_ruin_big.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -14612,6 +14645,98 @@ window.AddData = {
         "loot_by_structure": {},
         "annotation": []
     },
+    "dec:corn": {
+        "lang": {
+            "en_US": "Corn",
+            "zh_CN": "\u7389\u7c73"
+        },
+        "beh": {
+            "description": {
+                "category": "nature",
+                "identifier": "dec:corn"
+            },
+            "components": {
+                "minecraft:creative_category": {
+                    "parent": "itemGroup.name.crop"
+                },
+                "minecraft:display_name": {
+                    "value": "item.dec:corn.name"
+                },
+                "minecraft:icon": {
+                    "texture": "corn"
+                },
+                "minecraft:use_animation": "eat",
+                "minecraft:render_offsets": "cookie",
+                "minecraft:use_duration": 3.2,
+                "minecraft:food": {
+                    "on_consume": {
+                        "event": "consumed",
+                        "target": "self"
+                    },
+                    "nutrition": 4,
+                    "saturation_modifier": "normal",
+                    "using_converts_to": "dec:cob"
+                }
+            }
+        },
+        "texture": "textures/items/corn",
+        "rec": [],
+        "loot": [
+            "loot_tables/blocks/corn_crop.json"
+        ],
+        "loot_by_entity": [],
+        "loot_by_entity_lang": {},
+        "loot_by_block": [
+            "dec:corn_crop"
+        ],
+        "loot_by_block_lang": {
+            "en_US": [
+                "Corn Crop"
+            ],
+            "zh_CN": [
+                "\u7389\u7c73"
+            ]
+        },
+        "loot_by_structure": {},
+        "annotation": []
+    },
+    "dec:corn_seeds": {
+        "lang": {
+            "en_US": "Corn Seeds",
+            "zh_CN": "\u7389\u7c73\u7c92"
+        },
+        "beh": {
+            "description": {
+                "category": "nature",
+                "identifier": "dec:corn_seeds"
+            },
+            "components": {
+                "minecraft:creative_category": {
+                    "parent": "itemGroup.name.seed"
+                },
+                "minecraft:display_name": {
+                    "value": "item.dec:corn_seeds.name"
+                },
+                "minecraft:icon": {
+                    "texture": "corn_seeds"
+                },
+                "minecraft:use_animation": "eat",
+                "minecraft:render_offsets": "cookie",
+                "minecraft:block_placer": {
+                    "block": "dec:corn_crop"
+                }
+            }
+        },
+        "texture": "textures/items/corn_seeds",
+        "rec": [],
+        "loot": [],
+        "loot_by_entity": [],
+        "loot_by_entity_lang": {},
+        "loot_by_block": [],
+        "loot_by_block_lang": {},
+        "loot_by_structure": {},
+        "annotation": []
+    },
     "dec:corrupted_sword": {
         "lang": {
             "en_US": "Corrupted Sword",
@@ -14858,7 +14983,9 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {},
-        "annotation": []
+        "annotation": [
+            "\u62e5\u6709\u9ad8\u5f3a\u5ea6\u62a4\u7532\uff0c\u4f46\u662f\u53d7\u4f24\u65f6\u4f1a\u83b7\u5f97\u8d1f\u9762\u6548\u679c\uff01"
+        ]
     },
     "dec:crying_chestplate": {
         "lang": {
@@ -14933,7 +15060,9 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {},
-        "annotation": []
+        "annotation": [
+            "\u62e5\u6709\u9ad8\u5f3a\u5ea6\u62a4\u7532\uff0c\u4f46\u662f\u53d7\u4f24\u65f6\u4f1a\u83b7\u5f97\u8d1f\u9762\u6548\u679c\uff01"
+        ]
     },
     "dec:crying_helmet": {
         "lang": {
@@ -15008,7 +15137,10 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {},
-        "annotation": []
+        "annotation": [
+            "\u62e5\u6709\u9ad8\u5f3a\u5ea6\u62a4\u7532\uff0c\u4f46\u662f\u53d7\u4f24\u65f6\u4f1a\u83b7\u5f97\u8d1f\u9762\u6548\u679c\uff01",
+            "\u54ed\u54ed"
+        ]
     },
     "dec:crying_leggings": {
         "lang": {
@@ -15083,7 +15215,9 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {},
-        "annotation": []
+        "annotation": [
+            "\u62e5\u6709\u9ad8\u5f3a\u5ea6\u62a4\u7532\uff0c\u4f46\u662f\u53d7\u4f24\u65f6\u4f1a\u83b7\u5f97\u8d1f\u9762\u6548\u679c\uff01"
+        ]
     },
     "dec:crystal_nucleus": {
         "lang": {
@@ -15149,8 +15283,8 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/template/magic_recover/consume.json",
-            "loot_tables/tasks/003.json",
-            "loot_tables/tasks/033.json"
+            "loot_tables/tasks/033.json",
+            "loot_tables/tasks/003.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -15231,8 +15365,8 @@ window.AddData = {
         "texture": "textures/items/cudgel",
         "rec": [],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -15359,9 +15493,9 @@ window.AddData = {
         },
         "texture": "textures/items/dark_debris",
         "rec": [
-            "recipes/night_sword.json",
+            "recipes/dark_debris.json",
             "recipes/nightmare.json",
-            "recipes/dark_debris.json"
+            "recipes/night_sword.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -15500,10 +15634,10 @@ window.AddData = {
         "texture": "textures/items/decrepit_atlantis",
         "rec": [],
         "loot": [
-            "loot_tables/entities/abyssal_controller.json",
+            "loot_tables/items/hunter_book.json",
             "loot_tables/template/weapon/melee_weapon/sword.json",
             "loot_tables/entities/ruined_muddy_brushable_block.json",
-            "loot_tables/items/hunter_book.json"
+            "loot_tables/entities/abyssal_controller.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -15630,8 +15764,8 @@ window.AddData = {
         "texture": "textures/items/deep_staff",
         "rec": [],
         "loot": [
-            "loot_tables/entities/host_of_deep.json",
-            "loot_tables/template/weapon/magic_weapon/staff.json"
+            "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/entities/host_of_deep.json"
         ],
         "loot_by_entity": [
             "dec:host_of_deep_2"
@@ -15733,8 +15867,8 @@ window.AddData = {
         },
         "texture": "textures/items/destroy_staff",
         "rec": [
-            "recipes/destroy_staff.json",
-            "recipes/god_of_destroy.json"
+            "recipes/god_of_destroy.json",
+            "recipes/destroy_staff.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -15832,11 +15966,11 @@ window.AddData = {
             "recipes/diamond_apple.json"
         ],
         "loot": [
-            "loot_tables/chests/bastion_hoglin_stable.json",
             "loot_tables/chests/bastion_other.json",
-            "loot_tables/chests/bastion_treasure.json",
+            "loot_tables/chests/ash_castle_treasure.json",
             "loot_tables/chests/bastion_bridge.json",
-            "loot_tables/chests/ash_castle_treasure.json"
+            "loot_tables/chests/bastion_treasure.json",
+            "loot_tables/chests/bastion_hoglin_stable.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -15966,8 +16100,8 @@ window.AddData = {
             "recipes/diamond_apple_enchanted.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/end_city_treasure.json"
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -16179,27 +16313,27 @@ window.AddData = {
         },
         "texture": "textures/items/diamond_dagger",
         "rec": [
+            "recipes/everlasting_winter_dagger.json",
             "recipes/diamond_dagger.json",
-            "recipes/furnace_diamond_dagger.json",
-            "recipes/everlasting_winter_dagger.json"
+            "recipes/furnace_diamond_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
             "loot_tables/template/weapon/melee_weapon/dagger.json",
-            "loot_tables/entities/watcher_attack_equipment.json"
+            "loot_tables/entities/watcher_attack_equipment.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:watcher"
+            "dec:watcher",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Watcher"
+                "Watcher",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u770b\u5b88\u8005"
+                "\u770b\u5b88\u8005",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -16290,8 +16424,8 @@ window.AddData = {
             "recipes/furnace_diamond_fish.json"
         ],
         "loot": [
-            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/ice_fish.json",
+            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/fish.json",
             "loot_tables/gameplay/fishing/ocean_fish.json",
             "loot_tables/gameplay/fishing/desert_fish.json"
@@ -16329,87 +16463,98 @@ window.AddData = {
         },
         "texture": "textures/items/diamond_nugget",
         "rec": [
-            "recipes/diamond_nugget_by_ingot.json",
-            "recipes/furnace_diamond_axe.json",
-            "recipes/furnace_horse_armor_diamond.json",
-            "recipes/furnace_diamond_pickaxe.json",
+            "recipes/furnace_diamond_apple.json",
             "recipes/diamond_dart.json",
             "recipes/furnace_diamond_dagger.json",
-            "recipes/diamond_crystal_nucleus.json",
-            "recipes/furnace_diamond_apple.json",
-            "recipes/furnace_diamond_hoe.json",
-            "recipes/furnace_diamond_sword.json",
+            "recipes/furnace_diamond_shovel.json",
+            "recipes/furnace_diamond_pickaxe.json",
             "recipes/diamond_by_nugget.json",
-            "recipes/furnace_diamond_shovel.json"
+            "recipes/diamond_nugget_by_ingot.json",
+            "recipes/furnace_diamond_hoe.json",
+            "recipes/furnace_horse_armor_diamond.json",
+            "recipes/diamond_crystal_nucleus.json",
+            "recipes/furnace_diamond_axe.json",
+            "recipes/furnace_diamond_sword.json"
         ],
         "loot": [
-            "loot_tables/blocks/soul_soil_diamond_ore.json",
-            "loot_tables/entities/goblin.json",
-            "loot_tables/blocks/nether_diamond_ore.json",
-            "loot_tables/entities/goblin_wizard.json",
-            "loot_tables/chests/goblin_house_1.json",
-            "loot_tables/entities/goblin_sniper.json",
-            "loot_tables/chests/soul_room_har.json",
-            "loot_tables/chests/illusioner_house.json",
-            "loot_tables/chests/pirate_ship_small.json",
-            "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/items/red_bag.json",
             "loot_tables/blocks/cave_crate.json",
-            "loot_tables/entities/end_stone_golem.json",
-            "loot_tables/entities/obsidian_golem.json",
-            "loot_tables/entities/stone_golem.json",
             "loot_tables/chests/haunted_house.json",
-            "loot_tables/chests/tower_of_watcher/ore.json",
+            "loot_tables/entities/end_stone_golem.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/chests/illusioner_house.json",
+            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/chests/goblin_house_1.json",
             "loot_tables/chests/hunter_house.json",
-            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/entities/goblin.json",
+            "loot_tables/entities/goblin_sniper.json",
             "loot_tables/chests/soul_room_nor.json",
-            "loot_tables/blocks/end_diamond_ore.json"
+            "loot_tables/blocks/nether_diamond_ore.json",
+            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/items/red_bag.json",
+            "loot_tables/entities/obsidian_golem.json",
+            "loot_tables/blocks/end_diamond_ore.json",
+            "loot_tables/blocks/soul_soil_diamond_ore.json",
+            "loot_tables/entities/goblin_wizard.json",
+            "loot_tables/chests/tower_of_watcher/ore.json",
+            "loot_tables/entities/stone_golem.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:goblin_wizard",
-            "dec:goblin_sniper",
             "dec:end_stone_golem",
+            "dec:goblin",
+            "dec:goblin_sniper",
             "dec:obsidian_golem",
+            "dec:goblin_wizard",
             "dec:stone_golem"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Goblin Wizard",
-                "Goblin Sniper",
                 "Endstone Golem",
+                "Goblin",
+                "Goblin Sniper",
                 "Obsidian Golem",
+                "Goblin Wizard",
                 "Stone Golem"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u54e5\u5e03\u6797\u6cd5\u5e08",
-                "\u54e5\u5e03\u6797\u72d9\u51fb\u624b",
                 "\u672b\u5730\u77f3\u5080\u5121",
+                "\u54e5\u5e03\u6797",
+                "\u54e5\u5e03\u6797\u72d9\u51fb\u624b",
                 "\u9ed1\u66dc\u77f3\u5080\u5121",
+                "\u54e5\u5e03\u6797\u6cd5\u5e08",
                 "\u77f3\u5934\u5080\u5121"
             ]
         },
         "loot_by_block": [
-            "dec:soul_soil_diamond_ore",
             "dec:nether_diamond_ore",
-            "dec:end_diamond_ore"
+            "dec:end_diamond_ore",
+            "dec:soul_soil_diamond_ore"
         ],
         "loot_by_block_lang": {
             "en_US": [
-                "Soul Soil Diamond Ore",
                 "Nether Diamond Ore",
-                "End Diamond Ore"
+                "End Diamond Ore",
+                "Soul Soil Diamond Ore"
             ],
             "zh_CN": [
-                "\u9576\u94bb\u7684\u7075\u9b42\u571f",
                 "\u5730\u72f1\u94bb\u77f3\u77ff",
-                "\u672b\u5f71\u94bb\u77f3\u77ff"
+                "\u672b\u5f71\u94bb\u77f3\u77ff",
+                "\u9576\u94bb\u7684\u7075\u9b42\u571f"
             ]
         },
         "loot_by_structure": {
-            "goblin_house_1": [
+            "haunted_house_1": [
+                "Chest",
+                "Barrel"
+            ],
+            "haunted_house_2": [
+                "Chest"
+            ],
+            "warehouse_of_watcher": [
+                "Barrel",
+                "Chest"
+            ],
+            "illusioner_house_1": [
                 "Chest"
             ],
             "soul_room_har_1": [
@@ -16418,28 +16563,11 @@ window.AddData = {
             "soul_room_har_2": [
                 "Chest"
             ],
-            "illusioner_house_1": [
-                "Chest"
-            ],
-            "pirate_ship_small_1": [
-                "Chest"
-            ],
-            "warehouse_of_watcher": [
-                "Barrel",
-                "Chest"
-            ],
-            "haunted_house_1": [
-                "Chest",
-                "Barrel"
-            ],
-            "haunted_house_2": [
+            "goblin_house_1": [
                 "Chest"
             ],
             "hunter_house_1": [
                 "Barrel"
-            ],
-            "soul_room_boss": [
-                "Chest"
             ],
             "soul_room_nor_4": [
                 "Chest"
@@ -16454,6 +16582,12 @@ window.AddData = {
                 "Chest"
             ],
             "soul_room_stair_5": [
+                "Chest"
+            ],
+            "soul_room_boss": [
+                "Chest"
+            ],
+            "pirate_ship_small_1": [
                 "Chest"
             ]
         },
@@ -16671,27 +16805,27 @@ window.AddData = {
         },
         "texture": "textures/items/diamond_sickle",
         "rec": [
+            "recipes/furnace_diamond_sickle.json",
             "recipes/everlasting_winter_sickle.json",
-            "recipes/diamond_sickle.json",
-            "recipes/furnace_diamond_sickle.json"
+            "recipes/diamond_sickle.json"
         ],
         "loot": [
+            "loot_tables/entities/watcher_attack_equipment.json",
             "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/sickle.json",
-            "loot_tables/entities/watcher_attack_equipment.json"
+            "loot_tables/template/weapon/melee_weapon/sickle.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:watcher"
+            "dec:watcher",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Watcher"
+                "Watcher",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u770b\u5b88\u8005"
+                "\u770b\u5b88\u8005",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -17170,8 +17304,8 @@ window.AddData = {
             "recipes/dragon_fireball_by_player.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json"
+            "loot_tables/template/weapon/thrown_weapon/sundries.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -17249,10 +17383,10 @@ window.AddData = {
         "texture": "textures/items/drift_bottle",
         "rec": [],
         "loot": [
-            "loot_tables/gameplay/fishing/jungle_junk.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
             "loot_tables/gameplay/fishing/junk.json",
-            "loot_tables/gameplay/fishing/ice_junk.json"
+            "loot_tables/gameplay/fishing/ice_junk.json",
+            "loot_tables/gameplay/fishing/jungle_junk.json",
+            "loot_tables/gameplay/fishing/ocean_junk.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -17373,10 +17507,10 @@ window.AddData = {
         "texture": "textures/items/dust_destroyer",
         "rec": [],
         "loot": [
+            "loot_tables/template/weapon/melee_weapon/sword.json",
             "loot_tables/entities/ash_sword.json",
-            "loot_tables/entities/ash_knight_gear.json",
             "loot_tables/entities/ash_knight.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/entities/ash_knight_gear.json"
         ],
         "loot_by_entity": [
             "dec:ash_sword",
@@ -17541,9 +17675,9 @@ window.AddData = {
         "texture": "textures/items/dust_staff",
         "rec": [],
         "loot": [
-            "loot_tables/template/weapon/summon_weapon/summon_weapon.json",
+            "loot_tables/entities/ash_knight.json",
             "loot_tables/entities/ash_knight_head.json",
-            "loot_tables/entities/ash_knight.json"
+            "loot_tables/template/weapon/summon_weapon/summon_weapon.json"
         ],
         "loot_by_entity": [
             "dec:ash_knight_head"
@@ -17655,17 +17789,17 @@ window.AddData = {
             "recipes/furnace_emerald_apple.json"
         ],
         "loot": [
-            "loot_tables/chests/bastion_hoglin_stable.json",
-            "loot_tables/chests/desert_pyramid.json",
-            "loot_tables/chests/ash_castle.json",
-            "loot_tables/chests/challenger_tower.json",
+            "loot_tables/chests/ruined_portal.json",
             "loot_tables/chests/bastion_other.json",
+            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/chests/bastion_bridge.json",
             "loot_tables/chests/igloo_chest.json",
             "loot_tables/chests/bastion_treasure.json",
-            "loot_tables/chests/bastion_bridge.json",
-            "loot_tables/chests/ruined_portal.json",
-            "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/ash_castle_treasure.json"
+            "loot_tables/chests/bastion_hoglin_stable.json",
+            "loot_tables/chests/desert_pyramid.json",
+            "loot_tables/chests/challenger_tower.json",
+            "loot_tables/chests/ash_castle.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -17673,8 +17807,8 @@ window.AddData = {
         "loot_by_block_lang": {},
         "loot_by_structure": {
             "ash_castle": [
-                "Barrel",
-                "Chest"
+                "Chest",
+                "Barrel"
             ],
             "challenger_tower": [
                 "Chest"
@@ -17793,9 +17927,9 @@ window.AddData = {
             "recipes/emerald_apple_enchanted.json"
         ],
         "loot": [
+            "loot_tables/chests/end_city_treasure.json",
             "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/end_city_treasure.json"
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -19224,8 +19358,8 @@ window.AddData = {
             "recipes/emerald_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -19327,8 +19461,8 @@ window.AddData = {
             "recipes/furnace_emerald_fish.json"
         ],
         "loot": [
-            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/ice_fish.json",
+            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/fish.json",
             "loot_tables/gameplay/fishing/ocean_fish.json",
             "loot_tables/gameplay/fishing/desert_fish.json"
@@ -19514,21 +19648,21 @@ window.AddData = {
         },
         "texture": "textures/items/emerald_nugget",
         "rec": [
-            "recipes/furnace_emerald_dagger.json",
             "recipes/emerald_dart.json",
+            "recipes/furnace_emerald_apple.json",
             "recipes/emerald_nugget_by_emerald.json",
-            "recipes/emerald_by_nugget.json",
-            "recipes/furnace_emerald_apple.json"
+            "recipes/furnace_emerald_dagger.json",
+            "recipes/emerald_by_nugget.json"
         ],
         "loot": [
             "loot_tables/blocks/nether_emerald_ore.json",
             "loot_tables/chests/haunted_house.json",
             "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/chests/tower_of_watcher/ore.json",
-            "loot_tables/items/red_bag.json",
-            "loot_tables/entities/leaves_golem.json",
             "loot_tables/chests/giant_tree_barrel.json",
+            "loot_tables/entities/leaves_golem.json",
             "loot_tables/chests/illusioner_house.json",
+            "loot_tables/items/red_bag.json",
             "loot_tables/blocks/end_emerald_ore.json"
         ],
         "loot_by_entity": [
@@ -21783,8 +21917,8 @@ window.AddData = {
             "recipes/emerald_sword.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -21826,25 +21960,21 @@ window.AddData = {
         },
         "texture": "textures/items/empty_totem",
         "rec": [
-            "recipes/ocean_totem.json",
-            "recipes/empty_totem_by_totem.json",
             "recipes/fire_totem.json",
+            "recipes/empty_totem_by_totem.json",
+            "recipes/ocean_totem.json",
             "recipes/empty_totem.json"
         ],
         "loot": [
-            "loot_tables/chests/ruined_muddy_4.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/chests/ruined_house.json"
+            "loot_tables/chests/ruined_house.json",
+            "loot_tables/chests/ruined_muddy_4.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "ruined_muddy_4": [
-                "Chest",
-                "Barrel"
-            ],
             "muddy_altar": [
                 "Barrel"
             ],
@@ -21852,6 +21982,10 @@ window.AddData = {
                 "Barrel"
             ],
             "ruined_house_2": [
+                "Barrel"
+            ],
+            "ruined_muddy_4": [
+                "Chest",
                 "Barrel"
             ]
         },
@@ -21882,31 +22016,31 @@ window.AddData = {
         },
         "texture": "textures/items/ender_bone",
         "rec": [
-            "recipes/furnace_ender_bone.json",
             "recipes/crying_chestplate.json",
-            "recipes/crying_boots.json",
-            "recipes/crying_helmet.json",
+            "recipes/crying_leggings.json",
+            "recipes/furnace_ender_bone.json",
             "recipes/ender_ring.json",
-            "recipes/crying_leggings.json"
+            "recipes/crying_helmet.json",
+            "recipes/crying_boots.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
+            "loot_tables/entities/shadow_skeleton.json",
             "loot_tables/entities/ender_snake.json",
-            "loot_tables/tasks/034.json",
-            "loot_tables/entities/shadow_skeleton.json"
+            "loot_tables/chests/end_vestiges.json",
+            "loot_tables/tasks/034.json"
         ],
         "loot_by_entity": [
-            "dec:ender_snake",
-            "dec:shadow_skeleton"
+            "dec:shadow_skeleton",
+            "dec:ender_snake"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Ender Snake",
-                "Shadow Skeleton"
+                "Shadow Skeleton",
+                "Ender Snake"
             ],
             "zh_CN": [
-                "\u672b\u5f71\u87d2",
-                "\u6697\u5f71\u9ab7\u9ac5"
+                "\u6697\u5f71\u9ab7\u9ac5",
+                "\u672b\u5f71\u87d2"
             ]
         },
         "loot_by_block": [],
@@ -21942,20 +22076,20 @@ window.AddData = {
         },
         "texture": "textures/items/ender_breath",
         "rec": [
-            "recipes/item_picker.json",
-            "recipes/shadow_crystal.json",
-            "recipes/shadow_feather.json",
-            "recipes/ender_ring.json",
-            "recipes/ender_breath.json",
-            "recipes/elytra.json",
-            "recipes/dragon_fireball_by_player.json",
             "recipes/end_altar.json",
             "recipes/ender_egg.json",
-            "recipes/final_crystal_nucleus.json"
+            "recipes/final_crystal_nucleus.json",
+            "recipes/shadow_feather.json",
+            "recipes/elytra.json",
+            "recipes/ender_breath.json",
+            "recipes/ender_ring.json",
+            "recipes/item_picker.json",
+            "recipes/shadow_crystal.json",
+            "recipes/dragon_fireball_by_player.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/end_city_treasure.json"
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -21992,17 +22126,17 @@ window.AddData = {
         },
         "texture": "textures/items/ender_core",
         "rec": [
-            "recipes/archer_bullet_bag.json",
-            "recipes/item_picker.json",
-            "recipes/shadow_crystal.json",
-            "recipes/ender_core.json",
-            "recipes/ender_ring.json",
-            "recipes/god_of_destroy.json",
-            "recipes/wind_of_shadow.json",
-            "recipes/elytra.json",
-            "recipes/end_altar.json",
             "recipes/ender_crystal_nucleus.json",
-            "recipes/final_crystal_nucleus.json"
+            "recipes/end_altar.json",
+            "recipes/final_crystal_nucleus.json",
+            "recipes/ender_core.json",
+            "recipes/archer_bullet_bag.json",
+            "recipes/elytra.json",
+            "recipes/god_of_destroy.json",
+            "recipes/ender_ring.json",
+            "recipes/item_picker.json",
+            "recipes/wind_of_shadow.json",
+            "recipes/shadow_crystal.json"
         ],
         "loot": [
             "loot_tables/entities/ender_snake.json"
@@ -22213,10 +22347,10 @@ window.AddData = {
         "rec": [],
         "loot": [
             "loot_tables/gameplay/fishing/end_fish.json",
-            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/ice_fish.json",
-            "loot_tables/gameplay/fishing/fish.json",
-            "loot_tables/gameplay/fishing/ocean_fish.json"
+            "loot_tables/gameplay/fishing/jungle_fish.json",
+            "loot_tables/gameplay/fishing/ocean_fish.json",
+            "loot_tables/gameplay/fishing/fish.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -22329,15 +22463,15 @@ window.AddData = {
         },
         "texture": "textures/items/ender_powder",
         "rec": [
+            "recipes/ender_crystal_nucleus.json",
             "recipes/shadow_feather.json",
-            "recipes/ender_ring.json",
             "recipes/ender_breath.json",
             "recipes/ender_stone.json",
-            "recipes/ender_crystal_nucleus.json"
+            "recipes/ender_ring.json"
         ],
         "loot": [
-            "loot_tables/blocks/end_ore.json",
-            "loot_tables/entities/ender_snake.json"
+            "loot_tables/entities/ender_snake.json",
+            "loot_tables/blocks/end_ore.json"
         ],
         "loot_by_entity": [
             "dec:ender_snake"
@@ -22428,8 +22562,8 @@ window.AddData = {
             "recipes/ender_core.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/end_city_treasure.json"
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -22467,20 +22601,20 @@ window.AddData = {
         "texture": "textures/items/ender_substance",
         "rec": [
             "recipes/wither_substance.json",
+            "recipes/ender_egg.json",
             "recipes/elytra.json",
-            "recipes/shulker_shell.json",
-            "recipes/ender_egg.json"
+            "recipes/shulker_shell.json"
         ],
         "loot": [
             "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/entities/ender_snake.json",
             "loot_tables/entities/shulker.json",
             "loot_tables/chests/end_vestiges.json",
+            "loot_tables/entities/ender_snake.json",
             "loot_tables/gameplay/fishing/end_thing.json"
         ],
         "loot_by_entity": [
-            "dec:ender_snake",
             "minecraft:shulker",
+            "dec:ender_snake",
             "minecraft:fishing_hook"
         ],
         "loot_by_entity_lang": {
@@ -22528,15 +22662,15 @@ window.AddData = {
         },
         "texture": "textures/items/energy_gem",
         "rec": [
-            "recipes/super_armor_core81.json",
-            "recipes/super_armor_core5.json",
-            "recipes/super_armor_core4.json",
-            "recipes/super_armor_core82.json",
-            "recipes/super_armor_core6.json",
             "recipes/super_armor_core3.json",
-            "recipes/super_armor_core7.json",
             "recipes/super_armor_core83.json",
-            "recipes/energy_gem.json"
+            "recipes/super_armor_core6.json",
+            "recipes/super_armor_core7.json",
+            "recipes/super_armor_core5.json",
+            "recipes/energy_gem.json",
+            "recipes/super_armor_core82.json",
+            "recipes/super_armor_core4.json",
+            "recipes/super_armor_core81.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -22643,8 +22777,8 @@ window.AddData = {
         "texture": "textures/items/energy_ray_staff",
         "rec": [
             "recipes/energy_ray_staff.json",
-            "recipes/frozen_ray_staff.json",
-            "recipes/radiate_spreader.json"
+            "recipes/radiate_spreader.json",
+            "recipes/frozen_ray_staff.json"
         ],
         "loot": [
             "loot_tables/template/weapon/magic_weapon/staff.json"
@@ -23535,20 +23669,20 @@ window.AddData = {
         "texture": "textures/items/everlasting_winter_heart",
         "rec": [],
         "loot": [
-            "loot_tables/chests/everlasting_winter_tower.json",
             "loot_tables/chests/snow_altar.json",
-            "loot_tables/items/hunter_book.json"
+            "loot_tables/items/hunter_book.json",
+            "loot_tables/chests/everlasting_winter_tower.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "everlasting_winter_tower": [
-                "Chest"
-            ],
             "snow_altar": [
                 "Barrel",
+                "Chest"
+            ],
+            "everlasting_winter_tower": [
                 "Chest"
             ]
         },
@@ -23660,18 +23794,18 @@ window.AddData = {
         },
         "texture": "textures/items/everlasting_winter_ingot",
         "rec": [
-            "recipes/everlasting_winter_boots.json",
-            "recipes/everlasting_winter_leggings.json",
-            "recipes/everlasting_winter_dagger.json",
-            "recipes/everlasting_winter_flintlock.json",
-            "recipes/everlasting_winter_sword.json",
-            "recipes/everlasting_winter_dart.json",
-            "recipes/everlasting_winter_staff.json",
-            "recipes/everlasting_winter_helmet.json",
-            "recipes/everlasting_winter_chestplate.json",
-            "recipes/everlasting_winter_stick.json",
             "recipes/everlasting_winter_sickle.json",
-            "recipes/the_imperial_sword.json"
+            "recipes/everlasting_winter_stick.json",
+            "recipes/everlasting_winter_boots.json",
+            "recipes/the_imperial_sword.json",
+            "recipes/everlasting_winter_chestplate.json",
+            "recipes/everlasting_winter_dagger.json",
+            "recipes/everlasting_winter_dart.json",
+            "recipes/everlasting_winter_flintlock.json",
+            "recipes/everlasting_winter_helmet.json",
+            "recipes/everlasting_winter_leggings.json",
+            "recipes/everlasting_winter_staff.json",
+            "recipes/everlasting_winter_sword.json"
         ],
         "loot": [
             "loot_tables/tasks/007.json",
@@ -24100,8 +24234,8 @@ window.AddData = {
         },
         "texture": "textures/items/everlasting_winter_staff",
         "rec": [
-            "recipes/everlasting_winter_staff.json",
-            "recipes/nightmare.json"
+            "recipes/nightmare.json",
+            "recipes/everlasting_winter_staff.json"
         ],
         "loot": [
             "loot_tables/template/weapon/magic_weapon/staff.json",
@@ -24150,15 +24284,15 @@ window.AddData = {
         },
         "texture": "textures/items/everlasting_winter_stick",
         "rec": [
-            "recipes/everlasting_winter_boots.json",
-            "recipes/everlasting_winter_leggings.json",
-            "recipes/everlasting_winter_dagger.json",
-            "recipes/everlasting_winter_sword.json",
-            "recipes/everlasting_winter_helmet.json",
-            "recipes/everlasting_winter_chestplate.json",
-            "recipes/everlasting_winter_stick.json",
             "recipes/everlasting_winter_sickle.json",
-            "recipes/the_imperial_sword.json"
+            "recipes/everlasting_winter_stick.json",
+            "recipes/everlasting_winter_boots.json",
+            "recipes/the_imperial_sword.json",
+            "recipes/everlasting_winter_chestplate.json",
+            "recipes/everlasting_winter_dagger.json",
+            "recipes/everlasting_winter_helmet.json",
+            "recipes/everlasting_winter_leggings.json",
+            "recipes/everlasting_winter_sword.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -24355,9 +24489,9 @@ window.AddData = {
         "texture": "textures/items/experience_book",
         "rec": [],
         "loot": [
+            "loot_tables/items/hunter_book.json",
             "loot_tables/blocks/ice_bookshelf.json",
-            "loot_tables/items/experience_book.json",
-            "loot_tables/items/hunter_book.json"
+            "loot_tables/items/experience_book.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -24429,12 +24563,12 @@ window.AddData = {
         },
         "texture": "textures/items/experience_book",
         "rec": [
-            "recipes/experience_book_empty.json",
-            "recipes/experience_book_pro_empty.json"
+            "recipes/experience_book_pro_empty.json",
+            "recipes/experience_book_empty.json"
         ],
         "loot": [
-            "loot_tables/blocks/ice_bookshelf.json",
-            "loot_tables/items/experience_book_empty.json"
+            "loot_tables/items/experience_book_empty.json",
+            "loot_tables/blocks/ice_bookshelf.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -24630,19 +24764,19 @@ window.AddData = {
         },
         "texture": "textures/items/eye_of_nature",
         "rec": [
+            "recipes/natural_spear.json",
             "recipes/wood_chestplate.json",
             "recipes/leaves_dagger.json",
             "recipes/wood_leggings.json",
-            "recipes/natural_spear.json",
             "recipes/wood_helmet.json",
             "recipes/wood_boots.json",
             "recipes/leaves_knife.json"
         ],
         "loot": [
-            "loot_tables/blocks/eye_of_nature_log.json",
-            "loot_tables/entities/leaves_golem.json",
             "loot_tables/tasks/035.json",
-            "loot_tables/tasks/004.json"
+            "loot_tables/tasks/004.json",
+            "loot_tables/entities/leaves_golem.json",
+            "loot_tables/blocks/eye_of_nature_log.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -25113,15 +25247,15 @@ window.AddData = {
         },
         "texture": "textures/items/flintlock",
         "rec": [
-            "recipes/flintlock_pro.json",
-            "recipes/flintlock.json"
+            "recipes/flintlock.json",
+            "recipes/flintlock_pro.json"
         ],
         "loot": [
             "loot_tables/chests/hunter_house.json",
-            "loot_tables/entities/chest_monster.json",
-            "loot_tables/entities/chest_monster_trade.json",
             "loot_tables/template/weapon/range_weapon/range_weapon.json",
-            "loot_tables/chests/pirate_ship_small.json"
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/entities/chest_monster.json",
+            "loot_tables/entities/chest_monster_trade.json"
         ],
         "loot_by_entity": [
             "dec:chest_monster"
@@ -25172,9 +25306,9 @@ window.AddData = {
         },
         "texture": "textures/items/flintlock_bullet",
         "rec": [
-            "recipes/bullet_bag.json",
             "recipes/flintlock_bullet.json",
-            "recipes/herb_bag.json"
+            "recipes/herb_bag.json",
+            "recipes/bullet_bag.json"
         ],
         "loot": [
             "loot_tables/chests/pirate_ship_small.json",
@@ -25355,8 +25489,8 @@ window.AddData = {
         },
         "texture": "textures/items/flower_essence",
         "rec": [
-            "recipes/furnace_compress_flower_block.json",
-            "recipes/pure_ingot.json"
+            "recipes/pure_ingot.json",
+            "recipes/furnace_compress_flower_block.json"
         ],
         "loot": [
             "loot_tables/tasks/036.json"
@@ -25931,9 +26065,9 @@ window.AddData = {
         "texture": "textures/items/frozen_ball",
         "rec": [],
         "loot": [
+            "loot_tables/template/weapon/thrown_weapon/sundries.json",
             "loot_tables/tasks/007.json",
-            "loot_tables/entities/everlasting_winter_ghast.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json"
+            "loot_tables/entities/everlasting_winter_ghast.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -26017,12 +26151,12 @@ window.AddData = {
         },
         "texture": "textures/items/frozen_boots",
         "rec": [
-            "recipes/everlasting_winter_boots.json",
-            "recipes/frozen_boots.json"
+            "recipes/frozen_boots.json",
+            "recipes/everlasting_winter_boots.json"
         ],
         "loot": [
-            "loot_tables/template/armor/frozen.json",
-            "loot_tables/blocks/frozen_crate.json"
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/template/armor/frozen.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -26110,8 +26244,8 @@ window.AddData = {
             "recipes/frozen_chestplate.json"
         ],
         "loot": [
-            "loot_tables/template/armor/frozen.json",
-            "loot_tables/blocks/frozen_crate.json"
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/template/armor/frozen.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -26311,8 +26445,8 @@ window.AddData = {
             "recipes/frozen_helmet.json"
         ],
         "loot": [
-            "loot_tables/template/armor/frozen.json",
-            "loot_tables/blocks/frozen_crate.json"
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/template/armor/frozen.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -26400,8 +26534,8 @@ window.AddData = {
             "recipes/everlasting_winter_leggings.json"
         ],
         "loot": [
-            "loot_tables/template/armor/frozen.json",
-            "loot_tables/blocks/frozen_crate.json"
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/template/armor/frozen.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -26608,9 +26742,9 @@ window.AddData = {
         },
         "texture": "textures/items/frozen_ray_staff",
         "rec": [
-            "recipes/everlasting_winter_staff.json",
             "recipes/frozen_ray_staff.json",
-            "recipes/blizzard_staff.json"
+            "recipes/blizzard_staff.json",
+            "recipes/everlasting_winter_staff.json"
         ],
         "loot": [
             "loot_tables/template/weapon/magic_weapon/staff.json"
@@ -26764,11 +26898,11 @@ window.AddData = {
             "recipes/frozen_staff.json"
         ],
         "loot": [
-            "loot_tables/chests/snowflake_kiosk.json",
             "loot_tables/template/weapon/magic_weapon/staff.json",
-            "loot_tables/chests/snowflake_tower.json",
+            "loot_tables/entities/ice_wizard.json",
             "loot_tables/chests/snow_altar.json",
-            "loot_tables/entities/ice_wizard.json"
+            "loot_tables/chests/snowflake_kiosk.json",
+            "loot_tables/chests/snowflake_tower.json"
         ],
         "loot_by_entity": [
             "dec:ice_wizard"
@@ -26784,15 +26918,15 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
+            "snow_altar": [
+                "Barrel",
+                "Chest"
+            ],
             "snowflake_kiosk_2": [
                 "Barrel"
             ],
             "snowflake_tower_3": [
                 "Barrel"
-            ],
-            "snow_altar": [
-                "Barrel",
-                "Chest"
             ]
         },
         "annotation": []
@@ -26924,8 +27058,8 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/entities/escaped_soul.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json",
-            "loot_tables/entities/soul_soldier_dagger_equipment.json"
+            "loot_tables/entities/soul_soldier_dagger_equipment.json",
+            "loot_tables/template/weapon/melee_weapon/dagger.json"
         ],
         "loot_by_entity": [
             "dec:escaped_soul_3",
@@ -27207,15 +27341,15 @@ window.AddData = {
         },
         "texture": "textures/items/ghost_ingot",
         "rec": [
-            "recipes/archer_bullet_bag.json",
-            "recipes/archer_stones_bag.json",
-            "recipes/tear_from_dream.json",
+            "recipes/ghost_sickle.json",
             "recipes/ghost_sword.json",
             "recipes/infinite_crystal_nucleus_3.json",
-            "recipes/furnace_ghost_essence.json",
+            "recipes/archer_bullet_bag.json",
             "recipes/ghost_dagger.json",
             "recipes/ghost_flintlock.json",
-            "recipes/ghost_sickle.json",
+            "recipes/archer_stones_bag.json",
+            "recipes/furnace_ghost_essence.json",
+            "recipes/tear_from_dream.json",
             "recipes/ghost_summoner.json"
         ],
         "loot": [
@@ -27555,8 +27689,8 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/entities/escaped_soul.json",
-            "loot_tables/entities/soul_soldier_summon_equipment.json",
-            "loot_tables/template/weapon/summon_weapon/summon_weapon.json"
+            "loot_tables/template/weapon/summon_weapon/summon_weapon.json",
+            "loot_tables/entities/soul_soldier_summon_equipment.json"
         ],
         "loot_by_entity": [
             "dec:escaped_soul_3",
@@ -27879,8 +28013,8 @@ window.AddData = {
         "texture": "textures/items/gingerbread_man",
         "rec": [],
         "loot": [
-            "loot_tables/items/christmas_sock.json",
-            "loot_tables/blocks/christmas_gift_block.json"
+            "loot_tables/blocks/christmas_gift_block.json",
+            "loot_tables/items/christmas_sock.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -27988,10 +28122,10 @@ window.AddData = {
         "texture": "textures/items/gingerbread_sword",
         "rec": [],
         "loot": [
+            "loot_tables/blocks/christmas_gift_block.json",
             "loot_tables/items/christmas_sock.json",
             "loot_tables/entities/gingerbread_man.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/blocks/christmas_gift_block.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json"
         ],
         "loot_by_entity": [
             "dec:gingerbread_man_by_totem"
@@ -28046,8 +28180,8 @@ window.AddData = {
         "texture": "textures/items/gingerbread_totem",
         "rec": [],
         "loot": [
-            "loot_tables/items/christmas_sock.json",
-            "loot_tables/blocks/christmas_gift_block.json"
+            "loot_tables/blocks/christmas_gift_block.json",
+            "loot_tables/items/christmas_sock.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -29529,11 +29663,11 @@ window.AddData = {
             "recipes/glass_axe.json"
         ],
         "loot": [
-            "loot_tables/chests/tower_of_watcher/ore.json",
             "loot_tables/items/hunter_book.json",
+            "loot_tables/tasks/025.json",
+            "loot_tables/chests/tower_of_watcher/ore.json",
             "loot_tables/tasks/006.json",
-            "loot_tables/tasks/028.json",
-            "loot_tables/tasks/025.json"
+            "loot_tables/tasks/028.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -31714,12 +31848,12 @@ window.AddData = {
         },
         "texture": "textures/items/god_of_sun",
         "rec": [
-            "recipes/nightmare.json",
-            "recipes/god_of_sun.json"
+            "recipes/god_of_sun.json",
+            "recipes/nightmare.json"
         ],
         "loot": [
-            "loot_tables/entities/nether_skeleton_wizard_gear.json",
             "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/entities/nether_skeleton_wizard_gear.json",
             "loot_tables/chests/deep_garden.json"
         ],
         "loot_by_entity": [
@@ -31865,12 +31999,12 @@ window.AddData = {
         },
         "texture": "textures/items/golden_dagger",
         "rec": [
-            "recipes/furnace_golden_dagger.json",
-            "recipes/gold_dagger.json"
+            "recipes/gold_dagger.json",
+            "recipes/furnace_golden_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -31977,8 +32111,8 @@ window.AddData = {
             "recipes/golden_staff.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_wizard_gear.json",
-            "loot_tables/template/weapon/magic_weapon/staff.json"
+            "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/entities/goblin_wizard_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin_wizard"
@@ -32080,8 +32214,8 @@ window.AddData = {
             "recipes/furnace_gold_fish.json"
         ],
         "loot": [
-            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/ice_fish.json",
+            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/fish.json",
             "loot_tables/gameplay/fishing/ocean_fish.json",
             "loot_tables/gameplay/fishing/desert_fish.json"
@@ -32124,9 +32258,9 @@ window.AddData = {
             "recipes/heart_ring.json"
         ],
         "loot": [
+            "loot_tables/entities/goblin.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/entities/piglin_brute.json",
-            "loot_tables/entities/goblin.json"
+            "loot_tables/entities/piglin_brute.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -32460,9 +32594,9 @@ window.AddData = {
         "texture": "textures/items/grapeshot_frozen_ball",
         "rec": [],
         "loot": [
+            "loot_tables/template/weapon/thrown_weapon/sundries.json",
             "loot_tables/tasks/007.json",
-            "loot_tables/entities/everlasting_winter_ghast.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json"
+            "loot_tables/entities/everlasting_winter_ghast.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -33315,17 +33449,17 @@ window.AddData = {
         },
         "texture": "textures/items/health_nugget",
         "rec": [
-            "recipes/blood_meat.json",
-            "recipes/blood_bullet_bag.json",
             "recipes/heart_ring.json",
-            "recipes/health_stone.json"
+            "recipes/blood_bullet_bag.json",
+            "recipes/health_stone.json",
+            "recipes/blood_meat.json"
         ],
         "loot": [
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/chests/nether_bridge.json",
             "loot_tables/items/hunter_book.json",
-            "loot_tables/entities/blood_zombie.json",
             "loot_tables/entities/nether_phantom.json",
+            "loot_tables/chests/nether_bridge.json",
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/entities/blood_zombie.json",
             "loot_tables/entities/life_insect.json"
         ],
         "loot_by_entity": [
@@ -33375,12 +33509,12 @@ window.AddData = {
         },
         "texture": "textures/items/health_stone",
         "rec": [
-            "recipes/heart_egg.json",
+            "recipes/heart_ring.json",
             "recipes/blood_mare.json",
             "recipes/fire_heart.json",
-            "recipes/heart_ring.json",
             "recipes/blood_sickle.json",
-            "recipes/health_stone.json"
+            "recipes/health_stone.json",
+            "recipes/heart_egg.json"
         ],
         "loot": [
             "loot_tables/chests/nether_bridge.json",
@@ -33532,14 +33666,14 @@ window.AddData = {
         },
         "texture": "textures/items/hemp_rope",
         "rec": [
-            "recipes/saddle.json",
-            "recipes/catapult.json",
-            "recipes/furnace_straw_rope.json",
-            "recipes/elytra.json",
-            "recipes/bullet_bag.json",
             "recipes/fuse.json",
-            "recipes/shulker_helmet.json",
-            "recipes/herb_bag.json"
+            "recipes/catapult.json",
+            "recipes/elytra.json",
+            "recipes/saddle.json",
+            "recipes/herb_bag.json",
+            "recipes/bullet_bag.json",
+            "recipes/furnace_straw_rope.json",
+            "recipes/shulker_helmet.json"
         ],
         "loot": [
             "loot_tables/blocks/crate.json"
@@ -33580,13 +33714,13 @@ window.AddData = {
             "recipes/herb_bag.json"
         ],
         "loot": [
-            "loot_tables/entities/leaves_golem.json",
+            "loot_tables/items/hunter_book.json",
             "loot_tables/chests/muddy_altar.json",
             "loot_tables/blocks/cave_crate.json",
             "loot_tables/chests/ruined_house.json",
-            "loot_tables/items/hunter_book.json",
-            "loot_tables/blocks/frozen_crate.json",
-            "loot_tables/blocks/crate.json"
+            "loot_tables/blocks/crate.json",
+            "loot_tables/entities/leaves_golem.json",
+            "loot_tables/blocks/frozen_crate.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -33638,30 +33772,30 @@ window.AddData = {
         },
         "texture": "textures/items/high_concentration_uranium",
         "rec": [
-            "recipes/radiate_crystal.json",
-            "recipes/furnace_uranium.json",
-            "recipes/uranium_apple.json",
-            "recipes/radiate_spreader.json",
             "recipes/radiate_sword.json",
-            "recipes/enriched_uranium.json"
+            "recipes/furnace_uranium.json",
+            "recipes/radiate_spreader.json",
+            "recipes/uranium_apple.json",
+            "recipes/enriched_uranium.json",
+            "recipes/radiate_crystal.json"
         ],
         "loot": [
+            "loot_tables/entities/radiate_creeper.json",
             "loot_tables/entities/radiate_spider.json",
-            "loot_tables/entities/radiate_skeleton.json",
-            "loot_tables/entities/radiate_creeper.json"
+            "loot_tables/entities/radiate_skeleton.json"
         ],
         "loot_by_entity": [
-            "dec:radiate_spider",
-            "dec:radiate_creeper"
+            "dec:radiate_creeper",
+            "dec:radiate_spider"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Radiate Spider",
-                "Radiate Creeper"
+                "Radiate Creeper",
+                "Radiate Spider"
             ],
             "zh_CN": [
-                "\u8f90\u5c04\u8718\u86db",
-                "\u8f90\u5c04\u82e6\u529b\u6015"
+                "\u8f90\u5c04\u82e6\u529b\u6015",
+                "\u8f90\u5c04\u8718\u86db"
             ]
         },
         "loot_by_block": [],
@@ -33846,9 +33980,9 @@ window.AddData = {
             "recipes/lava_bullet_bag.json"
         ],
         "loot": [
+            "loot_tables/items/hunter_book.json",
             "loot_tables/entities/goblin_sniper.json",
-            "loot_tables/chests/hunter_house.json",
-            "loot_tables/items/hunter_book.json"
+            "loot_tables/chests/hunter_house.json"
         ],
         "loot_by_entity": [
             "dec:goblin_sniper"
@@ -33894,13 +34028,13 @@ window.AddData = {
         },
         "texture": "textures/items/ice_brick",
         "rec": [
-            "recipes/furnace_compressed_ice.json",
             "recipes/frozen_dart.json",
             "recipes/frozen_helmet.json",
-            "recipes/frozen_chestplate.json",
+            "recipes/furnace_compressed_ice.json",
             "recipes/ice_brick_block.json",
-            "recipes/frozen_leggings.json",
-            "recipes/frozen_boots.json"
+            "recipes/frozen_chestplate.json",
+            "recipes/frozen_boots.json",
+            "recipes/frozen_leggings.json"
         ],
         "loot": [
             "loot_tables/blocks/frozen_crate.json"
@@ -33944,42 +34078,42 @@ window.AddData = {
         "texture": "textures/items/ice_cream",
         "rec": [],
         "loot": [
+            "loot_tables/entities/ice_wizard.json",
+            "loot_tables/entities/frozen_spider.json",
             "loot_tables/entities/ice_monster.json",
             "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/entities/ice_spirit.json",
-            "loot_tables/entities/ice_blaze.json",
-            "loot_tables/entities/frozen_spider.json",
-            "loot_tables/entities/frozen_heart.json",
             "loot_tables/entities/ice_zombie.json",
-            "loot_tables/entities/ice_wizard.json"
+            "loot_tables/entities/frozen_heart.json",
+            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/entities/ice_spirit.json"
         ],
         "loot_by_entity": [
-            "dec:ice_monster",
-            "dec:ice_spirit",
-            "dec:ice_blaze",
+            "dec:ice_wizard",
             "dec:frozen_spider",
-            "dec:frozen_heart",
+            "dec:ice_monster",
             "dec:ice_zombie",
-            "dec:ice_wizard"
+            "dec:frozen_heart",
+            "dec:ice_blaze",
+            "dec:ice_spirit"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Ice Monster",
-                "Ice Spirit",
-                "Ice Blaze",
+                "Ice Wizard",
                 "Frozen Spider",
-                "Frozen Heart",
+                "Ice Monster",
                 "Ice Zombie",
-                "Ice Wizard"
+                "Frozen Heart",
+                "Ice Blaze",
+                "Ice Spirit"
             ],
             "zh_CN": [
-                "\u51b0\u96ea\u602a",
-                "\u51b0\u9b42",
-                "\u5bd2\u971c\u4eba",
+                "\u5bd2\u6f6e\u6cd5\u5e08",
                 "\u51b0\u51bb\u8718\u86db",
-                "\u51b0\u51bb\u4e4b\u5fc3",
+                "\u51b0\u96ea\u602a",
                 "\u5bd2\u51b0\u50f5\u5c38",
-                "\u5bd2\u6f6e\u6cd5\u5e08"
+                "\u51b0\u51bb\u4e4b\u5fc3",
+                "\u5bd2\u971c\u4eba",
+                "\u51b0\u9b42"
             ]
         },
         "loot_by_block": [],
@@ -34015,66 +34149,66 @@ window.AddData = {
         },
         "texture": "textures/items/ice_heart",
         "rec": [
-            "recipes/archer_bullet_bag.json",
-            "recipes/archer_stones_bag.json",
             "recipes/absolute_zero.json",
-            "recipes/tear_from_dream.json",
-            "recipes/everlasting_winter_flintlock.json",
-            "recipes/blizzard_staff.json",
-            "recipes/ghost_flintlock.json",
             "recipes/frozen_ray_staff.json",
+            "recipes/blizzard_staff.json",
+            "recipes/archer_bullet_bag.json",
+            "recipes/ghost_flintlock.json",
+            "recipes/everlasting_winter_flintlock.json",
+            "recipes/archer_stones_bag.json",
             "recipes/entity_soul.json",
+            "recipes/tear_from_dream.json",
             "recipes/ghost_summoner.json"
         ],
         "loot": [
+            "loot_tables/entities/escaped_soul.json",
             "loot_tables/entities/everlasting_winter_ghast.json",
+            "loot_tables/entities/ice_wizard.json",
+            "loot_tables/chests/snow_altar.json",
             "loot_tables/entities/ice_monster.json",
             "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/entities/ice_blaze.json",
-            "loot_tables/entities/escaped_soul.json",
-            "loot_tables/blocks/frozen_crate.json",
-            "loot_tables/entities/frozen_heart.json",
             "loot_tables/entities/ice_zombie.json",
-            "loot_tables/chests/snow_altar.json",
-            "loot_tables/entities/ice_wizard.json"
+            "loot_tables/entities/frozen_heart.json",
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/entities/ice_blaze.json"
         ],
         "loot_by_entity": [
-            "dec:ice_monster",
-            "dec:ice_blaze",
             "dec:escaped_soul_3",
             "dec:escaped_soul_entity",
-            "dec:frozen_heart",
+            "dec:ice_wizard",
+            "dec:ice_monster",
             "dec:ice_zombie",
-            "dec:ice_wizard"
+            "dec:frozen_heart",
+            "dec:ice_blaze"
         ],
         "loot_by_entity_lang": {
             "en_US": [
+                "Escaped Soul",
+                "Escaped Soul",
+                "Ice Wizard",
                 "Ice Monster",
-                "Ice Blaze",
-                "Escaped Soul",
-                "Escaped Soul",
-                "Frozen Heart",
                 "Ice Zombie",
-                "Ice Wizard"
+                "Frozen Heart",
+                "Ice Blaze"
             ],
             "zh_CN": [
+                "\u9003\u9038\u4e4b\u9b42",
+                "\u9003\u9038\u4e4b\u9b42",
+                "\u5bd2\u6f6e\u6cd5\u5e08",
                 "\u51b0\u96ea\u602a",
-                "\u5bd2\u971c\u4eba",
-                "\u9003\u9038\u4e4b\u9b42",
-                "\u9003\u9038\u4e4b\u9b42",
-                "\u51b0\u51bb\u4e4b\u5fc3",
                 "\u5bd2\u51b0\u50f5\u5c38",
-                "\u5bd2\u6f6e\u6cd5\u5e08"
+                "\u51b0\u51bb\u4e4b\u5fc3",
+                "\u5bd2\u971c\u4eba"
             ]
         },
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "everlasting_winter_tower": [
-                "Chest"
-            ],
             "snow_altar": [
                 "Barrel",
+                "Chest"
+            ],
+            "everlasting_winter_tower": [
                 "Chest"
             ]
         },
@@ -34108,63 +34242,63 @@ window.AddData = {
         },
         "texture": "textures/items/ice_ingot",
         "rec": [
-            "recipes/ancient_ice_by_ingot.json",
-            "recipes/frozen_helmet.json",
-            "recipes/frozen_chestplate.json",
-            "recipes/furnace_ancient_ice.json",
-            "recipes/ice_ingot.json",
             "recipes/frozen_ray_staff.json",
-            "recipes/blizzard_sword.json",
-            "recipes/frozen_leggings.json",
             "recipes/ice_nugget.json",
+            "recipes/frozen_helmet.json",
+            "recipes/furnace_ancient_ice.json",
+            "recipes/ancient_ice_by_ingot.json",
+            "recipes/blizzard_sword.json",
+            "recipes/frozen_chestplate.json",
+            "recipes/frozen_boots.json",
             "recipes/ice_sword.json",
-            "recipes/frozen_boots.json"
+            "recipes/ice_ingot.json",
+            "recipes/frozen_leggings.json"
         ],
         "loot": [
-            "loot_tables/chests/snowflake_kiosk.json",
-            "loot_tables/entities/ice_monster.json",
-            "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/entities/ice_blaze.json",
-            "loot_tables/chests/snowflake_tower.json",
-            "loot_tables/tasks/001.json",
-            "loot_tables/entities/frozen_heart.json",
+            "loot_tables/entities/ice_wizard.json",
             "loot_tables/chests/snow_altar.json",
-            "loot_tables/entities/ice_wizard.json"
+            "loot_tables/entities/ice_monster.json",
+            "loot_tables/chests/snowflake_kiosk.json",
+            "loot_tables/chests/snowflake_tower.json",
+            "loot_tables/chests/everlasting_winter_tower.json",
+            "loot_tables/entities/frozen_heart.json",
+            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/tasks/001.json"
         ],
         "loot_by_entity": [
+            "dec:ice_wizard",
             "dec:ice_monster",
-            "dec:ice_blaze",
             "dec:frozen_heart",
-            "dec:ice_wizard"
+            "dec:ice_blaze"
         ],
         "loot_by_entity_lang": {
             "en_US": [
+                "Ice Wizard",
                 "Ice Monster",
-                "Ice Blaze",
                 "Frozen Heart",
-                "Ice Wizard"
+                "Ice Blaze"
             ],
             "zh_CN": [
+                "\u5bd2\u6f6e\u6cd5\u5e08",
                 "\u51b0\u96ea\u602a",
-                "\u5bd2\u971c\u4eba",
                 "\u51b0\u51bb\u4e4b\u5fc3",
-                "\u5bd2\u6f6e\u6cd5\u5e08"
+                "\u5bd2\u971c\u4eba"
             ]
         },
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
+            "snow_altar": [
+                "Barrel",
+                "Chest"
+            ],
             "snowflake_kiosk_2": [
                 "Barrel"
-            ],
-            "everlasting_winter_tower": [
-                "Chest"
             ],
             "snowflake_tower_3": [
                 "Barrel"
             ],
-            "snow_altar": [
-                "Barrel",
+            "everlasting_winter_tower": [
                 "Chest"
             ]
         },
@@ -34194,41 +34328,41 @@ window.AddData = {
         },
         "texture": "textures/items/ice_nugget",
         "rec": [
-            "recipes/ice_nugget.json",
-            "recipes/ice_ingot.json"
+            "recipes/ice_ingot.json",
+            "recipes/ice_nugget.json"
         ],
         "loot": [
+            "loot_tables/entities/ice_wizard.json",
             "loot_tables/entities/ice_monster.json",
             "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/entities/ice_blaze.json",
-            "loot_tables/gameplay/fishing/ice_treasure.json",
-            "loot_tables/blocks/frozen_crate.json",
-            "loot_tables/entities/frozen_heart.json",
             "loot_tables/entities/ice_zombie.json",
-            "loot_tables/entities/ice_wizard.json"
+            "loot_tables/entities/frozen_heart.json",
+            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/gameplay/fishing/ice_treasure.json"
         ],
         "loot_by_entity": [
+            "dec:ice_wizard",
             "dec:ice_monster",
-            "dec:ice_blaze",
-            "minecraft:fishing_hook",
-            "dec:frozen_heart",
             "dec:ice_zombie",
-            "dec:ice_wizard"
+            "dec:frozen_heart",
+            "dec:ice_blaze",
+            "minecraft:fishing_hook"
         ],
         "loot_by_entity_lang": {
             "en_US": [
+                "Ice Wizard",
                 "Ice Monster",
-                "Ice Blaze",
-                "Frozen Heart",
                 "Ice Zombie",
-                "Ice Wizard"
+                "Frozen Heart",
+                "Ice Blaze"
             ],
             "zh_CN": [
+                "\u5bd2\u6f6e\u6cd5\u5e08",
                 "\u51b0\u96ea\u602a",
-                "\u5bd2\u971c\u4eba",
-                "\u51b0\u51bb\u4e4b\u5fc3",
                 "\u5bd2\u51b0\u50f5\u5c38",
-                "\u5bd2\u6f6e\u6cd5\u5e08"
+                "\u51b0\u51bb\u4e4b\u5fc3",
+                "\u5bd2\u971c\u4eba"
             ]
         },
         "loot_by_block": [],
@@ -34264,59 +34398,59 @@ window.AddData = {
         },
         "texture": "textures/items/ice_rod",
         "rec": [
-            "recipes/ghost_sword.json",
-            "recipes/everlasting_winter_flintlock.json",
-            "recipes/soul_staff.json",
-            "recipes/blizzard_staff.json",
-            "recipes/ghost_flintlock.json",
-            "recipes/ghost_dagger.json",
+            "recipes/frozen_staff.json",
             "recipes/frozen_ray_staff.json",
             "recipes/everlasting_winter_stick.json",
+            "recipes/blizzard_staff.json",
             "recipes/ghost_sickle.json",
-            "recipes/ghost_summoner.json",
+            "recipes/ghost_sword.json",
+            "recipes/ghost_dagger.json",
+            "recipes/ghost_flintlock.json",
+            "recipes/everlasting_winter_flintlock.json",
+            "recipes/soul_staff.json",
             "recipes/ice_sword.json",
-            "recipes/frozen_staff.json"
+            "recipes/ghost_summoner.json"
         ],
         "loot": [
             "loot_tables/entities/everlasting_winter_ghast.json",
+            "loot_tables/chests/snow_altar.json",
             "loot_tables/chests/snowflake_kiosk.json",
-            "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/entities/ice_blaze.json",
             "loot_tables/chests/snowflake_tower.json",
-            "loot_tables/gameplay/fishing/ice_treasure.json",
-            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/chests/everlasting_winter_tower.json",
             "loot_tables/entities/frozen_heart.json",
-            "loot_tables/chests/snow_altar.json"
+            "loot_tables/blocks/frozen_crate.json",
+            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/gameplay/fishing/ice_treasure.json"
         ],
         "loot_by_entity": [
+            "dec:frozen_heart",
             "dec:ice_blaze",
-            "minecraft:fishing_hook",
-            "dec:frozen_heart"
+            "minecraft:fishing_hook"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Ice Blaze",
-                "Frozen Heart"
+                "Frozen Heart",
+                "Ice Blaze"
             ],
             "zh_CN": [
-                "\u5bd2\u971c\u4eba",
-                "\u51b0\u51bb\u4e4b\u5fc3"
+                "\u51b0\u51bb\u4e4b\u5fc3",
+                "\u5bd2\u971c\u4eba"
             ]
         },
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
+            "snow_altar": [
+                "Barrel",
+                "Chest"
+            ],
             "snowflake_kiosk_2": [
                 "Barrel"
-            ],
-            "everlasting_winter_tower": [
-                "Chest"
             ],
             "snowflake_tower_3": [
                 "Barrel"
             ],
-            "snow_altar": [
-                "Barrel",
+            "everlasting_winter_tower": [
                 "Chest"
             ]
         },
@@ -34414,12 +34548,12 @@ window.AddData = {
         },
         "texture": "textures/items/ice_sword",
         "rec": [
-            "recipes/blizzard_sword.json",
-            "recipes/ice_sword.json"
+            "recipes/ice_sword.json",
+            "recipes/blizzard_sword.json"
         ],
         "loot": [
-            "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/chests/snow_altar.json"
+            "loot_tables/chests/snow_altar.json",
+            "loot_tables/template/weapon/melee_weapon/sword.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -34570,9 +34704,9 @@ window.AddData = {
             "recipes/night_sword.json"
         ],
         "loot": [
+            "loot_tables/entities/king_of_pillager_gear.json",
             "loot_tables/entities/king_of_pillager.json",
-            "loot_tables/template/weapon/melee_weapon/katana.json",
-            "loot_tables/entities/king_of_pillager_gear.json"
+            "loot_tables/template/weapon/melee_weapon/katana.json"
         ],
         "loot_by_entity": [
             "dec:king_of_pillager"
@@ -34973,8 +35107,8 @@ window.AddData = {
         },
         "texture": "textures/items/intestine",
         "rec": [
-            "recipes/blood_meat.json",
-            "recipes/blood_bullet_bag.json"
+            "recipes/blood_bullet_bag.json",
+            "recipes/blood_meat.json"
         ],
         "loot": [
             "loot_tables/entities/blood_zombie.json"
@@ -35044,52 +35178,47 @@ window.AddData = {
         },
         "texture": "textures/items/iron_apple",
         "rec": [
-            "recipes/furnace_iron_apple.json",
             "recipes/iron_apple.json",
+            "recipes/furnace_iron_apple.json",
             "recipes/uranium_apple.json"
         ],
         "loot": [
-            "loot_tables/chests/bastion_hoglin_stable.json",
-            "loot_tables/chests/bastion_other.json",
-            "loot_tables/chests/ruined_portal.json",
-            "loot_tables/chests/igloo_chest.json",
-            "loot_tables/chests/ash_castle.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/chests/bastion_treasure.json",
-            "loot_tables/chests/bastion_bridge.json",
-            "loot_tables/chests/grave.json",
             "loot_tables/chests/ruined_house.json",
-            "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/ash_castle_treasure.json",
-            "loot_tables/chests/soul_room_nor.json",
+            "loot_tables/chests/ruined_portal.json",
+            "loot_tables/chests/ruined_muddy_4.json",
             "loot_tables/chests/village/village_plains_house.json",
-            "loot_tables/chests/ruined_muddy_4.json"
+            "loot_tables/chests/bastion_other.json",
+            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/chests/bastion_bridge.json",
+            "loot_tables/chests/igloo_chest.json",
+            "loot_tables/chests/bastion_treasure.json",
+            "loot_tables/chests/soul_room_nor.json",
+            "loot_tables/chests/grave.json",
+            "loot_tables/chests/bastion_hoglin_stable.json",
+            "loot_tables/chests/ash_castle.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "ash_castle": [
-                "Barrel",
-                "Chest"
-            ],
             "muddy_altar": [
                 "Barrel"
-            ],
-            "cemetery_1": [
-                "Chest"
-            ],
-            "cemetery_2": [
-                "Chest"
-            ],
-            "grave_1": [
-                "Chest"
             ],
             "ruined_house_1": [
                 "Barrel"
             ],
             "ruined_house_2": [
+                "Barrel"
+            ],
+            "ruined_muddy_4": [
+                "Chest",
+                "Barrel"
+            ],
+            "ash_castle": [
+                "Chest",
                 "Barrel"
             ],
             "soul_room_nor_4": [
@@ -35107,9 +35236,14 @@ window.AddData = {
             "soul_room_stair_5": [
                 "Chest"
             ],
-            "ruined_muddy_4": [
-                "Chest",
-                "Barrel"
+            "cemetery_1": [
+                "Chest"
+            ],
+            "cemetery_2": [
+                "Chest"
+            ],
+            "grave_1": [
+                "Chest"
             ]
         },
         "annotation": []
@@ -35194,22 +35328,22 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/chests/desert_pyramid.json",
-            "loot_tables/chests/challenger_tower.json",
-            "loot_tables/chests/woodland_mansion.json",
             "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/monster_room.json"
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/chests/monster_room.json",
+            "loot_tables/chests/desert_pyramid.json",
+            "loot_tables/chests/challenger_tower.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "challenger_tower": [
-                "Chest"
-            ],
             "end_vestiges": [
                 "ShulkerBox"
+            ],
+            "challenger_tower": [
+                "Chest"
             ]
         },
         "annotation": []
@@ -35400,11 +35534,11 @@ window.AddData = {
             "recipes/iron_dagger.json"
         ],
         "loot": [
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/chests/tower_of_watcher/weapon.json",
             "loot_tables/entities/watcher_attack_equipment.json",
             "loot_tables/entities/frank_equipment.json",
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/chests/tower_of_watcher/weapon.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:watcher",
@@ -35463,15 +35597,15 @@ window.AddData = {
         },
         "texture": "textures/items/iron_dart",
         "rec": [
-            "recipes/stream_dart.json",
             "recipes/frozen_dart.json",
-            "recipes/iron_dart.json"
+            "recipes/iron_dart.json",
+            "recipes/stream_dart.json"
         ],
         "loot": [
             "loot_tables/chests/tower_of_watcher/weapon.json",
+            "loot_tables/entities/skeleton_assassin_iron_dart_.json",
             "loot_tables/entities/skeleton_assassin_iron_dart_gear.json",
-            "loot_tables/template/weapon/thrown_weapon/dart.json",
-            "loot_tables/entities/skeleton_assassin_iron_dart_.json"
+            "loot_tables/template/weapon/thrown_weapon/dart.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -35514,8 +35648,8 @@ window.AddData = {
             "recipes/furnace_iron_fish.json"
         ],
         "loot": [
-            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/ice_fish.json",
+            "loot_tables/gameplay/fishing/jungle_fish.json",
             "loot_tables/gameplay/fishing/fish.json",
             "loot_tables/gameplay/fishing/ocean_fish.json",
             "loot_tables/gameplay/fishing/desert_fish.json"
@@ -35555,8 +35689,8 @@ window.AddData = {
         "texture": "textures/items/iron_key",
         "rec": [
             "recipes/furnace_iron_key.json",
-            "recipes/iron_key.json",
-            "recipes/mysterious_key.json"
+            "recipes/mysterious_key.json",
+            "recipes/iron_key.json"
         ],
         "loot": [
             "loot_tables/chests/everlasting_winter_tower.json"
@@ -35736,13 +35870,13 @@ window.AddData = {
         },
         "texture": "textures/items/iron_sickle",
         "rec": [
-            "recipes/iron_sickle.json",
-            "recipes/furnace_iron_sickle.json"
+            "recipes/furnace_iron_sickle.json",
+            "recipes/iron_sickle.json"
         ],
         "loot": [
             "loot_tables/chests/tower_of_watcher/weapon.json",
-            "loot_tables/template/weapon/melee_weapon/sickle.json",
-            "loot_tables/entities/watcher_attack_equipment.json"
+            "loot_tables/entities/watcher_attack_equipment.json",
+            "loot_tables/template/weapon/melee_weapon/sickle.json"
         ],
         "loot_by_entity": [
             "dec:watcher"
@@ -35862,12 +35996,12 @@ window.AddData = {
         },
         "texture": "textures/items/iron_staff",
         "rec": [
-            "recipes/amethyst_ray_staff.json",
-            "recipes/iron_staff.json"
+            "recipes/iron_staff.json",
+            "recipes/amethyst_ray_staff.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/template/weapon/magic_weapon/staff.json"
+            "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -35906,28 +36040,28 @@ window.AddData = {
         },
         "texture": "textures/items/iron_stick",
         "rec": [
-            "recipes/gold_sickle.json",
-            "recipes/steel_sickle.json",
-            "recipes/copper_sickle.json",
-            "recipes/lava_sword.json",
-            "recipes/thunder_rapier.json",
+            "recipes/netherite_sickle.json",
+            "recipes/thunder_staff.json",
+            "recipes/iron_sickle.json",
+            "recipes/blood_sickle.json",
+            "recipes/iron_staff.json",
             "recipes/copper_sword.json",
             "recipes/amethyst_ray_staff.json",
-            "recipes/iron_staff.json",
-            "recipes/the_blade.json",
-            "recipes/iron_stick.json",
-            "recipes/copper_battleaxe.json",
-            "recipes/giant_ivy.json",
-            "recipes/iron_sickle.json",
-            "recipes/steel_battleaxe.json",
             "recipes/diamond_sickle.json",
-            "recipes/growth.json",
+            "recipes/steel_battleaxe.json",
+            "recipes/gold_sickle.json",
+            "recipes/giant_ivy.json",
+            "recipes/copper_sickle.json",
             "recipes/angel_purification.json",
-            "recipes/netherite_sickle.json",
-            "recipes/steel_sword.json",
-            "recipes/thunder_staff.json",
             "recipes/destroy_staff.json",
-            "recipes/blood_sickle.json"
+            "recipes/lava_sword.json",
+            "recipes/growth.json",
+            "recipes/the_blade.json",
+            "recipes/steel_sword.json",
+            "recipes/copper_battleaxe.json",
+            "recipes/steel_sickle.json",
+            "recipes/thunder_rapier.json",
+            "recipes/iron_stick.json"
         ],
         "loot": [
             "loot_tables/tasks/006.json"
@@ -36592,57 +36726,57 @@ window.AddData = {
         "texture": "textures/items/lapis_apple",
         "rec": [],
         "loot": [
-            "loot_tables/chests/jungle_temple.json",
-            "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/chests/igloo_chest.json",
-            "loot_tables/chests/stronghold_corridor.json",
-            "loot_tables/chests/buriedtreasure.json",
-            "loot_tables/chests/bastion_hoglin_stable.json",
-            "loot_tables/chests/bastion_other.json",
+            "loot_tables/chests/shipwreck.json",
             "loot_tables/chests/ruined_portal.json",
-            "loot_tables/chests/bastion_bridge.json",
-            "loot_tables/chests/stronghold_crossing.json",
-            "loot_tables/chests/shipwrecktreasure.json",
+            "loot_tables/chests/shipwrecksupply.json",
             "loot_tables/chests/monster_room.json",
+            "loot_tables/chests/bastion_hoglin_stable.json",
             "loot_tables/chests/simple_dungeon.json",
-            "loot_tables/chests/pirate_ship_small.json",
-            "loot_tables/chests/desert_pyramid.json",
-            "loot_tables/chests/nether_bridge.json",
-            "loot_tables/chests/bastion_treasure.json",
-            "loot_tables/chests/underwater_ruin_small.json",
-            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/underwater_ruin_big.json",
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/bastion_other.json",
+            "loot_tables/chests/plain_tower.json",
+            "loot_tables/chests/abandoned_mineshaft.json",
             "loot_tables/chests/challenger_tower.json",
             "loot_tables/chests/ash_castle.json",
-            "loot_tables/chests/underwater_ruin_big.json",
             "loot_tables/chests/stronghold_library.json",
-            "loot_tables/chests/plain_tower.json",
-            "loot_tables/chests/shipwreck.json",
-            "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/pillager_outpost.json",
             "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/shipwrecksupply.json",
-            "loot_tables/chests/abandoned_mineshaft.json"
+            "loot_tables/chests/nether_bridge.json",
+            "loot_tables/chests/bastion_bridge.json",
+            "loot_tables/chests/shipwrecktreasure.json",
+            "loot_tables/chests/bastion_treasure.json",
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/chests/pillager_outpost.json",
+            "loot_tables/chests/stronghold_crossing.json",
+            "loot_tables/chests/stronghold_corridor.json",
+            "loot_tables/chests/jungle_temple.json",
+            "loot_tables/chests/buriedtreasure.json",
+            "loot_tables/chests/underwater_ruin_small.json",
+            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/chests/igloo_chest.json",
+            "loot_tables/chests/desert_pyramid.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "pirate_ship_small_1": [
+            "plain_tower": [
                 "Chest"
-            ],
-            "ash_castle": [
-                "Chest",
-                "Barrel"
             ],
             "challenger_tower": [
                 "Chest"
             ],
-            "plain_tower": [
+            "ash_castle": [
+                "Barrel",
                 "Chest"
             ],
             "end_vestiges": [
                 "ShulkerBox"
+            ],
+            "pirate_ship_small_1": [
+                "Chest"
             ]
         },
         "annotation": []
@@ -36773,23 +36907,23 @@ window.AddData = {
             "recipes/lapis_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
+            "loot_tables/chests/enchanted_house.json",
             "loot_tables/template/weapon/melee_weapon/dagger.json",
             "loot_tables/entities/enchant_illager.json",
-            "loot_tables/chests/enchanted_house.json"
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:enchant_illager_2"
+            "dec:enchant_illager_2",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Enchant Illager"
+                "Enchant Illager",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u9644\u9b54\u5e08"
+                "\u9644\u9b54\u5e08",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -36888,10 +37022,10 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/entities/enchant_illager.json",
-            "loot_tables/blocks/ice_bookshelf.json",
             "loot_tables/chests/enchanted_house.json",
             "loot_tables/tasks/012.json",
-            "loot_tables/template/magic_recover/sustained.json"
+            "loot_tables/template/magic_recover/sustained.json",
+            "loot_tables/blocks/ice_bookshelf.json"
         ],
         "loot_by_entity": [
             "dec:enchant_illager_2"
@@ -36950,35 +37084,31 @@ window.AddData = {
             "recipes/lapis_by_nugget.json"
         ],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/blocks/end_lapis_ore.json",
             "loot_tables/chests/haunted_house.json",
+            "loot_tables/chests/enchanted_house.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/blocks/nether_lapis_ore.json",
             "loot_tables/chests/tower_of_watcher/ore.json",
-            "loot_tables/chests/enchanted_house.json",
-            "loot_tables/chests/illusioner_house.json",
-            "loot_tables/blocks/end_lapis_ore.json"
+            "loot_tables/chests/illusioner_house.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [
-            "dec:nether_lapis_ore",
-            "dec:end_lapis_ore"
+            "dec:end_lapis_ore",
+            "dec:nether_lapis_ore"
         ],
         "loot_by_block_lang": {
             "en_US": [
-                "Nether Lapis Ore",
-                "End Lapis Ore"
+                "End Lapis Ore",
+                "Nether Lapis Ore"
             ],
             "zh_CN": [
-                "\u5730\u72f1\u9752\u91d1\u77f3\u77ff",
-                "\u672b\u5f71\u9752\u91d1\u77f3\u77ff"
+                "\u672b\u5f71\u9752\u91d1\u77f3\u77ff",
+                "\u5730\u72f1\u9752\u91d1\u77f3\u77ff"
             ]
         },
         "loot_by_structure": {
-            "warehouse_of_watcher": [
-                "Barrel",
-                "Chest"
-            ],
             "haunted_house_1": [
                 "Chest",
                 "Barrel"
@@ -36988,6 +37118,10 @@ window.AddData = {
             ],
             "enchanted_house": [
                 "Barrel"
+            ],
+            "warehouse_of_watcher": [
+                "Barrel",
+                "Chest"
             ],
             "illusioner_house_1": [
                 "Chest"
@@ -37182,23 +37316,23 @@ window.AddData = {
             "recipes/lapis_sword.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
+            "loot_tables/chests/enchanted_house.json",
             "loot_tables/template/weapon/melee_weapon/sword.json",
             "loot_tables/entities/enchant_illager.json",
-            "loot_tables/chests/enchanted_house.json"
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:enchant_illager_2"
+            "dec:enchant_illager_2",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Enchant Illager"
+                "Enchant Illager",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u9644\u9b54\u5e08"
+                "\u9644\u9b54\u5e08",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -37282,8 +37416,8 @@ window.AddData = {
             "recipes/lava_boots.json"
         ],
         "loot": [
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/template/armor/lava.json"
+            "loot_tables/template/armor/lava.json",
+            "loot_tables/chests/deep_garden.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -37405,8 +37539,8 @@ window.AddData = {
             "recipes/lava_chestplate.json"
         ],
         "loot": [
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/template/armor/lava.json"
+            "loot_tables/template/armor/lava.json",
+            "loot_tables/chests/deep_garden.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -37459,9 +37593,9 @@ window.AddData = {
             "recipes/lava_dart.json"
         ],
         "loot": [
-            "loot_tables/template/weapon/thrown_weapon/dart.json",
             "loot_tables/tasks/000.json",
-            "loot_tables/chests/deep_garden.json"
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/template/weapon/thrown_weapon/dart.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -37518,7 +37652,10 @@ window.AddData = {
             ]
         },
         "loot_by_structure": {},
-        "annotation": []
+        "annotation": [
+            "\u70b9\u71c3\u70ed\u60c5",
+            "\u53ef\u4ee5\u7528\u6765\u5408\u6210\u4e00\u4e9b\u5730\u72f1\u7684\u6750\u6599"
+        ]
     },
     "dec:lava_flintlock": {
         "lang": {
@@ -37616,8 +37753,8 @@ window.AddData = {
         },
         "texture": "textures/items/lava_flintlock",
         "rec": [
-            "recipes/lava_flintlock.json",
-            "recipes/star_flintlock.json"
+            "recipes/star_flintlock.json",
+            "recipes/lava_flintlock.json"
         ],
         "loot": [
             "loot_tables/template/weapon/range_weapon/range_weapon.json"
@@ -37659,8 +37796,8 @@ window.AddData = {
         "texture": "textures/items/lava_flower_seeds",
         "rec": [],
         "loot": [
-            "loot_tables/blocks/lava_flower_crop.json",
-            "loot_tables/entities/ash_knight.json"
+            "loot_tables/entities/ash_knight.json",
+            "loot_tables/blocks/lava_flower_crop.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -37750,8 +37887,8 @@ window.AddData = {
             "recipes/lava_helmet.json"
         ],
         "loot": [
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/template/armor/lava.json"
+            "loot_tables/template/armor/lava.json",
+            "loot_tables/chests/deep_garden.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -37788,37 +37925,37 @@ window.AddData = {
         },
         "texture": "textures/items/lava_ingot",
         "rec": [
-            "recipes/lava_helmet.json",
-            "recipes/god_of_sun.json",
-            "recipes/fire_heart.json",
-            "recipes/lava_leggings.json",
-            "recipes/lava_boots.json",
-            "recipes/lava_sword.json",
-            "recipes/lava_nugget.json",
-            "recipes/lava_bullet_bag.json",
-            "recipes/star_sword.json",
-            "recipes/furnace_lava_ore.json",
             "recipes/lava_ingot_by_block.json",
             "recipes/solidified_lava_block.json",
-            "recipes/star_flintlock.json",
-            "recipes/lava_dart.json",
             "recipes/fire_ring.json",
+            "recipes/lava_boots.json",
+            "recipes/lava_bullet_bag.json",
             "recipes/lava_ingot.json",
-            "recipes/lava_chestplate.json",
+            "recipes/lava_helmet.json",
+            "recipes/furnace_lava_ore.json",
+            "recipes/lava_flintlock.json",
+            "recipes/lava_dart.json",
+            "recipes/lava_leggings.json",
+            "recipes/star_sword.json",
+            "recipes/fire_heart.json",
+            "recipes/lava_sword.json",
+            "recipes/star_flintlock.json",
+            "recipes/lava_nugget.json",
             "recipes/lava_ingot_by_nugget.json",
-            "recipes/lava_flintlock.json"
+            "recipes/god_of_sun.json",
+            "recipes/lava_chestplate.json"
         ],
         "loot": [
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/chests/ash_castle.json",
+            "loot_tables/entities/nether_skeleton.json",
+            "loot_tables/entities/nether_phantom.json",
+            "loot_tables/chests/ash_castle_treasure.json",
             "loot_tables/chests/bastion_treasure.json",
             "loot_tables/tasks/022.json",
-            "loot_tables/entities/nether_skeleton.json",
-            "loot_tables/entities/nether_golem.json",
-            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/entities/nether_skeleton_wizard.json",
+            "loot_tables/chests/ash_castle.json",
             "loot_tables/tasks/005.json",
-            "loot_tables/entities/nether_phantom.json",
-            "loot_tables/entities/nether_skeleton_wizard.json"
+            "loot_tables/entities/nether_golem.json"
         ],
         "loot_by_entity": [
             "dec:nether_skeleton",
@@ -37840,11 +37977,11 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "deep_garden": [
-                "Chest"
-            ],
             "ash_castle": [
-                "Barrel",
+                "Chest",
+                "Barrel"
+            ],
+            "deep_garden": [
                 "Chest"
             ]
         },
@@ -37924,8 +38061,8 @@ window.AddData = {
             "recipes/lava_leggings.json"
         ],
         "loot": [
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/template/armor/lava.json"
+            "loot_tables/template/armor/lava.json",
+            "loot_tables/chests/deep_garden.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -37962,35 +38099,35 @@ window.AddData = {
         },
         "texture": "textures/items/lava_nugget",
         "rec": [
+            "recipes/lava_dart.json",
+            "recipes/lava_ingot_by_nugget.json",
+            "recipes/magma_cream_by_lava_essence.json",
             "recipes/spurt_egg.json",
             "recipes/lava_ingot.json",
-            "recipes/magma_cream_by_lava_essence.json",
-            "recipes/lava_ingot_by_nugget.json",
-            "recipes/lava_nugget.json",
-            "recipes/lava_dart.json"
+            "recipes/lava_nugget.json"
         ],
         "loot": [
-            "loot_tables/entities/lava_lizard.json",
-            "loot_tables/chests/deep_garden.json",
             "loot_tables/chests/nether_bridge.json",
+            "loot_tables/entities/bomber.json",
             "loot_tables/entities/ash_blaze.json",
-            "loot_tables/entities/bomber.json"
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/entities/lava_lizard.json"
         ],
         "loot_by_entity": [
-            "dec:lava_lizard",
+            "dec:bomber",
             "dec:ash_blaze",
-            "dec:bomber"
+            "dec:lava_lizard"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Lava Lizard",
+                "Bomber",
                 "Ash Blaze",
-                "Bomber"
+                "Lava Lizard"
             ],
             "zh_CN": [
-                "\u7194\u5ca9\u8725\u8734",
+                "\u8f70\u70b8\u8005",
                 "\u7070\u70ec\u70c8\u7130\u4eba",
-                "\u8f70\u70b8\u8005"
+                "\u7194\u5ca9\u8725\u8734"
             ]
         },
         "loot_by_block": [],
@@ -38097,9 +38234,9 @@ window.AddData = {
             "recipes/star_sword.json"
         ],
         "loot": [
-            "loot_tables/entities/nether_skeleton_gear.json",
             "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/chests/deep_garden.json"
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/entities/nether_skeleton_gear.json"
         ],
         "loot_by_entity": [
             "dec:nether_skeleton"
@@ -38287,12 +38424,12 @@ window.AddData = {
         },
         "texture": "textures/items/leaves_dagger",
         "rec": [
-            "recipes/night_sword.json",
-            "recipes/leaves_dagger.json"
+            "recipes/leaves_dagger.json",
+            "recipes/night_sword.json"
         ],
         "loot": [
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -38349,8 +38486,8 @@ window.AddData = {
             "recipes/leaves_knife.json"
         ],
         "loot": [
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json"
+            "loot_tables/template/weapon/thrown_weapon/sundries.json",
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -38501,11 +38638,11 @@ window.AddData = {
         "texture": "textures/items/leek_seeds",
         "rec": [],
         "loot": [
+            "loot_tables/blocks/leek_crop.json",
+            "loot_tables/gameplay/fishing/junk.json",
             "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/gameplay/fishing/jungle_junk.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
-            "loot_tables/blocks/leek_crop.json",
-            "loot_tables/gameplay/fishing/junk.json"
+            "loot_tables/gameplay/fishing/ocean_junk.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -38879,10 +39016,10 @@ window.AddData = {
         },
         "texture": "textures/items/lightning_stone",
         "rec": [
-            "recipes/lightning_stone.json",
             "recipes/thunder_staff.json",
+            "recipes/thunder_rapier.json",
             "recipes/lightning_summoner.json",
-            "recipes/thunder_rapier.json"
+            "recipes/lightning_stone.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -39048,8 +39185,8 @@ window.AddData = {
             "recipes/long_bread.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -39139,8 +39276,8 @@ window.AddData = {
         "texture": "textures/items/mace",
         "rec": [],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -39292,8 +39429,8 @@ window.AddData = {
         "texture": "textures/items/magic_crystal",
         "rec": [],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/end_city_treasure.json"
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -39369,45 +39506,45 @@ window.AddData = {
         "texture": "textures/items/magic_ice_cream",
         "rec": [],
         "loot": [
+            "loot_tables/entities/ice_wizard.json",
+            "loot_tables/chests/snow_altar.json",
             "loot_tables/entities/ice_monster.json",
             "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/entities/ice_spirit.json",
-            "loot_tables/entities/ice_blaze.json",
             "loot_tables/entities/ice_zombie.json",
-            "loot_tables/chests/snow_altar.json",
-            "loot_tables/entities/ice_wizard.json"
+            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/entities/ice_spirit.json"
         ],
         "loot_by_entity": [
+            "dec:ice_wizard",
             "dec:ice_monster",
-            "dec:ice_spirit",
-            "dec:ice_blaze",
             "dec:ice_zombie",
-            "dec:ice_wizard"
+            "dec:ice_blaze",
+            "dec:ice_spirit"
         ],
         "loot_by_entity_lang": {
             "en_US": [
+                "Ice Wizard",
                 "Ice Monster",
-                "Ice Spirit",
-                "Ice Blaze",
                 "Ice Zombie",
-                "Ice Wizard"
+                "Ice Blaze",
+                "Ice Spirit"
             ],
             "zh_CN": [
+                "\u5bd2\u6f6e\u6cd5\u5e08",
                 "\u51b0\u96ea\u602a",
-                "\u51b0\u9b42",
-                "\u5bd2\u971c\u4eba",
                 "\u5bd2\u51b0\u50f5\u5c38",
-                "\u5bd2\u6f6e\u6cd5\u5e08"
+                "\u5bd2\u971c\u4eba",
+                "\u51b0\u9b42"
             ]
         },
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "everlasting_winter_tower": [
-                "Chest"
-            ],
             "snow_altar": [
                 "Barrel",
+                "Chest"
+            ],
+            "everlasting_winter_tower": [
                 "Chest"
             ]
         },
@@ -39437,25 +39574,25 @@ window.AddData = {
         },
         "texture": "textures/items/magic_powder",
         "rec": [
+            "recipes/lapis_magic_book.json",
             "recipes/magic_article.json",
+            "recipes/flowing_block.json",
+            "recipes/magic_letter_box.json",
+            "recipes/crystal_nucleus.json",
             "recipes/diamond_crystal_nucleus.json",
             "recipes/magic_powder_by_blue_gem_debris.json",
-            "recipes/flowing_block.json",
             "recipes/magic_surge_core.json",
-            "recipes/magic_letter_box.json",
-            "recipes/lapis_magic_book.json",
-            "recipes/crystal_nucleus.json",
             "recipes/magic_powder_by_red_gem_debris.json"
         ],
         "loot": [
             "loot_tables/items/hunter_book.json",
-            "loot_tables/tasks/005.json",
             "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/tasks/037.json",
             "loot_tables/chests/illusioner_house.json",
-            "loot_tables/chests/soul_room_boss.json",
             "loot_tables/chests/soul_room_nor.json",
-            "loot_tables/tasks/037.json"
+            "loot_tables/tasks/005.json",
+            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/chests/soul_room_boss.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -39465,16 +39602,7 @@ window.AddData = {
             "end_vestiges": [
                 "ShulkerBox"
             ],
-            "soul_room_har_1": [
-                "Chest"
-            ],
-            "soul_room_har_2": [
-                "Chest"
-            ],
             "illusioner_house_1": [
-                "Chest"
-            ],
-            "soul_room_boss": [
                 "Chest"
             ],
             "soul_room_nor_4": [
@@ -39490,6 +39618,15 @@ window.AddData = {
                 "Chest"
             ],
             "soul_room_stair_5": [
+                "Chest"
+            ],
+            "soul_room_har_1": [
+                "Chest"
+            ],
+            "soul_room_har_2": [
+                "Chest"
+            ],
+            "soul_room_boss": [
                 "Chest"
             ]
         },
@@ -39523,9 +39660,9 @@ window.AddData = {
         "texture": "textures/items/magic_scroll_blue",
         "rec": [],
         "loot": [
-            "loot_tables/tasks/013.json",
+            "loot_tables/chests/spawn_bonus_chest.json",
             "loot_tables/blocks/magic_letter_box/magic_scroll_blue.json",
-            "loot_tables/chests/spawn_bonus_chest.json"
+            "loot_tables/tasks/013.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -39645,10 +39782,10 @@ window.AddData = {
         "texture": "textures/items/mind_controller",
         "rec": [],
         "loot": [
-            "loot_tables/entities/elf_of_deep.json",
+            "loot_tables/template/weapon/thrown_weapon/sundries.json",
             "loot_tables/entities/elf_of_deep_ranged_gear.json",
-            "loot_tables/entities/shadow_of_deep.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json"
+            "loot_tables/entities/elf_of_deep.json",
+            "loot_tables/entities/shadow_of_deep.json"
         ],
         "loot_by_entity": [
             "dec:elf_of_deep",
@@ -39750,8 +39887,8 @@ window.AddData = {
         "rec": [],
         "loot": [
             "loot_tables/chests/enchanted_house.json",
-            "loot_tables/blocks/mooli_crop.json",
-            "loot_tables/chests/desert_pyramid.json"
+            "loot_tables/chests/desert_pyramid.json",
+            "loot_tables/blocks/mooli_crop.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -40076,8 +40213,8 @@ window.AddData = {
             "recipes/natural_spear.json"
         ],
         "loot": [
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/template/weapon/summon_weapon/summon_weapon.json"
+            "loot_tables/template/weapon/summon_weapon/summon_weapon.json",
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -40165,12 +40302,12 @@ window.AddData = {
         "texture": "textures/items/nautilus_alive",
         "rec": [],
         "loot": [
-            "loot_tables/entities/nautilus.json",
-            "loot_tables/gameplay/fishing/ocean_fish.json"
+            "loot_tables/gameplay/fishing/ocean_fish.json",
+            "loot_tables/entities/nautilus.json"
         ],
         "loot_by_entity": [
-            "dec:nautilus",
-            "minecraft:fishing_hook"
+            "minecraft:fishing_hook",
+            "dec:nautilus"
         ],
         "loot_by_entity_lang": {
             "en_US": [
@@ -41364,12 +41501,11 @@ window.AddData = {
         "texture": "textures/items/pine_cone",
         "rec": [],
         "loot": [
+            "loot_tables/entities/zombie.json",
             "loot_tables/entities/blood_zombie.json",
-            "loot_tables/entities/lurk_zombie.json",
-            "loot_tables/entities/zombie.json"
+            "loot_tables/entities/lurk_zombie.json"
         ],
         "loot_by_entity": [
-            "dec:lurk_zombie",
             "dec:mushroom_zombie",
             "dec:watcher",
             "minecraft:zombie",
@@ -41377,22 +41513,23 @@ window.AddData = {
             "dec:zombie_warrior",
             "minecraft:husk",
             "minecraft:zombie_villager",
-            "minecraft:zombie_villager_v2"
+            "minecraft:zombie_villager_v2",
+            "dec:lurk_zombie"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Lurk Zombie",
                 "Mushroom Zombie",
                 "Watcher",
                 "Zombie Summoner",
-                "Zombie Warrior"
+                "Zombie Warrior",
+                "Lurk Zombie"
             ],
             "zh_CN": [
-                "\u6f5c\u58f0\u50f5\u5c38",
                 "\u771f\u83cc\u50f5\u5c38",
                 "\u770b\u5b88\u8005",
                 "\u50f5\u5c38\u53ec\u5524\u5e08",
-                "\u50f5\u5c38\u6218\u58eb"
+                "\u50f5\u5c38\u6218\u58eb",
+                "\u6f5c\u58f0\u50f5\u5c38"
             ]
         },
         "loot_by_block": [],
@@ -41689,21 +41826,21 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/template/weapon/thrown_weapon/sundries.json",
-            "loot_tables/entities/swamp_drowned.json",
-            "loot_tables/entities/swamp_golem.json"
+            "loot_tables/entities/swamp_golem.json",
+            "loot_tables/entities/swamp_drowned.json"
         ],
         "loot_by_entity": [
-            "dec:swamp_drowned",
-            "dec:swamp_golem"
+            "dec:swamp_golem",
+            "dec:swamp_drowned"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Swamp Drowned",
-                "Swamp Golem"
+                "Swamp Golem",
+                "Swamp Drowned"
             ],
             "zh_CN": [
-                "\u6de4\u9ab8",
-                "\u6cbc\u6cfd\u5de8\u602a"
+                "\u6cbc\u6cfd\u5de8\u602a",
+                "\u6de4\u9ab8"
             ]
         },
         "loot_by_block": [],
@@ -41749,10 +41886,10 @@ window.AddData = {
         "texture": "textures/items/poison_dart",
         "rec": [],
         "loot": [
-            "loot_tables/entities/leaves_golem.json",
+            "loot_tables/entities/skeleton_assassin_poison_dart.json",
             "loot_tables/entities/skeleton_assassin_poison_dart_gear.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json",
-            "loot_tables/entities/skeleton_assassin_poison_dart.json"
+            "loot_tables/entities/leaves_golem.json",
+            "loot_tables/template/weapon/thrown_weapon/sundries.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -41892,8 +42029,8 @@ window.AddData = {
             "recipes/spider_staff.json"
         ],
         "loot": [
-            "loot_tables/chests/jungle_temple.json",
-            "loot_tables/entities/jungle_spider.json"
+            "loot_tables/entities/jungle_spider.json",
+            "loot_tables/chests/jungle_temple.json"
         ],
         "loot_by_entity": [
             "dec:jungle_spider"
@@ -42000,21 +42137,21 @@ window.AddData = {
         },
         "texture": "textures/items/pollution_algae",
         "rec": [
-            "recipes/dark_stone.json",
             "recipes/vortex.json",
-            "recipes/dark_pearl.json",
             "recipes/blood_meat.json",
-            "recipes/dark_debris.json"
+            "recipes/dark_stone.json",
+            "recipes/dark_debris.json",
+            "recipes/dark_pearl.json"
         ],
         "loot": [
-            "loot_tables/gameplay/fishing/ice_junk.json",
             "loot_tables/entities/drowned.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
+            "loot_tables/gameplay/fishing/junk.json",
             "loot_tables/entities/swamp_drowned.json",
             "loot_tables/tasks/032.json",
             "loot_tables/entities/sea_urchin.json",
-            "loot_tables/gameplay/fishing/junk.json",
-            "loot_tables/entities/swamp_golem.json"
+            "loot_tables/entities/swamp_golem.json",
+            "loot_tables/gameplay/fishing/ice_junk.json",
+            "loot_tables/gameplay/fishing/ocean_junk.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook",
@@ -42155,11 +42292,11 @@ window.AddData = {
         },
         "texture": "textures/items/pure_ingot",
         "rec": [
-            "recipes/angel_purification.json",
-            "recipes/emerald_staff.json",
-            "recipes/giant_ivy.json",
             "recipes/pure_ingot.json",
-            "recipes/growth.json"
+            "recipes/growth.json",
+            "recipes/giant_ivy.json",
+            "recipes/angel_purification.json",
+            "recipes/emerald_staff.json"
         ],
         "loot": [
             "loot_tables/blocks/cave_crate.json"
@@ -42660,8 +42797,8 @@ window.AddData = {
         "texture": "textures/items/red_bag",
         "rec": [],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/entities/chest_monster.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/entities/chest_monster_trade.json"
         ],
         "loot_by_entity": [
@@ -42776,61 +42913,61 @@ window.AddData = {
         },
         "texture": "textures/items/red_gem_debris",
         "rec": [
-            "recipes/magic_powder_by_red_gem_debris.json",
-            "recipes/red_gem.json"
+            "recipes/red_gem.json",
+            "recipes/magic_powder_by_red_gem_debris.json"
         ],
         "loot": [
-            "loot_tables/chests/jungle_temple.json",
-            "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/chests/deep_garden.json",
-            "loot_tables/chests/igloo_chest.json",
             "loot_tables/chests/muddy_altar.json",
-            "loot_tables/chests/stronghold_corridor.json",
-            "loot_tables/chests/buriedtreasure.json",
-            "loot_tables/chests/snow_altar.json",
-            "loot_tables/blocks/red_gem_ore.json",
-            "loot_tables/chests/bastion_hoglin_stable.json",
-            "loot_tables/chests/bastion_other.json",
-            "loot_tables/chests/goblin_house_1.json",
-            "loot_tables/chests/bastion_bridge.json",
-            "loot_tables/chests/everlasting_winter_tower.json",
-            "loot_tables/chests/effigy_2.json",
-            "loot_tables/chests/enchanted_house.json",
-            "loot_tables/chests/grave.json",
-            "loot_tables/chests/stronghold_crossing.json",
-            "loot_tables/chests/shipwrecktreasure.json",
-            "loot_tables/chests/soul_room_har.json",
-            "loot_tables/chests/illusioner_house.json",
-            "loot_tables/chests/monster_room.json",
-            "loot_tables/chests/simple_dungeon.json",
-            "loot_tables/chests/pirate_ship_small.json",
-            "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/chests/nether_bridge.json",
-            "loot_tables/chests/bastion_treasure.json",
-            "loot_tables/chests/ruined_house.json",
-            "loot_tables/chests/giant_tree_barrel.json",
-            "loot_tables/chests/underwater_ruin_small.json",
-            "loot_tables/chests/ash_castle_treasure.json",
-            "loot_tables/chests/snowflake_tower.json",
-            "loot_tables/chests/ruined_muddy_4.json",
-            "loot_tables/chests/haunted_house.json",
-            "loot_tables/chests/tower_of_watcher/ore.json",
-            "loot_tables/chests/snowflake_kiosk.json",
-            "loot_tables/chests/challenger_tower.json",
-            "loot_tables/chests/ash_castle.json",
-            "loot_tables/chests/underwater_ruin_big.json",
-            "loot_tables/chests/spawn_bonus_chest.json",
-            "loot_tables/chests/plain_tower.json",
-            "loot_tables/chests/stronghold_library.json",
             "loot_tables/chests/shipwreck.json",
-            "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/pillager_outpost.json",
-            "loot_tables/chests/end_vestiges.json",
+            "loot_tables/chests/haunted_house.json",
+            "loot_tables/chests/enchanted_house.json",
+            "loot_tables/chests/snow_altar.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/chests/effigy_2.json",
+            "loot_tables/chests/giant_tree_barrel.json",
             "loot_tables/chests/shipwrecksupply.json",
-            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/chests/illusioner_house.json",
+            "loot_tables/chests/deep_garden.json",
+            "loot_tables/chests/grave.json",
+            "loot_tables/chests/monster_room.json",
+            "loot_tables/chests/bastion_hoglin_stable.json",
+            "loot_tables/chests/simple_dungeon.json",
+            "loot_tables/blocks/red_gem_ore.json",
+            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/chests/goblin_house_1.json",
+            "loot_tables/chests/underwater_ruin_big.json",
+            "loot_tables/chests/ruined_muddy_4.json",
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/bastion_other.json",
+            "loot_tables/chests/plain_tower.json",
+            "loot_tables/chests/abandoned_mineshaft.json",
+            "loot_tables/chests/everlasting_winter_tower.json",
             "loot_tables/chests/soul_room_nor.json",
+            "loot_tables/chests/challenger_tower.json",
+            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/chests/ash_castle.json",
             "loot_tables/chests/ruined_stable.json",
-            "loot_tables/chests/abandoned_mineshaft.json"
+            "loot_tables/chests/stronghold_library.json",
+            "loot_tables/chests/end_vestiges.json",
+            "loot_tables/chests/nether_bridge.json",
+            "loot_tables/chests/bastion_bridge.json",
+            "loot_tables/chests/shipwrecktreasure.json",
+            "loot_tables/chests/bastion_treasure.json",
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/chests/pillager_outpost.json",
+            "loot_tables/chests/stronghold_crossing.json",
+            "loot_tables/chests/stronghold_corridor.json",
+            "loot_tables/chests/jungle_temple.json",
+            "loot_tables/chests/buriedtreasure.json",
+            "loot_tables/chests/underwater_ruin_small.json",
+            "loot_tables/chests/ruined_house.json",
+            "loot_tables/chests/ash_castle_treasure.json",
+            "loot_tables/chests/snowflake_kiosk.json",
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/chests/snowflake_tower.json",
+            "loot_tables/chests/igloo_chest.json",
+            "loot_tables/chests/tower_of_watcher/ore.json",
+            "loot_tables/chests/spawn_bonus_chest.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -42846,27 +42983,41 @@ window.AddData = {
             ]
         },
         "loot_by_structure": {
-            "deep_garden": [
+            "muddy_altar": [
+                "Barrel"
+            ],
+            "haunted_house_1": [
+                "Chest",
+                "Barrel"
+            ],
+            "haunted_house_2": [
                 "Chest"
             ],
-            "muddy_altar": [
+            "enchanted_house": [
                 "Barrel"
             ],
             "snow_altar": [
                 "Barrel",
                 "Chest"
             ],
-            "goblin_house_1": [
-                "Chest"
-            ],
-            "everlasting_winter_tower": [
+            "warehouse_of_watcher": [
+                "Barrel",
                 "Chest"
             ],
             "effigy_2": [
                 "Chest"
             ],
-            "enchanted_house": [
+            "giant_tree": [
                 "Barrel"
+            ],
+            "giant_tree_with_ticking": [
+                "Barrel"
+            ],
+            "illusioner_house_1": [
+                "Chest"
+            ],
+            "deep_garden": [
+                "Chest"
             ],
             "cemetery_1": [
                 "Chest"
@@ -42883,59 +43034,17 @@ window.AddData = {
             "soul_room_har_2": [
                 "Chest"
             ],
-            "illusioner_house_1": [
+            "goblin_house_1": [
                 "Chest"
-            ],
-            "pirate_ship_small_1": [
-                "Chest"
-            ],
-            "warehouse_of_watcher": [
-                "Barrel",
-                "Chest"
-            ],
-            "ruined_house_1": [
-                "Barrel"
-            ],
-            "ruined_house_2": [
-                "Barrel"
-            ],
-            "giant_tree": [
-                "Barrel"
-            ],
-            "giant_tree_with_ticking": [
-                "Barrel"
-            ],
-            "ash_castle": [
-                "Chest",
-                "Barrel"
-            ],
-            "snowflake_tower_3": [
-                "Barrel"
             ],
             "ruined_muddy_4": [
                 "Chest",
                 "Barrel"
             ],
-            "haunted_house_1": [
-                "Chest",
-                "Barrel"
-            ],
-            "haunted_house_2": [
-                "Chest"
-            ],
-            "snowflake_kiosk_2": [
-                "Barrel"
-            ],
-            "challenger_tower": [
-                "Chest"
-            ],
             "plain_tower": [
                 "Chest"
             ],
-            "end_vestiges": [
-                "ShulkerBox"
-            ],
-            "soul_room_boss": [
+            "everlasting_winter_tower": [
                 "Chest"
             ],
             "soul_room_nor_4": [
@@ -42953,7 +43062,35 @@ window.AddData = {
             "soul_room_stair_5": [
                 "Chest"
             ],
+            "challenger_tower": [
+                "Chest"
+            ],
+            "soul_room_boss": [
+                "Chest"
+            ],
+            "ash_castle": [
+                "Barrel",
+                "Chest"
+            ],
             "ruined_stable": [
+                "Barrel"
+            ],
+            "end_vestiges": [
+                "ShulkerBox"
+            ],
+            "pirate_ship_small_1": [
+                "Chest"
+            ],
+            "ruined_house_1": [
+                "Barrel"
+            ],
+            "ruined_house_2": [
+                "Barrel"
+            ],
+            "snowflake_kiosk_2": [
+                "Barrel"
+            ],
+            "snowflake_tower_3": [
                 "Barrel"
             ]
         },
@@ -43110,13 +43247,13 @@ window.AddData = {
             "recipes/rice.json"
         ],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/gameplay/fishing/ice_junk.json",
             "loot_tables/entities/drowned.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
-            "loot_tables/entities/swamp_drowned.json",
             "loot_tables/gameplay/fishing/junk.json",
-            "loot_tables/entities/swamp_golem.json"
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/entities/swamp_drowned.json",
+            "loot_tables/entities/swamp_golem.json",
+            "loot_tables/gameplay/fishing/ocean_junk.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook",
@@ -43175,11 +43312,11 @@ window.AddData = {
             "recipes/rice.json"
         ],
         "loot": [
+            "loot_tables/gameplay/fishing/junk.json",
             "loot_tables/chests/warehouse_of_watcher.json",
-            "loot_tables/gameplay/fishing/jungle_junk.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
             "loot_tables/blocks/rice_crop.json",
-            "loot_tables/gameplay/fishing/junk.json"
+            "loot_tables/gameplay/fishing/jungle_junk.json",
+            "loot_tables/gameplay/fishing/ocean_junk.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -43822,8 +43959,8 @@ window.AddData = {
         },
         "texture": "textures/items/scale_sword",
         "rec": [
-            "recipes/scale_sword_by_vortex.json",
-            "recipes/scale_sword_by_diamond_sword.json"
+            "recipes/scale_sword_by_diamond_sword.json",
+            "recipes/scale_sword_by_vortex.json"
         ],
         "loot": [
             "loot_tables/template/weapon/melee_weapon/sword.json"
@@ -43921,24 +44058,24 @@ window.AddData = {
         "texture": "textures/items/scimitar",
         "rec": [],
         "loot": [
-            "loot_tables/entities/king_of_pillager.json",
+            "loot_tables/entities/skeleton_knight_commander_melee_gear.json",
             "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/chests/pirate_ship_small.json",
             "loot_tables/entities/pirate_melee_gear.json",
-            "loot_tables/entities/skeleton_knight_commander_melee_gear.json"
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/entities/king_of_pillager.json"
         ],
         "loot_by_entity": [
-            "dec:king_of_pillager",
-            "dec:pirate"
+            "dec:pirate",
+            "dec:king_of_pillager"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "King Of Pillager",
-                "Pirate"
+                "Pirate",
+                "King Of Pillager"
             ],
             "zh_CN": [
-                "\u63a0\u593a\u8005\u4e4b\u738b",
-                "\u6d77\u76d7"
+                "\u6d77\u76d7",
+                "\u63a0\u593a\u8005\u4e4b\u738b"
             ]
         },
         "loot_by_block": [],
@@ -44060,9 +44197,9 @@ window.AddData = {
             "recipes/shadow_crystal.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
             "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/entities/shadow_crystal_fail.json"
+            "loot_tables/entities/shadow_crystal_fail.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -44360,11 +44497,11 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/chests/hunter_house.json",
-            "loot_tables/entities/chest_monster.json",
-            "loot_tables/entities/chest_monster_trade.json",
             "loot_tables/template/weapon/range_weapon/range_weapon.json",
+            "loot_tables/chests/pirate_ship_small.json",
+            "loot_tables/entities/chest_monster.json",
             "loot_tables/entities/pirate_ranged_gear.json",
-            "loot_tables/chests/pirate_ship_small.json"
+            "loot_tables/entities/chest_monster_trade.json"
         ],
         "loot_by_entity": [
             "dec:chest_monster",
@@ -47757,44 +47894,44 @@ window.AddData = {
         },
         "texture": "textures/items/small_stone",
         "rec": [
-            "recipes/exploding_pellets.json",
-            "recipes/cobblestone_by_small_stone.json",
             "recipes/stone_dart_by_cobblestone.json",
+            "recipes/health_stone.json",
             "recipes/stone_dart_by_stone.json",
-            "recipes/health_stone.json"
+            "recipes/exploding_pellets.json",
+            "recipes/cobblestone_by_small_stone.json"
         ],
         "loot": [
-            "loot_tables/blocks/small_stone.json",
-            "loot_tables/blocks/radiate_stone.json",
+            "loot_tables/entities/rumorer.json",
             "loot_tables/blocks/stone_heap.json",
-            "loot_tables/entities/small_stone.json",
+            "loot_tables/blocks/small_stone.json",
             "loot_tables/blocks/cave_crate.json",
             "loot_tables/template/weapon/range_weapon/range_weapon.json",
-            "loot_tables/entities/rumorer.json"
+            "loot_tables/blocks/radiate_stone.json",
+            "loot_tables/entities/small_stone.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [
+            "dec:stone_heap",
+            "dec:stone_road",
             "dec:small_stone_block_entity",
             "dec:radiate_stone",
-            "dec:radiate_stonebrick",
-            "dec:stone_heap",
-            "dec:stone_road"
+            "dec:radiate_stonebrick"
         ],
         "loot_by_block_lang": {
             "en_US": [
+                "Stone Heap",
+                "Stone Road",
                 "Small Stone",
                 "Radiate Stone",
-                "Radiate Stonebrick",
-                "Stone Heap",
-                "Stone Road"
+                "Radiate Stonebrick"
             ],
             "zh_CN": [
+                "\u77f3\u5806",
+                "\u77f3\u5b50\u8def",
                 "\u5c0f\u77f3\u5b50",
                 "\u8f90\u5c04\u77f3\u5934",
-                "\u8f90\u5c04\u77f3\u7816",
-                "\u77f3\u5806",
-                "\u77f3\u5b50\u8def"
+                "\u8f90\u5c04\u77f3\u7816"
             ]
         },
         "loot_by_structure": {},
@@ -48028,26 +48165,26 @@ window.AddData = {
         "rec": [],
         "loot": [
             "loot_tables/entities/everlasting_winter_ghast.json",
-            "loot_tables/chests/snowflake_kiosk.json",
-            "loot_tables/blocks/ice_bookshelf.json",
             "loot_tables/template/weapon/magic_weapon/book.json",
-            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/chests/snow_altar.json",
+            "loot_tables/chests/snowflake_kiosk.json",
             "loot_tables/chests/snowflake_tower.json",
             "loot_tables/entities/frozen_heart.json",
-            "loot_tables/chests/snow_altar.json"
+            "loot_tables/entities/ice_blaze.json",
+            "loot_tables/blocks/ice_bookshelf.json"
         ],
         "loot_by_entity": [
-            "dec:ice_blaze",
-            "dec:frozen_heart"
+            "dec:frozen_heart",
+            "dec:ice_blaze"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Ice Blaze",
-                "Frozen Heart"
+                "Frozen Heart",
+                "Ice Blaze"
             ],
             "zh_CN": [
-                "\u5bd2\u971c\u4eba",
-                "\u51b0\u51bb\u4e4b\u5fc3"
+                "\u51b0\u51bb\u4e4b\u5fc3",
+                "\u5bd2\u971c\u4eba"
             ]
         },
         "loot_by_block": [
@@ -48062,15 +48199,15 @@ window.AddData = {
             ]
         },
         "loot_by_structure": {
+            "snow_altar": [
+                "Barrel",
+                "Chest"
+            ],
             "snowflake_kiosk_2": [
                 "Barrel"
             ],
             "snowflake_tower_3": [
                 "Barrel"
-            ],
-            "snow_altar": [
-                "Barrel",
-                "Chest"
             ]
         },
         "annotation": []
@@ -48148,16 +48285,16 @@ window.AddData = {
         "texture": "textures/items/soul",
         "rec": [
             "recipes/soul_staff.json",
-            "recipes/tear_from_dream.json",
-            "recipes/entity_soul.json"
+            "recipes/entity_soul.json",
+            "recipes/tear_from_dream.json"
         ],
         "loot": [
             "loot_tables/entities/soul_insect.json",
-            "loot_tables/tasks/040.json",
+            "loot_tables/entities/soul_soldier.json",
+            "loot_tables/chests/soul_room_nor.json",
             "loot_tables/chests/soul_room_har.json",
             "loot_tables/chests/soul_room_boss.json",
-            "loot_tables/chests/soul_room_nor.json",
-            "loot_tables/entities/soul_soldier.json"
+            "loot_tables/tasks/040.json"
         ],
         "loot_by_entity": [
             "dec:soul_insect",
@@ -48176,15 +48313,6 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "soul_room_har_1": [
-                "Chest"
-            ],
-            "soul_room_har_2": [
-                "Chest"
-            ],
-            "soul_room_boss": [
-                "Chest"
-            ],
             "soul_room_nor_4": [
                 "Chest"
             ],
@@ -48198,6 +48326,15 @@ window.AddData = {
                 "Chest"
             ],
             "soul_room_stair_5": [
+                "Chest"
+            ],
+            "soul_room_har_1": [
+                "Chest"
+            ],
+            "soul_room_har_2": [
+                "Chest"
+            ],
+            "soul_room_boss": [
                 "Chest"
             ]
         },
@@ -48231,12 +48368,12 @@ window.AddData = {
         },
         "texture": "textures/items/soul_blaze_rod",
         "rec": [
-            "recipes/archer_bullet_bag.json",
-            "recipes/rupert_helmet.json",
-            "recipes/rupert_leggings.json",
-            "recipes/furnace_soul_blaze_rod.json",
             "recipes/rupert_chestplate.json",
-            "recipes/rupert_boots.json"
+            "recipes/archer_bullet_bag.json",
+            "recipes/furnace_soul_blaze_rod.json",
+            "recipes/rupert_boots.json",
+            "recipes/rupert_helmet.json",
+            "recipes/rupert_leggings.json"
         ],
         "loot": [
             "loot_tables/entities/soul_blaze.json",
@@ -48296,9 +48433,9 @@ window.AddData = {
         "texture": "textures/items/soul_fireball",
         "rec": [],
         "loot": [
+            "loot_tables/template/weapon/thrown_weapon/sundries.json",
             "loot_tables/entities/soul_blaze.json",
-            "loot_tables/tasks/002.json",
-            "loot_tables/template/weapon/thrown_weapon/sundries.json"
+            "loot_tables/tasks/002.json"
         ],
         "loot_by_entity": [
             "dec:soul"
@@ -48342,14 +48479,20 @@ window.AddData = {
         "texture": "textures/items/soul_key",
         "rec": [],
         "loot": [
-            "loot_tables/chests/soul_room_nor.json",
-            "loot_tables/chests/soul_room_har.json"
+            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/chests/soul_room_nor.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
+            "soul_room_har_1": [
+                "Chest"
+            ],
+            "soul_room_har_2": [
+                "Chest"
+            ],
             "soul_room_nor_4": [
                 "Chest"
             ],
@@ -48363,12 +48506,6 @@ window.AddData = {
                 "Chest"
             ],
             "soul_room_stair_5": [
-                "Chest"
-            ],
-            "soul_room_har_1": [
-                "Chest"
-            ],
-            "soul_room_har_2": [
                 "Chest"
             ]
         },
@@ -48463,13 +48600,13 @@ window.AddData = {
             "recipes/soul_staff.json"
         ],
         "loot": [
-            "loot_tables/entities/soul_skeleton_gear.json",
-            "loot_tables/entities/soul_soldier_staff_equipment.json",
             "loot_tables/template/weapon/magic_weapon/staff.json",
-            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/entities/soul_skeleton_gear.json",
+            "loot_tables/chests/soul_room_nor.json",
+            "loot_tables/entities/soul_soldier_staff_equipment.json",
             "loot_tables/tasks/002.json",
-            "loot_tables/chests/soul_room_boss.json",
-            "loot_tables/chests/soul_room_nor.json"
+            "loot_tables/chests/soul_room_har.json",
+            "loot_tables/chests/soul_room_boss.json"
         ],
         "loot_by_entity": [
             "dec:soul_skeleton",
@@ -48488,15 +48625,6 @@ window.AddData = {
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
-            "soul_room_har_1": [
-                "Chest"
-            ],
-            "soul_room_har_2": [
-                "Chest"
-            ],
-            "soul_room_boss": [
-                "Chest"
-            ],
             "soul_room_nor_4": [
                 "Chest"
             ],
@@ -48510,6 +48638,15 @@ window.AddData = {
                 "Chest"
             ],
             "soul_room_stair_5": [
+                "Chest"
+            ],
+            "soul_room_har_1": [
+                "Chest"
+            ],
+            "soul_room_har_2": [
+                "Chest"
+            ],
+            "soul_room_boss": [
                 "Chest"
             ]
         },
@@ -48552,12 +48689,12 @@ window.AddData = {
             "recipes/tofu.json"
         ],
         "loot": [
-            "loot_tables/chests/warehouse_of_watcher.json",
             "loot_tables/items/hunter_book.json",
-            "loot_tables/entities/ruined_muddy_brushable_block.json",
-            "loot_tables/entities/blood_zombie.json",
             "loot_tables/blocks/soybean_crop.json",
+            "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/entities/ruined_muddy_brushable_block.json",
             "loot_tables/entities/zombie.json",
+            "loot_tables/entities/blood_zombie.json",
             "loot_tables/chests/ruined_stable.json"
         ],
         "loot_by_entity": [
@@ -48891,15 +49028,15 @@ window.AddData = {
         },
         "texture": "textures/items/star_debris",
         "rec": [
-            "recipes/star_sword.json",
-            "recipes/flare_magic_book.json",
+            "recipes/dark_debris.json",
             "recipes/star_flintlock.json",
-            "recipes/dark_debris.json"
+            "recipes/flare_magic_book.json",
+            "recipes/star_sword.json"
         ],
         "loot": [
-            "loot_tables/tasks/020.json",
             "loot_tables/blocks/crate.json",
-            "loot_tables/entities/star.json"
+            "loot_tables/entities/star.json",
+            "loot_tables/tasks/020.json"
         ],
         "loot_by_entity": [
             "dec:star"
@@ -49221,8 +49358,8 @@ window.AddData = {
         },
         "texture": "textures/items/star_sword",
         "rec": [
-            "recipes/night_sword.json",
-            "recipes/star_sword.json"
+            "recipes/star_sword.json",
+            "recipes/night_sword.json"
         ],
         "loot": [
             "loot_tables/template/weapon/melee_weapon/sword.json"
@@ -50730,21 +50867,21 @@ window.AddData = {
         "loot": [
             "loot_tables/chests/tower_of_watcher/weapon.json",
             "loot_tables/template/weapon/melee_weapon/dagger.json",
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/entities/watcher_attack_equipment.json"
+            "loot_tables/entities/watcher_attack_equipment.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:watcher"
+            "dec:watcher",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Watcher"
+                "Watcher",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u770b\u5b88\u8005"
+                "\u770b\u5b88\u8005",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -50903,55 +51040,55 @@ window.AddData = {
         },
         "texture": "textures/items/steel_ingot",
         "rec": [
-            "recipes/steel_dagger.json",
-            "recipes/furnace_rough_steel.json",
-            "recipes/crying_chestplate.json",
+            "recipes/furnace_steel_battleaxe.json",
             "recipes/brew_steel_ingot.json",
-            "recipes/steel_sickle.json",
-            "recipes/steel_nugget_by_steel_ingot.json",
-            "recipes/flintlock_pro.json",
-            "recipes/bucket_by_steel.json",
-            "recipes/simple_glider.json",
-            "recipes/crying_helmet.json",
-            "recipes/furnace_steel_sickle.json",
-            "recipes/simple_car.json",
-            "recipes/steel_ingot_by_nugget.json",
-            "recipes/furnace_steel_sword.json",
             "recipes/steel_helmet.json",
             "recipes/steel_dart.json",
-            "recipes/steel_chestplate.json",
-            "recipes/the_blade.json",
-            "recipes/minecart_by_steel.json",
-            "recipes/steel_by_block.json",
+            "recipes/crying_helmet.json",
+            "recipes/furnace_rough_steel.json",
+            "recipes/crying_chestplate.json",
+            "recipes/crying_leggings.json",
+            "recipes/steel_boots.json",
             "recipes/steel_battleaxe.json",
             "recipes/steel_block.json",
-            "recipes/steel_boots.json",
+            "recipes/flintlock_pro.json",
+            "recipes/furnace_steel_sword.json",
+            "recipes/steel_dagger.json",
+            "recipes/the_blade.json",
             "recipes/steel_leggings.json",
-            "recipes/furnace_steel_battleaxe.json",
+            "recipes/simple_glider.json",
             "recipes/steel_sword.json",
-            "recipes/crying_leggings.json"
+            "recipes/simple_car.json",
+            "recipes/steel_chestplate.json",
+            "recipes/steel_ingot_by_nugget.json",
+            "recipes/steel_sickle.json",
+            "recipes/steel_nugget_by_steel_ingot.json",
+            "recipes/bucket_by_steel.json",
+            "recipes/minecart_by_steel.json",
+            "recipes/steel_by_block.json",
+            "recipes/furnace_steel_sickle.json"
         ],
         "loot": [
             "loot_tables/entities/chest_monster.json",
-            "loot_tables/entities/simple_glider.json",
             "loot_tables/entities/simple_car.json",
+            "loot_tables/entities/simple_glider.json",
             "loot_tables/entities/chest_monster_trade.json"
         ],
         "loot_by_entity": [
             "dec:chest_monster",
-            "dec:simple_glider",
-            "dec:simple_car"
+            "dec:simple_car",
+            "dec:simple_glider"
         ],
         "loot_by_entity_lang": {
             "en_US": [
                 "Chest Monster",
-                "Simple Glider",
-                "Simple Car"
+                "Simple Car",
+                "Simple Glider"
             ],
             "zh_CN": [
                 "\u7bb1\u5b50\u602a",
-                "\u7b80\u5355\u6ed1\u7fd4\u673a",
-                "\u7b80\u5355\u5c0f\u8f66"
+                "\u7b80\u5355\u5c0f\u8f66",
+                "\u7b80\u5355\u6ed1\u7fd4\u673a"
             ]
         },
         "loot_by_block": [],
@@ -51060,16 +51197,16 @@ window.AddData = {
         },
         "texture": "textures/items/steel_nugget",
         "rec": [
-            "recipes/furnace_steel_dagger.json",
-            "recipes/compress_flower_block_by_pink.json",
             "recipes/compress_flower_block_by_black.json",
-            "recipes/steel_ingot_by_nugget.json",
-            "recipes/compress_flower_block_by_yellow.json",
             "recipes/compress_flower_block_by_white.json",
-            "recipes/steel_dart.json",
-            "recipes/compress_flower_block_by_blue.json",
             "recipes/compress_flower_block_by_red.json",
-            "recipes/steel_nugget_by_steel_ingot.json"
+            "recipes/steel_nugget_by_steel_ingot.json",
+            "recipes/compress_flower_block_by_pink.json",
+            "recipes/compress_flower_block_by_blue.json",
+            "recipes/steel_dart.json",
+            "recipes/compress_flower_block_by_yellow.json",
+            "recipes/steel_ingot_by_nugget.json",
+            "recipes/furnace_steel_dagger.json"
         ],
         "loot": [
             "loot_tables/chests/soul_room_nor.json"
@@ -51266,22 +51403,22 @@ window.AddData = {
         ],
         "loot": [
             "loot_tables/chests/tower_of_watcher/weapon.json",
-            "loot_tables/template/weapon/melee_weapon/sickle.json",
+            "loot_tables/entities/watcher_attack_equipment.json",
             "loot_tables/entities/goblin_gear.json",
-            "loot_tables/entities/watcher_attack_equipment.json"
+            "loot_tables/template/weapon/melee_weapon/sickle.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:watcher"
+            "dec:watcher",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Watcher"
+                "Watcher",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u770b\u5b88\u8005"
+                "\u770b\u5b88\u8005",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -51380,21 +51517,21 @@ window.AddData = {
         "loot": [
             "loot_tables/chests/tower_of_watcher/weapon.json",
             "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/entities/watcher_attack_equipment.json"
+            "loot_tables/entities/watcher_attack_equipment.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
-            "dec:goblin",
-            "dec:watcher"
+            "dec:watcher",
+            "dec:goblin"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Goblin",
-                "Watcher"
+                "Watcher",
+                "Goblin"
             ],
             "zh_CN": [
-                "\u54e5\u5e03\u6797",
-                "\u770b\u5b88\u8005"
+                "\u770b\u5b88\u8005",
+                "\u54e5\u5e03\u6797"
             ]
         },
         "loot_by_block": [],
@@ -51489,52 +51626,33 @@ window.AddData = {
             "recipes/archer_stones_bag.json"
         ],
         "loot": [
-            "loot_tables/chests/haunted_house.json",
-            "loot_tables/chests/hunter_house.json",
-            "loot_tables/chests/guard_tower.json",
-            "loot_tables/chests/grave.json",
             "loot_tables/blocks/cave_crate.json",
-            "loot_tables/chests/stronghold_crossing.json",
-            "loot_tables/chests/stronghold_corridor.json",
             "loot_tables/chests/shipwreck.json",
-            "loot_tables/chests/shipwrecktreasure.json",
-            "loot_tables/chests/shipwrecksupply.json",
+            "loot_tables/chests/hunter_house.json",
+            "loot_tables/chests/haunted_house.json",
             "loot_tables/entities/ruined_muddy_brushable_block.json",
+            "loot_tables/blocks/crate.json",
+            "loot_tables/chests/shipwrecktreasure.json",
+            "loot_tables/chests/guard_tower.json",
+            "loot_tables/chests/shipwrecksupply.json",
             "loot_tables/blocks/frozen_crate.json",
-            "loot_tables/blocks/crate.json"
+            "loot_tables/chests/grave.json",
+            "loot_tables/chests/stronghold_crossing.json",
+            "loot_tables/chests/stronghold_corridor.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
         "loot_by_block_lang": {},
         "loot_by_structure": {
+            "hunter_house_1": [
+                "Barrel"
+            ],
             "haunted_house_1": [
                 "Chest",
                 "Barrel"
             ],
             "haunted_house_2": [
-                "Chest"
-            ],
-            "hunter_house_1": [
-                "Barrel"
-            ],
-            "guard_tower_1": [
-                "Chest"
-            ],
-            "guard_tower_2": [
-                "Chest"
-            ],
-            "guard_tower_3": [
-                "Chest",
-                "Barrel"
-            ],
-            "cemetery_1": [
-                "Chest"
-            ],
-            "cemetery_2": [
-                "Chest"
-            ],
-            "grave_1": [
                 "Chest"
             ],
             "effigy_1": [
@@ -51566,6 +51684,25 @@ window.AddData = {
             ],
             "ruined_stonecutter": [
                 "BrushableBlock"
+            ],
+            "guard_tower_1": [
+                "Chest"
+            ],
+            "guard_tower_2": [
+                "Chest"
+            ],
+            "guard_tower_3": [
+                "Chest",
+                "Barrel"
+            ],
+            "cemetery_1": [
+                "Chest"
+            ],
+            "cemetery_2": [
+                "Chest"
+            ],
+            "grave_1": [
+                "Chest"
             ]
         },
         "annotation": []
@@ -51896,8 +52033,8 @@ window.AddData = {
             "recipes/stone_dagger.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -51952,8 +52089,8 @@ window.AddData = {
         },
         "texture": "textures/items/stone_dart",
         "rec": [
-            "recipes/stone_dart_by_stone.json",
-            "recipes/stone_dart_by_cobblestone.json"
+            "recipes/stone_dart_by_cobblestone.json",
+            "recipes/stone_dart_by_stone.json"
         ],
         "loot": [
             "loot_tables/chests/tower_of_watcher/weapon.json",
@@ -53332,8 +53469,8 @@ window.AddData = {
         "texture": "textures/items/storm_battleaxe",
         "rec": [],
         "loot": [
-            "loot_tables/entities/abyssal_controller.json",
-            "loot_tables/template/weapon/melee_weapon/axe.json"
+            "loot_tables/template/weapon/melee_weapon/axe.json",
+            "loot_tables/entities/abyssal_controller.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -53597,8 +53734,8 @@ window.AddData = {
         "texture": "textures/items/storm_giant_sword",
         "rec": [],
         "loot": [
-            "loot_tables/entities/abyssal_controller.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/abyssal_controller.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -53703,8 +53840,8 @@ window.AddData = {
         "texture": "textures/items/storm_staff",
         "rec": [],
         "loot": [
-            "loot_tables/entities/abyssal_controller.json",
-            "loot_tables/template/weapon/magic_weapon/staff.json"
+            "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/entities/abyssal_controller.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -54012,25 +54149,25 @@ window.AddData = {
         },
         "texture": "textures/items/stream_stone",
         "rec": [
-            "recipes/furnace_stream_stone.json",
-            "recipes/dark_stone.json",
+            "recipes/pulse_stone.json",
+            "recipes/stream_dart.json",
+            "recipes/magic_surge_core.json",
             "recipes/raining_summoner.json",
             "recipes/lightning_stone.json",
-            "recipes/magic_surge_core.json",
-            "recipes/diamond_staff.json",
-            "recipes/pulse_stone.json",
+            "recipes/furnace_stream_stone.json",
             "recipes/wind_dagger.json",
             "recipes/wind_of_shadow.json",
-            "recipes/stream_dart.json",
-            "recipes/furnace_stream_ore.json"
+            "recipes/diamond_staff.json",
+            "recipes/furnace_stream_ore.json",
+            "recipes/dark_stone.json"
         ],
         "loot": [
             "loot_tables/chests/warehouse_of_watcher.json",
+            "loot_tables/chests/abandoned_mineshaft.json",
             "loot_tables/entities/king_of_pillager.json",
             "loot_tables/entities/chest_monster.json",
             "loot_tables/chests/goblin_house_1.json",
-            "loot_tables/entities/chest_monster_trade.json",
-            "loot_tables/chests/abandoned_mineshaft.json"
+            "loot_tables/entities/chest_monster_trade.json"
         ],
         "loot_by_entity": [
             "dec:king_of_pillager",
@@ -54148,9 +54285,9 @@ window.AddData = {
         },
         "texture": "textures/items/sun_stone",
         "rec": [
+            "recipes/golden_staff.json",
             "recipes/sunny_summoner.json",
-            "recipes/furnace_stream_stone.json",
-            "recipes/golden_staff.json"
+            "recipes/furnace_stream_stone.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -54671,8 +54808,8 @@ window.AddData = {
         },
         "texture": "textures/items/super_armor_core5",
         "rec": [
-            "recipes/super_armor_core81.json",
-            "recipes/super_armor_core5.json"
+            "recipes/super_armor_core5.json",
+            "recipes/super_armor_core81.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -54768,8 +54905,8 @@ window.AddData = {
         },
         "texture": "textures/items/super_armor_core6",
         "rec": [
-            "recipes/super_armor_core6.json",
-            "recipes/super_armor_core82.json"
+            "recipes/super_armor_core82.json",
+            "recipes/super_armor_core6.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -54865,8 +55002,8 @@ window.AddData = {
         },
         "texture": "textures/items/super_armor_core7",
         "rec": [
-            "recipes/super_armor_core7.json",
-            "recipes/super_armor_core83.json"
+            "recipes/super_armor_core83.json",
+            "recipes/super_armor_core7.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -54962,9 +55099,9 @@ window.AddData = {
         },
         "texture": "textures/items/super_armor_core8",
         "rec": [
-            "recipes/super_armor_core81.json",
+            "recipes/super_armor_core83.json",
             "recipes/super_armor_core82.json",
-            "recipes/super_armor_core83.json"
+            "recipes/super_armor_core81.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -55051,8 +55188,8 @@ window.AddData = {
             "recipes/the_imperial_sword.json"
         ],
         "loot": [
-            "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/gameplay/fishing/ocean_fish.json"
+            "loot_tables/gameplay/fishing/ocean_fish.json",
+            "loot_tables/template/weapon/melee_weapon/sword.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -55188,13 +55325,13 @@ window.AddData = {
         "texture": "textures/items/sword_of_deep",
         "rec": [],
         "loot": [
-            "loot_tables/entities/host_of_deep.json",
             "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/entities/host_of_deep_gear.json"
+            "loot_tables/entities/host_of_deep_gear.json",
+            "loot_tables/entities/host_of_deep.json"
         ],
         "loot_by_entity": [
-            "dec:host_of_deep_2",
-            "dec:host_of_deep_1"
+            "dec:host_of_deep_1",
+            "dec:host_of_deep_2"
         ],
         "loot_by_entity_lang": {
             "en_US": [
@@ -55333,8 +55470,8 @@ window.AddData = {
         "texture": "textures/items/sword_of_guard",
         "rec": [],
         "loot": [
-            "loot_tables/entities/abyssal_controller.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/abyssal_controller.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -56246,12 +56383,12 @@ window.AddData = {
             "recipes/furnace_tropical_fish.json"
         ],
         "loot": [
-            "loot_tables/entities/tropicalfish.json",
-            "loot_tables/gameplay/fishing/ocean_fish.json"
+            "loot_tables/gameplay/fishing/ocean_fish.json",
+            "loot_tables/entities/tropicalfish.json"
         ],
         "loot_by_entity": [
-            "minecraft:tropicalfish",
-            "minecraft:fishing_hook"
+            "minecraft:fishing_hook",
+            "minecraft:tropicalfish"
         ],
         "loot_by_entity_lang": {},
         "loot_by_block": [],
@@ -56880,28 +57017,28 @@ window.AddData = {
             "recipes/lapis_magic_book.json"
         ],
         "loot": [
-            "loot_tables/chests/jungle_temple.json",
-            "loot_tables/chests/end_city_treasure.json",
-            "loot_tables/gameplay/fishing/jungle_junk.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
-            "loot_tables/gameplay/fishing/ice_junk.json",
-            "loot_tables/blocks/ice_bookshelf.json",
-            "loot_tables/chests/shipwrecktreasure.json",
-            "loot_tables/chests/soul_room_har.json",
             "loot_tables/chests/monster_room.json",
             "loot_tables/chests/simple_dungeon.json",
-            "loot_tables/chests/desert_pyramid.json",
-            "loot_tables/chests/nether_bridge.json",
-            "loot_tables/gameplay/fishing/end_thing.json",
-            "loot_tables/chests/challenger_tower.json",
+            "loot_tables/chests/soul_room_har.json",
             "loot_tables/chests/underwater_ruin_big.json",
-            "loot_tables/chests/stronghold_library.json",
-            "loot_tables/chests/woodland_mansion.json",
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/gameplay/fishing/ocean_junk.json",
+            "loot_tables/chests/end_city_treasure.json",
+            "loot_tables/chests/abandoned_mineshaft.json",
             "loot_tables/chests/soul_room_nor.json",
+            "loot_tables/chests/challenger_tower.json",
+            "loot_tables/chests/soul_room_boss.json",
+            "loot_tables/chests/stronghold_library.json",
+            "loot_tables/chests/end_vestiges.json",
             "loot_tables/gameplay/fishing/junk.json",
-            "loot_tables/chests/abandoned_mineshaft.json"
+            "loot_tables/chests/nether_bridge.json",
+            "loot_tables/chests/shipwrecktreasure.json",
+            "loot_tables/blocks/ice_bookshelf.json",
+            "loot_tables/chests/jungle_temple.json",
+            "loot_tables/chests/woodland_mansion.json",
+            "loot_tables/gameplay/fishing/end_thing.json",
+            "loot_tables/chests/desert_pyramid.json",
+            "loot_tables/gameplay/fishing/ice_junk.json",
+            "loot_tables/gameplay/fishing/jungle_junk.json"
         ],
         "loot_by_entity": [
             "minecraft:fishing_hook"
@@ -56925,15 +57062,6 @@ window.AddData = {
             "soul_room_har_2": [
                 "Chest"
             ],
-            "challenger_tower": [
-                "Chest"
-            ],
-            "end_vestiges": [
-                "ShulkerBox"
-            ],
-            "soul_room_boss": [
-                "Chest"
-            ],
             "soul_room_nor_4": [
                 "Chest"
             ],
@@ -56948,6 +57076,15 @@ window.AddData = {
             ],
             "soul_room_stair_5": [
                 "Chest"
+            ],
+            "challenger_tower": [
+                "Chest"
+            ],
+            "soul_room_boss": [
+                "Chest"
+            ],
+            "end_vestiges": [
+                "ShulkerBox"
             ]
         },
         "annotation": []
@@ -56976,32 +57113,32 @@ window.AddData = {
         },
         "texture": "textures/items/uranium",
         "rec": [
-            "recipes/furnace_uranium_ore.json",
-            "recipes/radiate_stone.json",
             "recipes/furnace_uranium.json",
-            "recipes/uranium_by_block.json",
-            "recipes/radiate_dirt.json",
-            "recipes/furnace_uranium_apple.json",
             "recipes/uranium_block.json",
-            "recipes/radiate_stonebrick.json"
+            "recipes/radiate_stone.json",
+            "recipes/radiate_stonebrick.json",
+            "recipes/uranium_by_block.json",
+            "recipes/furnace_uranium_ore.json",
+            "recipes/furnace_uranium_apple.json",
+            "recipes/radiate_dirt.json"
         ],
         "loot": [
+            "loot_tables/entities/radiate_creeper.json",
             "loot_tables/entities/radiate_spider.json",
-            "loot_tables/entities/radiate_skeleton.json",
-            "loot_tables/entities/radiate_creeper.json"
+            "loot_tables/entities/radiate_skeleton.json"
         ],
         "loot_by_entity": [
-            "dec:radiate_spider",
-            "dec:radiate_creeper"
+            "dec:radiate_creeper",
+            "dec:radiate_spider"
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Radiate Spider",
-                "Radiate Creeper"
+                "Radiate Creeper",
+                "Radiate Spider"
             ],
             "zh_CN": [
-                "\u8f90\u5c04\u8718\u86db",
-                "\u8f90\u5c04\u82e6\u529b\u6015"
+                "\u8f90\u5c04\u82e6\u529b\u6015",
+                "\u8f90\u5c04\u8718\u86db"
             ]
         },
         "loot_by_block": [],
@@ -57093,8 +57230,8 @@ window.AddData = {
         },
         "texture": "textures/items/uranium_apple",
         "rec": [
-            "recipes/furnace_uranium_apple.json",
-            "recipes/uranium_apple.json"
+            "recipes/uranium_apple.json",
+            "recipes/furnace_uranium_apple.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -57242,14 +57379,14 @@ window.AddData = {
         "texture": "textures/items/village_guardian",
         "rec": [],
         "loot": [
-            "loot_tables/entities/king_of_pillager.json",
-            "loot_tables/chests/village/village_armorer.json",
-            "loot_tables/chests/guard_tower.json",
-            "loot_tables/chests/village/village_toolsmith.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json",
             "loot_tables/items/hunter_book.json",
+            "loot_tables/chests/village/village_toolsmith.json",
+            "loot_tables/chests/village/village_armorer.json",
+            "loot_tables/template/weapon/melee_weapon/sword.json",
             "loot_tables/chests/village/village_weaponsmith.json",
-            "loot_tables/chests/tower_of_watcher/weapon.json"
+            "loot_tables/chests/tower_of_watcher/weapon.json",
+            "loot_tables/chests/guard_tower.json",
+            "loot_tables/entities/king_of_pillager.json"
         ],
         "loot_by_entity": [
             "dec:king_of_pillager"
@@ -57581,8 +57718,8 @@ window.AddData = {
             "recipes/scale_sword_by_vortex.json"
         ],
         "loot": [
-            "loot_tables/template/weapon/melee_weapon/sword.json",
-            "loot_tables/items/hunter_book.json"
+            "loot_tables/items/hunter_book.json",
+            "loot_tables/template/weapon/melee_weapon/sword.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -57716,8 +57853,8 @@ window.AddData = {
         "texture": "textures/items/warden_sword",
         "rec": [],
         "loot": [
-            "loot_tables/entities/warden.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/entities/warden.json"
         ],
         "loot_by_entity": [
             "minecraft:warden"
@@ -57895,8 +58032,8 @@ window.AddData = {
             "recipes/nightmare.json"
         ],
         "loot": [
-            "loot_tables/entities/abyssal_controller.json",
-            "loot_tables/template/weapon/magic_weapon/book.json"
+            "loot_tables/template/weapon/magic_weapon/book.json",
+            "loot_tables/entities/abyssal_controller.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -57929,9 +58066,9 @@ window.AddData = {
         },
         "texture": "textures/items/wet_paper",
         "rec": [
-            "recipes/artificial_meat2.json",
+            "recipes/wet_paper.json",
             "recipes/artificial_meat1.json",
-            "recipes/wet_paper.json"
+            "recipes/artificial_meat2.json"
         ],
         "loot": [],
         "loot_by_entity": [],
@@ -58410,8 +58547,8 @@ window.AddData = {
             "recipes/wind_of_shadow.json"
         ],
         "loot": [
-            "loot_tables/chests/end_vestiges.json",
-            "loot_tables/template/weapon/melee_weapon/sword.json"
+            "loot_tables/template/weapon/melee_weapon/sword.json",
+            "loot_tables/chests/end_vestiges.json"
         ],
         "loot_by_entity": [],
         "loot_by_entity_lang": {},
@@ -58450,8 +58587,8 @@ window.AddData = {
         },
         "texture": "textures/items/wine_glass",
         "rec": [
-            "recipes/wine_glass.json",
-            "recipes/rice_wine.json"
+            "recipes/rice_wine.json",
+            "recipes/wine_glass.json"
         ],
         "loot": [
             "loot_tables/chests/warehouse_of_watcher.json"
@@ -58625,17 +58762,17 @@ window.AddData = {
         },
         "texture": "textures/items/wither_substance",
         "rec": [
-            "recipes/wither_substance.json",
-            "recipes/skull1.json"
+            "recipes/skull1.json",
+            "recipes/wither_substance.json"
         ],
         "loot": [
-            "loot_tables/tasks/039.json",
+            "loot_tables/entities/wither_skeleton.json",
             "loot_tables/entities/warped_skeleton.json",
-            "loot_tables/entities/wither_skeleton.json"
+            "loot_tables/tasks/039.json"
         ],
         "loot_by_entity": [
-            "dec:warped_skeleton",
-            "minecraft:wither_skeleton"
+            "minecraft:wither_skeleton",
+            "dec:warped_skeleton"
         ],
         "loot_by_entity_lang": {
             "en_US": [
@@ -58770,13 +58907,13 @@ window.AddData = {
         },
         "texture": "textures/items/wooden_dagger",
         "rec": [
+            "recipes/wooden_dagger_from_crimson_planks.json",
             "recipes/wooden_dagger.json",
-            "recipes/wooden_dagger_from_warped_planks.json",
-            "recipes/wooden_dagger_from_crimson_planks.json"
+            "recipes/wooden_dagger_from_warped_planks.json"
         ],
         "loot": [
-            "loot_tables/entities/goblin_gear.json",
-            "loot_tables/template/weapon/melee_weapon/dagger.json"
+            "loot_tables/template/weapon/melee_weapon/dagger.json",
+            "loot_tables/entities/goblin_gear.json"
         ],
         "loot_by_entity": [
             "dec:goblin"
@@ -59017,8 +59154,8 @@ window.AddData = {
             "recipes/wooden_staff.json"
         ],
         "loot": [
-            "loot_tables/entities/skeleton_wizard_gear.json",
-            "loot_tables/template/weapon/magic_weapon/staff.json"
+            "loot_tables/template/weapon/magic_weapon/staff.json",
+            "loot_tables/entities/skeleton_wizard_gear.json"
         ],
         "loot_by_entity": [
             "dec:skeleton_wizard"
@@ -59110,9 +59247,9 @@ window.AddData = {
             "recipes/wood_boots.json"
         ],
         "loot": [
+            "loot_tables/chests/giant_tree_barrel.json",
             "loot_tables/template/armor/wood.json",
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/chests/giant_tree_barrel.json"
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -59211,9 +59348,9 @@ window.AddData = {
             "recipes/wood_chestplate.json"
         ],
         "loot": [
+            "loot_tables/chests/giant_tree_barrel.json",
             "loot_tables/template/armor/wood.json",
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/chests/giant_tree_barrel.json"
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -59365,9 +59502,9 @@ window.AddData = {
             "recipes/wood_helmet.json"
         ],
         "loot": [
+            "loot_tables/chests/giant_tree_barrel.json",
             "loot_tables/template/armor/wood.json",
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/chests/giant_tree_barrel.json"
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -59466,9 +59603,9 @@ window.AddData = {
             "recipes/wood_leggings.json"
         ],
         "loot": [
+            "loot_tables/chests/giant_tree_barrel.json",
             "loot_tables/template/armor/wood.json",
-            "loot_tables/entities/leaves_golem.json",
-            "loot_tables/chests/giant_tree_barrel.json"
+            "loot_tables/entities/leaves_golem.json"
         ],
         "loot_by_entity": [
             "dec:leaves_golem"
@@ -59631,28 +59768,28 @@ window.AddData = {
         },
         "texture": "textures/items/zombie_brain",
         "rec": [
+            "recipes/blood_bullet_bag.json",
             "recipes/furnace_zombie_brain.json",
-            "recipes/blood_meat.json",
-            "recipes/blood_bullet_bag.json"
+            "recipes/blood_meat.json"
         ],
         "loot": [
+            "loot_tables/entities/mummy.json",
+            "loot_tables/entities/lurk_zombie.json",
             "loot_tables/gameplay/fishing/ice_junk.json",
             "loot_tables/entities/drowned.json",
-            "loot_tables/entities/lurk_zombie.json",
-            "loot_tables/gameplay/fishing/ocean_junk.json",
-            "loot_tables/entities/mummy.json",
+            "loot_tables/entities/zombie_pigman.json",
+            "loot_tables/gameplay/fishing/junk.json",
             "loot_tables/entities/swamp_drowned.json",
+            "loot_tables/entities/zombie.json",
+            "loot_tables/entities/ice_zombie.json",
             "loot_tables/chests/simple_dungeon.json",
             "loot_tables/entities/blood_zombie.json",
-            "loot_tables/entities/zombie_pigman.json",
-            "loot_tables/entities/zombie.json",
-            "loot_tables/gameplay/fishing/junk.json",
-            "loot_tables/entities/ice_zombie.json"
+            "loot_tables/gameplay/fishing/ocean_junk.json"
         ],
         "loot_by_entity": [
-            "minecraft:fishing_hook",
-            "dec:lurk_zombie",
             "dec:mummy",
+            "dec:lurk_zombie",
+            "minecraft:fishing_hook",
             "dec:swamp_drowned",
             "dec:mushroom_zombie",
             "dec:watcher",
@@ -59666,8 +59803,8 @@ window.AddData = {
         ],
         "loot_by_entity_lang": {
             "en_US": [
-                "Lurk Zombie",
                 "Mummy",
+                "Lurk Zombie",
                 "Swamp Drowned",
                 "Mushroom Zombie",
                 "Watcher",
@@ -59676,8 +59813,8 @@ window.AddData = {
                 "Ice Zombie"
             ],
             "zh_CN": [
-                "\u6f5c\u58f0\u50f5\u5c38",
                 "\u6728\u4e43\u4f0a",
+                "\u6f5c\u58f0\u50f5\u5c38",
                 "\u6de4\u9ab8",
                 "\u771f\u83cc\u50f5\u5c38",
                 "\u770b\u5b88\u8005",
@@ -59767,13 +59904,13 @@ window.AddData = {
             "recipes/furnace_zombie_fish.json"
         ],
         "loot": [
-            "loot_tables/entities/zombie_fish_large.json",
+            "loot_tables/gameplay/fishing/fish.json",
             "loot_tables/entities/zombie_fish_normal.json",
-            "loot_tables/gameplay/fishing/fish.json"
+            "loot_tables/entities/zombie_fish_large.json"
         ],
         "loot_by_entity": [
-            "dec:zombie_fish",
-            "minecraft:fishing_hook"
+            "minecraft:fishing_hook",
+            "dec:zombie_fish"
         ],
         "loot_by_entity_lang": {
             "en_US": [

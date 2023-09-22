@@ -24,7 +24,13 @@ function page_spawn(s, l) {
         let id_infact = item + '█' + window.AddData[item]['lang'][lang]
         function add_str(strf) {
             let a_h = 'introduction.html?item=' + String(item) + '&lang=' + l
-            strf = strf + '<div class="item" id="' + id_infact + '"><li><img class="item_icon" src="static/data/' + window.AddData[item]['texture'] + '.png"><a href="' + a_h + '">' + String(window.AddData[item]['lang'][lang]) + '</a></li></div>'
+            let name = undefined
+            if(window.AddData[item]['lang'][lang] == undefined){
+                name = window.AddData[item]['beh']['components']['minecraft:display_name']['value']
+            } else {
+                name = window.AddData[item]['lang'][lang]
+            }
+            strf = strf + '<div class="item" id="' + id_infact + '"><li><img class="item_icon" src="static/data/' + window.AddData[item]['texture'] + '.png"><a href="' + a_h + '">' + String(name) + '</a></li></div>'
             return strf
         }
         if (s == 'undefined' || s == '') {
@@ -35,6 +41,7 @@ function page_spawn(s, l) {
     });
     items_list.innerHTML = str;
 
+    document.getElementById('total_number').innerHTML = translate(lang,DefaultTran,'text.dec:total_number.name') + String(Object.keys(window.AddData).length)
     document.getElementById('search_content').placeholder = translate(lang,DefaultTran,'text.dec:search_content.name')
     document.getElementById('search_button').value = translate(lang,DefaultTran,'text.dec:search_button.name')
 }

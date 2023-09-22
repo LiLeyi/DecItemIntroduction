@@ -13,7 +13,13 @@ function items_li_spawn() {
     let lang = p_dic['lang']
 
     let name_lang_obj = document.getElementById('js_item_name_lang');
-    name_lang_obj.innerHTML = item_dict['lang'][lang];
+    let name = undefined
+    if(item_dict['lang'][lang] == undefined){
+        name = window.AddData[item_id]['beh']['components']['minecraft:display_name']['value']
+    } else {
+        name = item_dict['lang'][lang]
+    }
+    name_lang_obj.innerHTML = name;
 
     let item_id_obj = document.getElementById('js_item_id');
     item_id_obj.innerHTML = item_id;
@@ -91,8 +97,26 @@ function items_li_spawn() {
         }
         document.getElementById('js_item_annotation').innerHTML = ann
     }
+    if (components.hasOwnProperty('minecraft:max_stack_size')) {
+        document.getElementById('js_item_stack_max').innerHTML = translate(lang,DefaultTran,'text.dec:stack_max.name') + String(components['minecraft:max_stack_size'])
+    } else {
+        document.getElementById('js_item_stack_max').innerHTML = translate(lang,DefaultTran,'text.dec:stack_max.name') + '64'
+    }
     if (components.hasOwnProperty('minecraft:cooldown')) {
         document.getElementById('js_item_cooldown').innerHTML = translate(lang,DefaultTran,'text.dec:cooldown.name') + String(components['minecraft:cooldown']['category']) + ',' + String(components['minecraft:cooldown']['duration']) + 's'
+    }
+    if (components.hasOwnProperty('minecraft:enchantable')) {
+        document.getElementById('js_item_enchant').innerHTML = translate(lang,DefaultTran,'text.dec:enchant_type.name') + String(components['minecraft:enchantable']['slot']) + '<br>' + translate(lang,DefaultTran,'text.dec:enchant_level.name')+ String(components['minecraft:enchantable']['value'])
+    }
+    if (components.hasOwnProperty('minecraft:allow_off_hand')) {
+        if (components['minecraft:allow_off_hand']){
+            document.getElementById('js_item_allow_offhand').innerHTML = translate(lang,DefaultTran,'text.dec:allow_off_hand.name')
+        }
+    }
+    if (components.hasOwnProperty('minecraft:foil')) {
+        if (components['minecraft:foil']){
+            document.getElementById('js_item_foil').innerHTML = translate(lang,DefaultTran,'text.dec:foil.name')
+        }
     }
     if (components.hasOwnProperty('minecraft:food')) {
         document.getElementById('js_item_food_nutrition').innerHTML = translate(lang,DefaultTran,'text.dec:nutrition.name') + String(components['minecraft:food']['nutrition'])

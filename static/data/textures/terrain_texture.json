@@ -978,6 +978,51 @@
       "textures": [
         "textures/blocks/red_spider_lily_crop"
       ]
+    },
+    "corn_crop_0_0": {
+      "textures": [
+        "textures/blocks/corn_crop_0_0"
+      ]
+    },
+    "corn_crop_0_1": {
+      "textures": [
+        "textures/blocks/corn_crop_0_1"
+      ]
+    },
+    "corn_crop_0_2": {
+      "textures": [
+        "textures/blocks/corn_crop_0_2"
+      ]
+    },
+    "corn_crop_0_3": {
+      "textures": [
+        "textures/blocks/corn_crop_0_3"
+      ]
+    },
+    "corn_crop_0_4": {
+      "textures": [
+        "textures/blocks/corn_crop_0_4"
+      ]
+    },
+    "corn_crop_1_0": {
+      "textures": [
+        "textures/blocks/corn_crop_1_0"
+      ]
+    },
+    "corn_crop_1_1": {
+      "textures": [
+        "textures/blocks/corn_crop_1_1"
+      ]
+    },
+    "corn_crop_1_2": {
+      "textures": [
+        "textures/blocks/corn_crop_1_2"
+      ]
+    },
+    "corn_crop_1_3": {
+      "textures": [
+        "textures/blocks/corn_crop_1_3"
+      ]
     }
   }
 }
