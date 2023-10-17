@@ -73,6 +73,16 @@ async function items_li_spawn() {
     } else {
         fill_blank(document.getElementById('js_item_if_rec'), translate(lang, tran_dict, 'text.dec:recipe_no.name'), '1')
     }
+    if (item_dict['ingredient'].length != 0) {
+        let ings = ''
+        for (let ing of item_dict['ingredient']){
+            ings += rec_spawn(ing,tran_dict,lang) + '<br>'
+            console.log(ings)
+        }
+        fill_blank(document.getElementById('js_item_if_ing'), translate(lang, tran_dict, 'text.dec:ingredient.name') + '<br>' + ings, '1')
+    } else {
+        fill_blank(document.getElementById('js_item_if_ing'), translate(lang, tran_dict, 'text.dec:ingredient_no.name'), '1')
+    }
     if (components.hasOwnProperty('minecraft:max_stack_size')) {
         document.getElementById('js_item_stack_max').innerHTML = translate(lang, tran_dict, 'text.dec:stack_max.name') + String(components['minecraft:max_stack_size'])
     } else {

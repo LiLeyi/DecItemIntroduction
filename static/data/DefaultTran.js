@@ -38,6 +38,8 @@ let DefaultTran = {
         'text.dec:recipe_data.name': '特殊值',
         'text.dec:title_basic.name': '基础属性',
         'text.dec:title_access.name': '获取',
+        'text.dec:ingredient.name': '作原料：',
+        'text.dec:ingredient_no.name': '不可作原料',
         
         'item.potion.name': '药水',
         'item.dye.name': '染料'
@@ -81,6 +83,8 @@ let DefaultTran = {
         'text.dec:recipe_data.name': ' with data ',
         'text.dec:title_basic.name': 'Basic Information',
         'text.dec:title_access.name': 'Access',
+        'text.dec:ingredient.name': 'Ingredient:',
+        'text.dec:ingredient_no.name': 'Cannot be used as ingredient',
         
         'item.potion.name': 'Potion',
         'item.dye.name': 'Dye'
