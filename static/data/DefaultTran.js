@@ -20,10 +20,12 @@ let DefaultTran = {
         'text.dec:enchant_level.name': '附魔等级:',
         'text.dec:foil.name': '自带附魔光效',
         'text.dec:normal_attack.name': '普通攻击:',
-        'text.dec:recipe_crafttable.name': '可在工作台处合成，',
-        'text.dec:recipe_furnace.name': '可由熔炉、高炉、篝火或烟熏炉烧制得，',
-        'text.dec:recipe_brew.name': '可酿造得来，',
-        'text.dec:recipe_stonecutter.name': '可在切石机处合成，',
+        'text.dec:recipe_craft_1.name': '可在',
+        'text.dec:recipe_craft_2.name': '合成：',
+        'text.dec:recipe_furnace_1.name': '可在 ',
+        'text.dec:recipe_furnace_2.name': '中被烧制：',
+        'text.dec:recipe_brewing.name': '酿造：',
+        'text.dec:recipe_smithing.name': '锻造：',
         'text.dec:recipe.name': '合成条件:',
         'text.dec:recipe_no.name': '不可被合成',
         'text.dec:annotation_title.name': '介绍:<br>',
@@ -32,7 +34,13 @@ let DefaultTran = {
         'text.dec:cooldown.name': '冷却类型，时间:',
         'text.dec:nutrition.name': '食用恢复饱食度:',
         'text.dec:saturation_modifier.name': '饱和度类型:',
-        'text.dec:food_time.name': '食用消耗时间:'
+        'text.dec:food_time.name': '食用消耗时间:',
+        'text.dec:recipe_data.name': '特殊值',
+        'text.dec:title_basic.name': '基础属性',
+        'text.dec:title_access.name': '获取',
+        
+        'item.potion.name': '药水',
+        'item.dye.name': '染料'
     },
     'en_US': {
         'text.dec:title.name': ' Item Introduction',
@@ -55,10 +63,12 @@ let DefaultTran = {
         'text.dec:enchant_level.name': 'Enchant level:',
         'text.dec:foil.name': 'Has foil naturally',
         'text.dec:normal_attack.name': 'Normal attack:',
-        'text.dec:recipe_crafttable.name': 'can be crafted on craft table,',
-        'text.dec:recipe_furnace.name': 'can be fired in furnace or blast furnace or campfire or smoke furnace,',
-        'text.dec:recipe_brew.name': 'can be brewed,',
-        'text.dec:recipe_stonecutter.name': 'can be made on stonecutter',
+        'text.dec:recipe_craft_1.name': 'Can be crafted in ',
+        'text.dec:recipe_craft_2.name': ':',
+        'text.dec:recipe_furnace_1.name': 'Can be fired in ',
+        'text.dec:recipe_furnace_2.name': ':',
+        'text.dec:recipe_brewing.name': 'Brewing:',
+        'text.dec:recipe_smithing.name': 'Smithing:',
         'text.dec:recipe.name': 'Recipe condition:',
         'text.dec:recipe_no.name': 'Can not be crafted',
         'text.dec:annotation_title.name': 'Annotation:<br>',
@@ -67,6 +77,12 @@ let DefaultTran = {
         'text.dec:cooldown.name': 'Cooldown category and time:',
         'text.dec:nutrition.name': 'Nutrition:',
         'text.dec:saturation_modifier.name': 'Saturation modifier:',
-        'text.dec:food_time.name': 'Eating time:'
+        'text.dec:food_time.name': 'Eating time:',
+        'text.dec:recipe_data.name': ' with data ',
+        'text.dec:title_basic.name': 'Basic Information',
+        'text.dec:title_access.name': 'Access',
+        
+        'item.potion.name': 'Potion',
+        'item.dye.name': 'Dye'
     }
 }

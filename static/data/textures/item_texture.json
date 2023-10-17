@@ -1471,6 +1471,9 @@
 		},
 		"corn_seeds": {
 			"textures": "textures/items/corn_seeds"
+		},
+		"giant_bat_wings": {
+			"textures": "textures/items/giant_bat_wings"
 		}
   }
 }

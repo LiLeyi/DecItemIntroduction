@@ -1,6 +1,7 @@
 function page_spawn(s, l) {
+    let tran_dict = [DefaultTran]
     //标题
-    page_title = window.AddName + translate(lang,DefaultTran,'text.dec:title.name')
+    let page_title = window.AddName + translate(lang,tran_dict,'text.dec:title.name')
     document.title = page_title
     document.getElementById('title').innerHTML = page_title
 
@@ -41,9 +42,9 @@ function page_spawn(s, l) {
     });
     items_list.innerHTML = str;
 
-    document.getElementById('total_number').innerHTML = translate(lang,DefaultTran,'text.dec:total_number.name') + String(Object.keys(window.AddData).length)
-    document.getElementById('search_content').placeholder = translate(lang,DefaultTran,'text.dec:search_content.name')
-    document.getElementById('search_button').value = translate(lang,DefaultTran,'text.dec:search_button.name')
+    document.getElementById('total_number').innerHTML = translate(lang,tran_dict,'text.dec:total_number.name') + String(Object.keys(window.AddData).length)
+    document.getElementById('search_content').placeholder = translate(lang,tran_dict,'text.dec:search_content.name')
+    document.getElementById('search_button').value = translate(lang,tran_dict,'text.dec:search_button.name')
 }
 function search() {
     let k = String(document.getElementById('search_content').value);
