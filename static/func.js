@@ -51,6 +51,16 @@ function translate(lang, langlist, rawtext) {
     return null
 }
 
+function checkImgExist(imgurl){
+    let Imgobj = new Image()
+    Imgobj.src = imgurl
+    if(Imgobj.fileSize > 0 || (Imgobj.width > 0 && Imgobj.height > 0)) {
+        return true
+    } 
+    return false
+    
+}
+
 async function quote(lang, langdict, raw_sentence) {
     /*输入语言，语言文件，句子。将句子中\*xxx.xxx:xxx.name*\翻译成对应文本。将\*path*dict_path*\翻译成static/data对应文件中对应键的值*/
     let targets = raw_sentence.match(/\\\*(\S*?)\*\\/g)
@@ -103,10 +113,11 @@ function rec_spawn(rec_id, lang_list, lang, has_div = false) {
     }
 }
 
-function rec_get_id_data_name(i, lang_list, lang){
+function rec_get_id_data_name(i, lang_list, lang) {
     let i_data = -1
     let i_id = i
     let a_able = true
+    let id_without_np = ''
     if (i.match(/:/g).length == 2) {
         let c = 0
         i_id = ''
@@ -124,9 +135,18 @@ function rec_get_id_data_name(i, lang_list, lang){
             }
         }
         i_data = Number(i_data_str)
+    } else {
+        let c = 0
+        for (let l of i){
+            if (l == ':') {
+                c = 1
+            } else if (c == 1 ) {
+                id_without_np += l
+            }
+        }
     }
     let i_name = i_id
-    if (i_id.match(/minecraft:/) != null && i_id.match(/minecraft:/).length > 0){
+    if (i_id.match(/minecraft:/) != null && i_id.match(/minecraft:/).length > 0) {
         a_able = false
         i_name = i_id.replace(/minecraft:/, '')
     }
@@ -141,21 +161,32 @@ function rec_get_id_data_name(i, lang_list, lang){
         i_tr += translate(lang, lang_list, 'text.dec:recipe_data.name') + Number(i_data)
     }
     if (a_able) {
-        i_tr = '<a href="introduction.html?item=' + String(i_id) + '&lang=' + lang + '">' + i_tr + '</a>'
+        if(i_id in window.AddData){
+            if (checkImgExist('static/data/' + window.AddData[i_id]['texture'] + '.png')){
+                i_tr = '<img class="rec_icon" src="static/data/' + window.AddData[i_id]['texture'] + '.png">' + i_tr
+            } else {
+                console.log('static/data/' + id_without_np + '.png:Do not exist!')
+            }
+        }
+        i_tr = '<a class="rec_a" href="introduction.html?item=' + String(i_id) + '&lang=' + lang + '">' + i_tr + '</a>'
+    } else if (checkImgExist('static/data/textures/items/' + i_id.slice(10) + '.png')){
+        i_tr = '<img class="rec_icon" src="static/data/textures/items/' + i_id.slice(10) + '.png">' + i_tr
+    } else {
+        console.log('static/data/textures/items/' + i_id.slice(10) + '.png:Do not exist!')
     }
-    return [i_id,i_name,i_data,i_tr]
+    return [i_id, i_name, i_data, i_tr]
 }
 
 function rec_shaped_and_less(rec_id, lang_list, lang) {
     let str = ''
     str += translate(lang, lang_list, 'text.dec:recipe_craft_1.name')
     for (let t of window.RecData[rec_id]['tags']) {
-        str += translate(lang,lang_list,'tile.' + t + '.name') + ','
+        str += translate(lang, lang_list, 'tile.' + t + '.name') + ','
     }
-    str = str.slice(0,-1)
+    str = str.slice(0, -1)
     str += translate(lang, lang_list, 'text.dec:recipe_craft_2.name')
     for (let i of Object.keys(window.RecData[rec_id]['count'])) {
-        let [i_id,i_name,i_data,i_tr] = rec_get_id_data_name(i, lang_list, lang)
+        let [i_id, i_name, i_data, i_tr] = rec_get_id_data_name(i, lang_list, lang)
         str += i_tr + '*' + String(window.RecData[rec_id]['count'][i]) + ','
     }
     str = str.slice(0, -1)
@@ -176,33 +207,33 @@ function rec_shaped_and_less(rec_id, lang_list, lang) {
 }
 
 function rec_furnace(rec_id, lang_list, lang) {
-    let str =  translate(lang, lang_list, 'text.dec:recipe_furnace_1.name')
+    let str = translate(lang, lang_list, 'text.dec:recipe_furnace_1.name')
     for (let t of window.RecData[rec_id]['tags']) {
-        str += translate(lang,lang_list,'tile.' + t + '.name') + ','
+        str += translate(lang, lang_list, 'tile.' + t + '.name') + ','
     }
-    str = str.slice(0,-1)
+    str = str.slice(0, -1)
     str += translate(lang, lang_list, 'text.dec:recipe_furnace_2.name')
-    let [inp_id,inp_name,inp_data,inp_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern'], lang_list, lang)
-    let [out_id,out_name,out_data,out_tr] = rec_get_id_data_name(window.RecData[rec_id]['result'], lang_list, lang)
+    let [inp_id, inp_name, inp_data, inp_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern'], lang_list, lang)
+    let [out_id, out_name, out_data, out_tr] = rec_get_id_data_name(window.RecData[rec_id]['result'], lang_list, lang)
     str += inp_tr + '   -->   ' + out_tr
     return str
 }
 
 function rec_brewing(rec_id, lang_list, lang) {
-    let str =  translate(lang, lang_list, 'text.dec:recipe_brewing.name')
-    let [inp_id,inp_name,inp_data,inp_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['input'], lang_list, lang)
-    let [rea_id,rea_name,rea_data,rea_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['reagent'], lang_list, lang)
-    let [out_id,out_name,out_data,out_tr] = rec_get_id_data_name(window.RecData[rec_id]['result'], lang_list, lang)
+    let str = translate(lang, lang_list, 'text.dec:recipe_brewing.name')
+    let [inp_id, inp_name, inp_data, inp_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['input'], lang_list, lang)
+    let [rea_id, rea_name, rea_data, rea_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['reagent'], lang_list, lang)
+    let [out_id, out_name, out_data, out_tr] = rec_get_id_data_name(window.RecData[rec_id]['result'], lang_list, lang)
     str += inp_tr + '+' + rea_tr + '   -->   ' + out_tr
     return str
 }
 
 function rec_smithing(rec_id, lang_list, lang) {
-    let str =  translate(lang, lang_list, 'text.dec:recipe_brewing.name')
-    let [temple_id,temple_name,temple_data,temple_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['temple'], lang_list, lang)
-    let [base_id,base_name,base_data,base_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['base'], lang_list, lang)
-    let [addition_id,addition_name,addition_data,addition_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['addition'], lang_list, lang)
-    let [out_id,out_name,out_data,out_tr] = rec_get_id_data_name(window.RecData[rec_id]['result'], lang_list, lang)
+    let str = translate(lang, lang_list, 'text.dec:recipe_brewing.name')
+    let [temple_id, temple_name, temple_data, temple_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['temple'], lang_list, lang)
+    let [base_id, base_name, base_data, base_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['base'], lang_list, lang)
+    let [addition_id, addition_name, addition_data, addition_tr] = rec_get_id_data_name(window.RecData[rec_id]['pattern']['addition'], lang_list, lang)
+    let [out_id, out_name, out_data, out_tr] = rec_get_id_data_name(window.RecData[rec_id]['result'], lang_list, lang)
     str += temple_tr + '+' + base_tr + '+' + addition_tr + '   -->   ' + out_tr
     return str
 }

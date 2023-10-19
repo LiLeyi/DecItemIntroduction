@@ -52,12 +52,30 @@ body {
 
 .recipe_li {
     background-color: rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
     padding: 10px;
     padding-left: 0.7vh;
-    border-radius: 10px;
     padding-top: 0.7vh;
     padding-bottom: 0.7vh;
     margin-top: 1.5vh;
+    flex-wrap: wrap;
+}
+
+.rec_a{
+    display: flex;
+    align-items: center;
+}
+
+.rec_icon{
+    position: relative;
+    width: 3.5vh;
+    height: 3.5vh;
+    image-rendering: pixelated;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.1vh;
+    border-radius: 10px;
 }
 
 #main {

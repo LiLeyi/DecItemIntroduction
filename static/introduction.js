@@ -15,6 +15,9 @@ async function items_li_spawn() {
     let item_beh = await resp.json()
     item_dict['beh'] = item_beh
     let lang = p_dic['lang']
+    //标题
+    let page_title = window.AddName + translate(lang, tran_dict, 'text.dec:title.name')
+    document.title = page_title
 
     let name_lang_obj = document.getElementById('js_item_name_lang');
     let name = undefined
@@ -122,10 +125,6 @@ async function items_li_spawn() {
     }
 }
 window.onload = items_li_spawn()
-//标题
-tran_dict = [AddTran,DefaultTran]
-let page_title = window.AddName + translate(lang, tran_dict, 'text.dec:title.name')
-document.title = page_title
 
 window.onkeydown = function () {
     if (event.keyCode == 27) {
