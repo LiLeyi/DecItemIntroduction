@@ -82,16 +82,22 @@ async function quote(lang, langdict, raw_sentence) {
     return cur_sentence
 }
 
-function rec_spawn(rec_id, lang_list, lang) {
+function rec_spawn(rec_id, lang_list, lang, has_div = false) {
     if (rec_id in window.RecData) {
+        let str = ''
         if (window.RecData[rec_id]['type'] == 'shaped' || window.RecData[rec_id]['type'] == 'shapeless') {
-            return rec_shaped_and_less(rec_id, lang_list, lang)
+            str = rec_shaped_and_less(rec_id, lang_list, lang)
         } else if (window.RecData[rec_id]['type'] == 'furnace') {
-            return rec_furnace(rec_id, lang_list, lang)
+            str = rec_furnace(rec_id, lang_list, lang)
         } else if (window.RecData[rec_id]['type'] == 'brewing') {
-            return rec_brewing(rec_id, lang_list, lang)
+            str = rec_brewing(rec_id, lang_list, lang)
         }
-        return str
+        if (has_div) {
+            console.log(has_div)
+            return '<div class="recipe_li">' + str + '</div>'
+        } else {
+            return str
+        }
     } else {
         return null
     }
@@ -115,14 +121,12 @@ function rec_get_id_data_name(i, lang_list, lang){
                 i_id += l
             } else {
                 i_data_str += l
-                console.log(i_data_str)
             }
         }
         i_data = Number(i_data_str)
     }
     let i_name = i_id
     if (i_id.match(/minecraft:/) != null && i_id.match(/minecraft:/).length > 0){
-        console.log('tesssst')
         a_able = false
         i_name = i_id.replace(/minecraft:/, '')
     }
@@ -139,7 +143,6 @@ function rec_get_id_data_name(i, lang_list, lang){
     if (a_able) {
         i_tr = '<a href="introduction.html?item=' + String(i_id) + '&lang=' + lang + '">' + i_tr + '</a>'
     }
-    console.log(i_tr)
     return [i_id,i_name,i_data,i_tr]
 }
 

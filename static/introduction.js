@@ -67,7 +67,7 @@ async function items_li_spawn() {
     if (item_dict['rec'].length != 0) {
         let recs = ''
         for (let rec of item_dict['rec']){
-            recs += rec_spawn(rec,tran_dict,lang) + '<br>'
+            recs += rec_spawn(rec,tran_dict,lang,true)
         }
         fill_blank(document.getElementById('js_item_if_rec'), translate(lang, tran_dict, 'text.dec:recipe.name') + '<br>' + recs, '1')
     } else {
@@ -76,8 +76,7 @@ async function items_li_spawn() {
     if (item_dict['ingredient'].length != 0) {
         let ings = ''
         for (let ing of item_dict['ingredient']){
-            ings += rec_spawn(ing,tran_dict,lang) + '<br>'
-            console.log(ings)
+            ings += rec_spawn(ing,tran_dict,lang,true)
         }
         fill_blank(document.getElementById('js_item_if_ing'), translate(lang, tran_dict, 'text.dec:ingredient.name') + '<br>' + ings, '1')
     } else {
