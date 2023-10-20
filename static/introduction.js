@@ -114,7 +114,7 @@ async function items_li_spawn() {
         }
     }
     if (item_dict['texture'] != '') {
-        document.getElementById('js_item_textures').innerHTML = '<img class="item_icon" src="static/data/' + item_dict['texture'] + '.png">'
+        document.getElementById('js_item_textures').innerHTML = '<img loading="lazy" class="item_icon" src="static/data/' + item_dict['texture'] + '.png">'
     }
     if (item_dict['annotation'].length != 0) {
         let ann = translate(lang, tran_dict, 'text.dec:annotation_title.name')

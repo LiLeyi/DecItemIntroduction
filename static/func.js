@@ -51,16 +51,6 @@ function translate(lang, langlist, rawtext) {
     return null
 }
 
-function checkImgExist(imgurl){
-    let Imgobj = new Image()
-    Imgobj.src = imgurl
-    if(Imgobj.fileSize > 0 || (Imgobj.width > 0 && Imgobj.height > 0)) {
-        return true
-    } 
-    return false
-    
-}
-
 async function quote(lang, langdict, raw_sentence) {
     /*输入语言，语言文件，句子。将句子中\*xxx.xxx:xxx.name*\翻译成对应文本。将\*path*dict_path*\翻译成static/data对应文件中对应键的值*/
     let targets = raw_sentence.match(/\\\*(\S*?)\*\\/g)
@@ -103,7 +93,6 @@ function rec_spawn(rec_id, lang_list, lang, has_div = false) {
             str = rec_brewing(rec_id, lang_list, lang)
         }
         if (has_div) {
-            console.log(has_div)
             return '<div class="recipe_li">' + str + '</div>'
         } else {
             return str
@@ -162,19 +151,14 @@ function rec_get_id_data_name(i, lang_list, lang) {
     }
     if (a_able) {
         if(i_id in window.AddData){
-            if (checkImgExist('static/data/' + window.AddData[i_id]['texture'] + '.png')){
-                i_tr = '<img class="rec_icon" src="static/data/' + window.AddData[i_id]['texture'] + '.png">' + i_tr
-            } else {
-                console.log('static/data/' + id_without_np + '.png:Do not exist!')
-            }
+            i_tr = '<img onerror="javascript:this.hidden = true" loading="lazy" class="rec_icon" src="static/data/' + window.AddData[i_id]['texture'] + '.png">' + i_tr
         }
         i_tr = '<a class="rec_a" href="introduction.html?item=' + String(i_id) + '&lang=' + lang + '">' + i_tr + '</a>'
-    } else if (checkImgExist('static/data/textures/items/' + i_id.slice(10) + '.png')){
-        i_tr = '<img class="rec_icon" src="static/data/textures/items/' + i_id.slice(10) + '.png">' + i_tr
+        return [i_id, i_name, i_data, i_tr]
     } else {
-        console.log('static/data/textures/items/' + i_id.slice(10) + '.png:Do not exist!')
+        i_tr = '<img onerror="javascript:this.hidden = true" loading="lazy" class="rec_icon" src="static/data/textures/items/' + i_id.slice(10) + '.png">' + i_tr
+        return [i_id, i_name, i_data, i_tr]
     }
-    return [i_id, i_name, i_data, i_tr]
 }
 
 function rec_shaped_and_less(rec_id, lang_list, lang) {

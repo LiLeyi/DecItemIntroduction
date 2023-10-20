@@ -31,7 +31,7 @@ function page_spawn(s, l) {
             } else {
                 name = window.AddData[item]['lang'][lang]
             }
-            strf = strf + '<div class="item" id="' + id_infact + '"><li><img class="item_icon" src="static/data/' + window.AddData[item]['texture'] + '.png"><a href="' + a_h + '">' + String(name) + '</a></li></div>'
+            strf = strf + '<div class="item" id="' + id_infact + '"><li><img onerror="javascript:this.hidden = true" loading="lazy" class="item_icon" src="static/data/' + window.AddData[item]['texture'] + '.png"><a href="' + a_h + '">' + String(name) + '</a></li></div>'
             return strf
         }
         if (s == 'undefined' || s == '') {
