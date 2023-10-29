@@ -108,9 +108,13 @@ a:active {
 }
 
 .item_icon {
+    position: relative;
+    image-rendering: pixelated;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.6vh;
+    border-radius: 10px;
     width: 5vh;
     height: 5vh;
-    image-rendering: pixelated;
 }
 
 ul {
@@ -118,8 +122,12 @@ ul {
     padding: 0;
 }
 
-li {
+.item {
+    margin-top: 1.3vh;
     list-style: none;
     padding-left: 20px;
     padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }

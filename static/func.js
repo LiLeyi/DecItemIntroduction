@@ -42,10 +42,26 @@ function set_p(or, k, v) {
     window.location.replace(or + "?" + p_txt)
 }
 
-function translate(lang, langlist, rawtext) {
+function translate(lang, langlist, rawtext,no_color = true) {
     for (let langdict of langlist) {
         if (Object.keys(langdict[lang]).indexOf(rawtext) != -1) {
-            return langdict[lang][rawtext]
+            let tr = langdict[lang][rawtext]
+            let tr_af = ''
+            if (no_color){
+                let ig_l = [
+                    '§a','§b','§c','§d','§e','§f','§g','§h','§i','§j','§k','§l','§m','§n','§o','§p','§q','§r','§s','§t','§u',
+                    '§1','§2','§3','§4','§5','§6','§7','§8','§9','§0'
+                    ]
+                for(let l in tr){
+                    tr_af += tr[l]
+                    if (ig_l.indexOf(tr_af.slice(-2)) != -1){
+                        tr_af = tr_af.slice(0,-2)
+                    }
+                }
+            } else {
+                tr_af = tr
+            }
+            return tr_af
         }
     }
     return null
@@ -141,7 +157,13 @@ function rec_get_id_data_name(i, lang_list, lang) {
     }
     let i_tr = translate(lang, lang_list, 'item.' + i_name + '.name')
     if (i_tr == null) {
+        i_tr = translate(lang, lang_list, 'item.' + i_name)
+    }
+    if (i_tr == null) {
         i_tr = translate(lang, lang_list, 'tile.' + i_name + '.name')
+    }
+    if (i_tr == null) {
+        i_tr = translate(lang, lang_list, 'tile.' + i_name)
     }
     if (i_tr == null) {
         i_tr = translate(lang, lang_list, 'item.spawn_egg.entity.' + i_name + '.name')

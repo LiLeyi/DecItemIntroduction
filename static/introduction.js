@@ -11,7 +11,7 @@ async function items_li_spawn() {
     let p_dic = get_p(window.location.href);
     let item_id = p_dic['item'];
     let item_dict = window.AddData[item_id]
-    let resp = await fetch('static/data/items/'+window.AddData[item_id]['file_name'])
+    let resp = await fetch('static/data/items/'+window.AddData[item_id]['file_path'])
     let item_beh = await resp.json()
     item_dict['beh'] = item_beh
     let lang = p_dic['lang']
@@ -108,7 +108,9 @@ async function items_li_spawn() {
     }
     if (components.hasOwnProperty('minecraft:food')) {
         document.getElementById('js_item_food_nutrition').innerHTML = translate(lang, tran_dict, 'text.dec:nutrition.name') + String(components['minecraft:food']['nutrition'])
-        document.getElementById('js_item_food_saturation_modifier').innerHTML = translate(lang, tran_dict, 'text.dec:saturation_modifier.name') + String(components['minecraft:food']['saturation_modifier'])
+        if (components['minecraft:food'].hasOwnProperty(['saturation_modifier'])) {
+            document.getElementById('js_item_food_saturation_modifier').innerHTML = translate(lang, tran_dict, 'text.dec:saturation_modifier.name') + String(components['minecraft:food']['saturation_modifier'])
+        }
         if (components.hasOwnProperty('minecraft:use_duration')) {
             document.getElementById('js_item_food_time').innerHTML = translate(lang, tran_dict, 'text.dec:food_time.name') + String(components['minecraft:use_duration'])
         }
