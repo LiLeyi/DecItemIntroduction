@@ -42,7 +42,8 @@ let DefaultTran = {
         'text.dec:ingredient_no.name': '不可作原料',
         
         'item.potion.name': '药水',
-        'item.dye.name': '染料'
+        'item.dye.name': '染料',
+        'item.netherstar.name': '下界之星'
     },
     'en_US': {
         'text.dec:title.name': ' Item Introduction',
@@ -87,6 +88,7 @@ let DefaultTran = {
         'text.dec:ingredient_no.name': 'Cannot be used as ingredient',
         
         'item.potion.name': 'Potion',
-        'item.dye.name': 'Dye'
+        'item.dye.name': 'Dye',
+        'item.netherstar.name': 'Netherstar'
     }
 }

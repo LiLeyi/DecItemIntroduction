@@ -1474,6 +1474,51 @@
 		},
 		"giant_bat_wings": {
 			"textures": "textures/items/giant_bat_wings"
+		},
+		"smoke_bomb": {
+			"textures": "textures/items/smoke_bomb"
+		},
+		"gas_bomb": {
+			"textures": "textures/items/gas_bomb"
+		},
+		"golden_fence": {
+			"textures": "textures/items/golden_fence"
+		},
+		"bamboo_katana": {
+			"textures": "textures/items/bamboo_katana"
+		},
+		"hard_bamboo_katana": {
+			"textures": "textures/items/hard_bamboo_katana"
+		},
+		"rapier": {
+			"textures": "textures/items/rapier"
+		},
+		"dead_wood_rapier": {
+			"textures": "textures/items/dead_wood_rapier"
+		},
+		"dead_wood_dagger": {
+			"textures": "textures/items/dead_wood_dagger"
+		},
+		"moon_jellyfish": {
+			"textures": "textures/items/moon_jellyfish"
+		},
+		"scarecrow": {
+			"textures": "textures/items/scarecrow"
+		},
+		"archer_hat": {
+			"textures": "textures/items/archer_hat"
+		},
+		"black_courtesy": {
+			"textures": "textures/items/black_courtesy"
+		},
+		"blue_gem_hat": {
+			"textures": "textures/items/blue_gem_hat"
+		},
+		"farmer_hat": {
+			"textures": "textures/items/farmer_hat"
+		},
+		"red_gem_hat": {
+			"textures": "textures/items/red_gem_hat"
 		}
   }
 }

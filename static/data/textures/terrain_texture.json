@@ -1023,6 +1023,81 @@
       "textures": [
         "textures/blocks/corn_crop_1_3"
       ]
+    },
+    "crimson_lamp_bottom": {
+      "textures": [
+        "textures/blocks/crimson_lamp_bottom"
+      ]
+    },
+    "crimson_lamp_side": {
+      "textures": [
+        "textures/blocks/crimson_lamp_side"
+      ]
+    },
+    "crimson_lamp_top": {
+      "textures": [
+        "textures/blocks/crimson_lamp_top"
+      ]
+    },
+    "golden_bookshelf_back": {
+      "textures": [
+        "textures/blocks/golden_bookshelf_back"
+      ]
+    },
+    "golden_bookshelf_frame_front": {
+      "textures": [
+        "textures/blocks/golden_bookshelf_frame_front"
+      ]
+    },
+    "golden_bookshelf_frame_side": {
+      "textures": [
+        "textures/blocks/golden_bookshelf_frame_side"
+      ]
+    },
+    "golden_bookshelf_front": {
+      "textures": [
+        "textures/blocks/golden_bookshelf_front"
+      ]
+    },
+    "golden_bookshelf_side": {
+      "textures": [
+        "textures/blocks/golden_bookshelf_side"
+      ]
+    },
+    "golden_bookshelf_up_down": {
+      "textures": [
+        "textures/blocks/golden_bookshelf_up_down"
+      ]
+    },
+    "golden_chain": {
+      "textures": [
+        "textures/blocks/golden_chain"
+      ]
+    },
+    "golden_fence_block": {
+      "textures": [
+        "textures/blocks/golden_fence_block"
+      ]
+    },
+    "golden_lamp_bottom": {
+      "textures": [
+        "textures/blocks/golden_lamp_bottom"
+      ]
+    },
+    "golden_lamp_side": {
+      "textures": [
+        "textures/blocks/golden_lamp_side"
+      ]
+    },
+    "golden_lamp_top": {
+      "textures": [
+        "textures/blocks/golden_lamp_top"
+      ]
+    },
+    "lampshade": {
+      "textures": [
+        "textures/blocks/lampshade"
+      ]
     }
   }
 }
