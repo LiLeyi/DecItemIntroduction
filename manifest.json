@@ -2,7 +2,6 @@
     "index.html": [
     ],
     "introduction.html": [
-        "static/data/PowTran.js",
-        "static/pow.js"
+        "static/data/PowTran.js"
     ]
 }
